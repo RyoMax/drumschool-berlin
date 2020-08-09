@@ -1,4 +1,4 @@
-$( document ).ready( function() {
+$( document ).ready(function() {
     /*function timeout() {
         setTimeout(function () {
             // Do Something Here
@@ -7,15 +7,19 @@ $( document ).ready( function() {
             $(  )
             timeout();
         }, 3000);
+        
     }
-
     function welcomeResizer(){
         var h1Height = $(".welcome h1").height();
         var h2Height = $(".welcome h2").height();
         var divHeight = h1Height + h2Height;
         $(".welcome .header-fix").height(divHeight);
         //console.log(divHeight);
-    }*/
+    }
+    */
+    
+
+    
 
     function welcomeHover(){ 
         $(".welcome .arr").toggleClass("hover"); 
@@ -43,14 +47,26 @@ $( document ).ready( function() {
     }
     var sections = [".service", ".locations", ".teacher", ".news"];
 
-    welcomeResizer();
-    $(".welcome .more").hover(welcomeHover);
+    //welcomeResizer();
+    
     getStartedResizer();
+    sections.forEach(function(e) {
+        console.log("Beim Laden der Seite wurde die Höhe angepasst");
+        headerResizer(e);
+    });
 
+    $(".welcome .more").hover(welcomeHover);
+
+    $( window).on("load", function(){
+        sections.forEach(function(e) {
+            console.log("Beim Laden der Seite wurde die Höhe angepasst");
+            headerResizer(e);
+        });
+    })
 
     $(window).resize(function() {
         //console.log("Bildschirm Größe hat sich verändert!");
-        welcomeResizer();
+        //welcomeResizer();
         getStartedResizer();
         sections.forEach(function(e) {
             //console.log(e);
@@ -58,10 +74,5 @@ $( document ).ready( function() {
         });
     });
     
+    
 });
-$( window ).on("load", function(){
-    sections.forEach(function(e) {
-        console.log("Beim Laden der Seite wurde die Höhe angepasst");
-        headerResizer(e);
-    });
-})
