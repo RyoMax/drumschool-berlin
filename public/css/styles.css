@@ -60,6 +60,12 @@ body h1, body h2, body h3 {
   }
 }
 
+@media (max-width: 767.98px) {
+  .headliner .section-line {
+    font-size: 30px;
+  }
+}
+
 .headliner .section-line.h-right {
   left: 50%;
 }
@@ -201,7 +207,7 @@ header .drum-logo {
 
 @media (max-width: 767.98px) {
   .welcome .btn-placer h1 {
-    font-size: 50px;
+    font-size: 53px;
     text-align: center;
   }
 }
@@ -379,6 +385,8 @@ header .drum-logo {
 
 .service .grid .ico {
   background-color: #F9DA58;
+  display: block;
+  margin: auto;
 }
 
 .service .grid .row {
@@ -396,6 +404,18 @@ header .drum-logo {
 
 @media (max-width: 991.98px) {
   .service .grid .p-header {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .service .grid .p-header {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .service .grid .p-header {
     margin-top: 1rem;
     text-align: center;
   }
@@ -405,7 +425,7 @@ header .drum-logo {
   text-align: right;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
   .service .grid .r {
     text-align: center;
   }
