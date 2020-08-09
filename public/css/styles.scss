@@ -34,6 +34,12 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  @include media-breakpoint-down(sm){
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+  }
 }
 /*.background-2{
   background-image: url("/media/drums-2708199_1280.jpg");
