@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$( window ).on( "load", function() {
     /*function timeout() {
         setTimeout(function () {
             // Do Something Here
