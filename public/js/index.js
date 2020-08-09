@@ -46,7 +46,7 @@ $( document ).ready(function() {
     $(".welcome .more").hover(welcomeHover);
     getStartedResizer();
     sections.forEach(function(e) {
-        //console.log(e);
+        console.log("Beim Laden der Seite wurde die Höhe angepasst");
         headerResizer(e);
     });
 
