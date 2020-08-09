@@ -288,7 +288,7 @@ header{
   
   .grid{
     .ico{
-      background-color: $drumyellow;
+      //background-color: $drumyellow;
       display: block;
       margin: auto;
       
@@ -300,6 +300,7 @@ header{
       }
       &:nth-child(odd){
         background-color: $drumgrey;
+        padding: 2rem 0;
       }
     }
     .p-header{

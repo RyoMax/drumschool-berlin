@@ -384,7 +384,6 @@ header .drum-logo {
 }
 
 .service .grid .ico {
-  background-color: #F9DA58;
   display: block;
   margin: auto;
 }
@@ -401,6 +400,7 @@ header .drum-logo {
 
 .service .grid .row:nth-child(odd) {
   background-color: #A3A3A3;
+  padding: 2rem 0;
 }
 
 .service .grid .p-header {
