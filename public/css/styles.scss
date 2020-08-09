@@ -28,6 +28,9 @@ body {
   }
 .background-1{
   background-image: url("/media/drums-2599508_1280.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
