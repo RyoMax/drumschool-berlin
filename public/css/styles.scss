@@ -26,22 +26,23 @@ body {
       font-family: 'Bebas Neue', cursive;
     }
   }
-.background_1{
+.background-1{
   background-image: url("/media/drums-2599508_1280.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-/*.background_2{
+/*.background-2{
   background-image: url("/media/drums-2708199_1280.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-}
-.background_3{
+}*/
+.background-3{
   background-image: url("/media/stage-2089831_1280.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-}*/
+  background-attachment: fixed;
+}
 
 .headliner{
   position: relative;
@@ -50,6 +51,12 @@ body {
     font-size: 110px;
     top: 0;
     z-index: 3;
+    @include media-breakpoint-down(lg){
+      font-size: 80px;
+    }
+    @include media-breakpoint-down(md){
+      font-size: 50px;
+    }
     &.h-right{
       left:50%;
     }
@@ -155,7 +162,7 @@ header{
         font-size:50px;
       }
       @include media-breakpoint-down(sm){
-        font-size:68px ;
+        font-size:50px ;
         text-align: center;
       }
     }
@@ -436,4 +443,7 @@ header{
       }
     }
   }
+}
+footer{
+  color: black;
 }

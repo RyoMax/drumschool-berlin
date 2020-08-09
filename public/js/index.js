@@ -52,5 +52,9 @@ $(window).resize(function() {
     //console.log("Bildschirm Größe hat sich verändert!");
     welcomeResizer();
     getStartedResizer();
+    sections.forEach(function(e) {
+        //console.log(e);
+        headerResizer(e);
+    });
   });
 $(".welcome .more").hover(welcomeHover);
