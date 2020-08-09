@@ -1,4 +1,4 @@
-$( window ).on( "load", function() {
+$( document ).ready( function() {
     /*function timeout() {
         setTimeout(function () {
             // Do Something Here
@@ -7,9 +7,6 @@ $( window ).on( "load", function() {
             $(  )
             timeout();
         }, 3000);
-    }*/
-    function welcomeHover(){ 
-        $(".welcome .arr").toggleClass("hover"); 
     }
 
     function welcomeResizer(){
@@ -18,6 +15,10 @@ $( window ).on( "load", function() {
         var divHeight = h1Height + h2Height;
         $(".welcome .header-fix").height(divHeight);
         //console.log(divHeight);
+    }*/
+
+    function welcomeHover(){ 
+        $(".welcome .arr").toggleClass("hover"); 
     }
 
     function headerResizer(section){
@@ -45,10 +46,6 @@ $( window ).on( "load", function() {
     welcomeResizer();
     $(".welcome .more").hover(welcomeHover);
     getStartedResizer();
-    sections.forEach(function(e) {
-        console.log("Beim Laden der Seite wurde die Höhe angepasst");
-        headerResizer(e);
-    });
 
 
     $(window).resize(function() {
@@ -62,3 +59,9 @@ $( window ).on( "load", function() {
     });
     
 });
+$( window ).on("load", function(){
+    sections.forEach(function(e) {
+        console.log("Beim Laden der Seite wurde die Höhe angepasst");
+        headerResizer(e);
+    });
+})
