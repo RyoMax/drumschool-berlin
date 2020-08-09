@@ -40,14 +40,16 @@ $( document ).ready(function() {
         console.log("the contact is " + contactHeight + "pixels big");
 
     }
-    var sections = [".service", ".locations", ".teacher", ".news"]
+    var sections = [".service", ".locations", ".teacher", ".news"];
 
+    welcomeResizer();
+    $(".welcome .more").hover(welcomeHover);
+    getStartedResizer();
     sections.forEach(function(e) {
         //console.log(e);
         headerResizer(e);
     });
-    welcomeResizer();
-    getStartedResizer();
+
 
     $(window).resize(function() {
         //console.log("Bildschirm Größe hat sich verändert!");
@@ -58,5 +60,5 @@ $( document ).ready(function() {
             headerResizer(e);
         });
     });
-    $(".welcome .more").hover(welcomeHover);
+    
 });

@@ -195,6 +195,8 @@ header{
       box-shadow: 0 0 10px $drumblack;
       transition: all 0.4s;
       -moz-transition: all 0.4;
+      -webkit-transition: all 0.4s;
+      -o-transition: all 0.4s;
       @include media-breakpoint-down(lg){
         font-size:12px;
       }
@@ -211,6 +213,9 @@ header{
         font-weight: bold;
         transition: all 0.4s;
         -moz-transition: all 0.4;
+        -webkit-transition: all 0.4s;
+       -o-transition: all 0.4s;
+        
         @include media-breakpoint-down(lg){
           font-size: 16px;
         }
@@ -237,6 +242,8 @@ header{
       font-weight: 600;
       transition: all 0.4s;
       -moz-transition: all 0.4;
+      -webkit-transition: all 0.4s;
+      -o-transition: all 0.4s;
       @include media-breakpoint-down(lg){
         font-size:16px;
       }
@@ -264,6 +271,8 @@ header{
         box-shadow: $drumblack 0 0 0;
         transition: all 0.4s;
         -moz-transition: all 0.4;
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
         i{
           display: inline-block;
           transform: translateX(35%);
@@ -271,6 +280,8 @@ header{
           color: $drumblack;
           transition: all 0.4s;
           -moz-transition: all 0.4;
+          -webkit-transition: all 0.4s;
+          -o-transition: all 0.4s;
         }
         &.hover{
             background-color: $drumblack;

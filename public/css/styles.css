@@ -244,9 +244,10 @@ header .drum-logo {
   line-height: 20px;
   -webkit-box-shadow: 0 0 10px #141414;
           box-shadow: 0 0 10px #141414;
-  -webkit-transition: all 0.4s;
   transition: all 0.4s;
   -moz-transition: all 0.4;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
 }
 
 @media (max-width: 1199.98px) {
@@ -271,9 +272,10 @@ header .drum-logo {
 .welcome .btn-placer .drum-btn span {
   font-size: 18px;
   font-weight: bold;
-  -webkit-transition: all 0.4s;
   transition: all 0.4s;
   -moz-transition: all 0.4;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
 }
 
 @media (max-width: 1199.98px) {
@@ -307,9 +309,10 @@ header .drum-logo {
   color: #ffffff;
   font-size: 18px;
   font-weight: 600;
-  -webkit-transition: all 0.4s;
   transition: all 0.4s;
   -moz-transition: all 0.4;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
 }
 
 @media (max-width: 1199.98px) {
@@ -350,9 +353,10 @@ header .drum-logo {
   border-radius: 100%;
   -webkit-box-shadow: #141414 0 0 0;
           box-shadow: #141414 0 0 0;
-  -webkit-transition: all 0.4s;
   transition: all 0.4s;
   -moz-transition: all 0.4;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
 }
 
 .welcome .btn-placer .more .arr i {
@@ -361,9 +365,10 @@ header .drum-logo {
           transform: translateX(35%);
   font-size: 25px;
   color: #141414;
-  -webkit-transition: all 0.4s;
   transition: all 0.4s;
   -moz-transition: all 0.4;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
 }
 
 .welcome .btn-placer .more .arr.hover {
