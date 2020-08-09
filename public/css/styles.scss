@@ -291,9 +291,13 @@ header{
       background-color: $drumyellow;
       display: block;
       margin: auto;
+      
     }
     .row{
       margin: 2rem 0;
+      @include media-breakpoint-down(sm){
+        padding: 2rem 0 .5rem;
+      }
       &:nth-child(odd){
         background-color: $drumgrey;
       }
