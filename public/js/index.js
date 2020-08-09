@@ -62,6 +62,7 @@ $( document ).ready(function() {
             console.log("Beim Laden der Seite wurde die Höhe angepasst");
             headerResizer(e);
         });
+        getStartedResizer();
     })
 
     $(window).resize(function() {
