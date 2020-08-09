@@ -1,0 +1,439 @@
+/* GLOBAL STYLES*/
+@import "../bootstrap-4.5.0/scss/_functions.scss";
+@import "../bootstrap-4.5.0/scss/_variables.scss";
+@import "../bootstrap-4.5.0/scss/mixins/_breakpoints.scss";
+
+$drumwhite: #ffffff;
+$drumyellow: #F9DA58;
+$drumblack: #141414;
+$drumgrey: #A3A3A3;
+$margin: 100px;
+
+/*@font-face {
+  font-family: druk-text-wide;
+  src: url("/fonts/Druk Text Wide Web Medium Regular.ttf");
+}*/
+/*------------------------------------------------- */
+
+html{
+  overflow-x: hidden;
+}
+body {
+    background-color: $drumblack;
+    color: $drumwhite;
+    font-family: 'Montserrat', sans-serif;
+    h1, h2, h3{
+      font-family: 'Bebas Neue', cursive;
+    }
+  }
+.background_1{
+  background-image: url("/media/drums-2599508_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/*.background_2{
+  background-image: url("/media/drums-2708199_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.background_3{
+  background-image: url("/media/stage-2089831_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}*/
+
+.headliner{
+  position: relative;
+  .section-line{
+    position: absolute;
+    font-size: 110px;
+    top: 0;
+    z-index: 3;
+    &.h-right{
+      left:50%;
+    }
+    &.h-left{
+      right:50%;
+    }
+  }
+  .down-line{
+    position: absolute;
+    width: 60%;
+    height: auto;
+    bottom: 0;
+    transform: translateY(-50%);
+    z-index:1;
+    &.h-right{
+      right:0;
+    }
+    &.h-left{
+      left:0;
+    }
+  }
+}
+
+.headliner-left{
+  position: relative;
+  .section-line{
+    position: absolute;
+    margin-bottom: 0;
+    z-index: 2;
+  }
+  .downline{
+    position: absolute;
+    width: 60%;
+    margin-left: auto;
+    z-index:1;
+  }
+}
+
+header{
+  position: relative;
+  height: 100vh;
+  margin-bottom: $margin;
+  li a{
+    color: $drumwhite
+  }
+  
+  nav{
+    //mittels DOM manipulation komplette Hintergrund Farbe mittels transition toggeln
+    @include media-breakpoint-down(md){
+      background:rgba(0, 0, 0, 0.6);
+      z-index: 3;
+    }
+    #nav-logo{
+      width: auto;
+      height:70px;
+    }
+    .navbar-toggler .navbar-toggler-icon{
+      color: $drumwhite;
+    }
+    ul{
+      width: 80%;
+      
+    }
+  }
+  .drum-logo{
+    position: absolute;
+    max-width: 40%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    @include media-breakpoint-down(sm){
+      max-width: 60%;
+    }
+  }
+}
+.welcome{
+  margin: $margin 0;
+  .btn-placer{
+    position: relative;
+    h2{
+      font-size: 30px;
+      font-family: 'Montserrat', sans-serif;
+      margin-top: 1rem;
+      font-weight: 700;
+      @include media-breakpoint-down(lg){
+        font-size:25px;
+      }
+      @include media-breakpoint-down(md){
+        font-size:20px;
+      }
+      @include media-breakpoint-down(sm){
+        text-align: center;
+      }
+    }
+    h1{
+      color: $drumyellow;
+      font-size: 82px;
+      margin-bottom: 2rem;
+      @include media-breakpoint-down(lg){
+        font-size:68px
+      }
+      @include media-breakpoint-down(md){
+        font-size:50px;
+      }
+      @include media-breakpoint-down(sm){
+        font-size:68px ;
+        text-align: center;
+      }
+    }
+    p{
+      text-align: justify;
+      font-size: 18px;
+      line-height: 25px;
+      @include media-breakpoint-down(lg){
+        font-size:16px;
+      }
+      @include media-breakpoint-down(md){
+        font-size:12px;
+        line-height: 22px;
+      }
+    }
+    .drum-btn{
+      position: absolute;
+      bottom: 0;
+      margin-top: auto;
+      padding: 6px 25px;
+      background-color: $drumyellow;
+      color: $drumblack;
+      font-size: 14px;
+      border: $drumyellow solid 1px;
+      border-radius: 30px;
+      line-height: 20px;
+      box-shadow: 0 0 10px $drumblack;
+      transition: all 0.4s;
+      @include media-breakpoint-down(lg){
+        font-size:12px;
+      }
+      @include media-breakpoint-down(md){
+        font-size:10px;
+        //position: relative;
+      }
+      @include media-breakpoint-down(sm){
+        font-size:10px;
+        position: relative;
+      }
+      span{
+        font-size: 18px;
+        font-weight: bold;
+        transition: all 0.4s;
+        @include media-breakpoint-down(lg){
+          font-size: 16px;
+        }
+        @include media-breakpoint-down(md){
+          font-size: 13px;
+        }
+      }
+      &:hover{
+        background-color: $drumblack;
+        color: $drumwhite;
+        border: $drumyellow 1px solid;
+        box-shadow: $drumyellow 0 0 5px;
+        span{
+          color: $drumyellow;
+        }
+      }
+    }
+    .more{
+      position: absolute;
+      bottom: 8px;
+      right: 15px;
+      color: $drumwhite;
+      font-size: 18px;
+      font-weight: 600;
+      transition: all 0.4s;
+      @include media-breakpoint-down(lg){
+        font-size:16px;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 14px;
+      }
+      &:hover{
+        text-decoration: none;
+        font-size: 20px;
+        @include media-breakpoint-down(lg){
+          font-size:18px;
+        }
+        @include media-breakpoint-down(md) {
+          font-size: 16px;
+        }
+      }
+      .arr{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        //padding: 6px;
+        background-color: $drumwhite;
+        border: $drumwhite 1px solid;
+        border-radius: 100%;
+        box-shadow: $drumblack 0 0 0;
+        transition: all 0.4s;
+        i{
+          display: inline-block;
+          transform: translateX(35%);
+          font-size: 25px;
+          color: $drumblack;
+          transition: all 0.4s;
+        }
+        &.hover{
+            background-color: $drumblack;
+            border: $drumwhite 1px solid;
+            box-shadow: $drumwhite 0 0 5px;
+            i{
+              color: $drumwhite;
+            }
+        }
+      }
+      
+    }
+  }
+  
+}
+.service{
+  margin-top: $margin;
+  margin-bottom: $margin;
+  
+  
+  .grid{
+    .ico{
+      background-color: $drumyellow;
+    }
+    .row{
+      margin: 2rem 0;
+      &:nth-child(odd){
+        background-color: $drumgrey;
+      }
+    }
+    .p-header{
+      font-weight: bold;
+      font-size: 30px;
+      @include media-breakpoint-down(md){
+        margin-top: 1rem;
+        text-align: center;
+      }
+    }
+    .r{
+      text-align: right;
+      @include media-breakpoint-down(md){
+        text-align: center;
+      }
+    }
+    /*img{
+      max-height: 250px;
+    }*/
+  }
+   
+}
+.get-started{
+  font-size: 22px;
+  margin-top: $margin;
+  margin-bottom: $margin;
+  position: relative;
+  color: $drumblack;
+  @include media-breakpoint-down(lg){
+    font-size:18px;
+  }
+  @include media-breakpoint-down(md){
+    font-size:14px;
+  }
+  p{
+    @include media-breakpoint-down(lg){
+      margin-bottom: 0.5rem;
+    }
+    @include media-breakpoint-down(sm){
+      margin-bottom: 0;
+    }
+  }
+  img{
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 51%;
+    @include media-breakpoint-down(sm){
+      position: relative;
+      width: 100%;
+    }
+  }
+  .get-contact{
+    position: absolute;
+    bottom: 0;
+    background-color: $drumyellow;
+    width: 100%;
+    z-index: 1;
+    //margin-bottom: 2rem;
+    @include media-breakpoint-down(sm){
+      position: relative;
+    }
+    h3{
+      font-size: 110px;
+      //font-weight: bold;
+      
+      @include media-breakpoint-down(lg){
+        font-size:90px;
+      }
+      @include media-breakpoint-down(md){
+        font-size:60px;
+      }
+    }
+    .left{
+      p, a{
+        text-align: left;
+        display: block;
+        color: $drumblack;
+        @include media-breakpoint-down(sm){
+          text-align: center;
+        }
+      }
+    }
+    .right{
+      p, a{
+        text-align: right;
+        display: block;
+        color: $drumblack;
+        margin: 0 2rem 0 0;
+        @include media-breakpoint-down(md){
+          margin-right: 1rem;
+        }
+        @include media-breakpoint-down(sm){
+          text-align: center;
+          margin-bottom: 1rem;
+          margin-right: 0;
+        }
+      }
+    }
+    .pl{
+      p, a{
+        padding-left: 2rem;
+        @include media-breakpoint-down(md){
+          padding-left: 0;
+        }
+      }
+    }
+    .bold{
+      p, a{
+        font-weight: bold;
+      }
+      
+    }
+    .drum-btn{
+      width: 100%;
+      padding: 10px 2px;
+      background-color: $drumblack;
+      color: $drumyellow;
+      font-size: 22px;
+      //border: $drumblack solid 3px;
+      border-radius: 30px;
+      @include media-breakpoint-down(lg){
+        font-size:18px;
+      }
+      @include media-breakpoint-down(md){
+        font-size:14px;
+      }
+      @include media-breakpoint-down(sm){
+        min-width: 40%;
+        max-width: 60%;
+      }
+      
+      //box-shadow: 0 0 10px $drumyellow;
+    }
+    .info{
+      text-align: right;
+      font-size: 15px;
+      margin: 1rem 2rem 1rem 0;
+      @include media-breakpoint-down(lg){
+        font-size:12px;
+      }
+      @include media-breakpoint-down(md){
+        //margin-bottom: 1rem;
+        font-size: 10px;
+        margin: 0.5rem 1rem 1rem 0;
+      }
+      @include media-breakpoint-down(sm){
+        text-align: center;
+        margin-right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,576 @@
+/* GLOBAL STYLES*/
+/*@font-face {
+  font-family: druk-text-wide;
+  src: url("/fonts/Druk Text Wide Web Medium Regular.ttf");
+}*/
+/*------------------------------------------------- */
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #141414;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body h1, body h2, body h3 {
+  font-family: 'Bebas Neue', cursive;
+}
+
+.background_1 {
+  background-image: url("/media/drums-2599508_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*.background_2{
+  background-image: url("/media/drums-2708199_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.background_3{
+  background-image: url("/media/stage-2089831_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}*/
+.headliner {
+  position: relative;
+}
+
+.headliner .section-line {
+  position: absolute;
+  font-size: 110px;
+  top: 0;
+  z-index: 3;
+}
+
+.headliner .section-line.h-right {
+  left: 50%;
+}
+
+.headliner .section-line.h-left {
+  right: 50%;
+}
+
+.headliner .down-line {
+  position: absolute;
+  width: 60%;
+  height: auto;
+  bottom: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 1;
+}
+
+.headliner .down-line.h-right {
+  right: 0;
+}
+
+.headliner .down-line.h-left {
+  left: 0;
+}
+
+.headliner-left {
+  position: relative;
+}
+
+.headliner-left .section-line {
+  position: absolute;
+  margin-bottom: 0;
+  z-index: 2;
+}
+
+.headliner-left .downline {
+  position: absolute;
+  width: 60%;
+  margin-left: auto;
+  z-index: 1;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  margin-bottom: 100px;
+}
+
+header li a {
+  color: #ffffff;
+}
+
+@media (max-width: 991.98px) {
+  header nav {
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 3;
+  }
+}
+
+header nav #nav-logo {
+  width: auto;
+  height: 70px;
+}
+
+header nav .navbar-toggler .navbar-toggler-icon {
+  color: #ffffff;
+}
+
+header nav ul {
+  width: 80%;
+}
+
+header .drum-logo {
+  position: absolute;
+  max-width: 40%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media (max-width: 767.98px) {
+  header .drum-logo {
+    max-width: 60%;
+  }
+}
+
+.welcome {
+  margin: 100px 0;
+}
+
+.welcome .btn-placer {
+  position: relative;
+}
+
+.welcome .btn-placer h2 {
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+@media (max-width: 1199.98px) {
+  .welcome .btn-placer h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .welcome .btn-placer h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .welcome .btn-placer h2 {
+    text-align: center;
+  }
+}
+
+.welcome .btn-placer h1 {
+  color: #F9DA58;
+  font-size: 82px;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1199.98px) {
+  .welcome .btn-placer h1 {
+    font-size: 68px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .welcome .btn-placer h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .welcome .btn-placer h1 {
+    font-size: 68px;
+    text-align: center;
+  }
+}
+
+.welcome .btn-placer p {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+@media (max-width: 1199.98px) {
+  .welcome .btn-placer p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .welcome .btn-placer p {
+    font-size: 12px;
+    line-height: 22px;
+  }
+}
+
+.welcome .btn-placer .drum-btn {
+  position: absolute;
+  bottom: 0;
+  margin-top: auto;
+  padding: 6px 25px;
+  background-color: #F9DA58;
+  color: #141414;
+  font-size: 14px;
+  border: #F9DA58 solid 1px;
+  border-radius: 30px;
+  line-height: 20px;
+  -webkit-box-shadow: 0 0 10px #141414;
+          box-shadow: 0 0 10px #141414;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+@media (max-width: 1199.98px) {
+  .welcome .btn-placer .drum-btn {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .welcome .btn-placer .drum-btn {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .welcome .btn-placer .drum-btn {
+    font-size: 10px;
+    position: relative;
+  }
+}
+
+.welcome .btn-placer .drum-btn span {
+  font-size: 18px;
+  font-weight: bold;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+@media (max-width: 1199.98px) {
+  .welcome .btn-placer .drum-btn span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .welcome .btn-placer .drum-btn span {
+    font-size: 13px;
+  }
+}
+
+.welcome .btn-placer .drum-btn:hover {
+  background-color: #141414;
+  color: #ffffff;
+  border: #F9DA58 1px solid;
+  -webkit-box-shadow: #F9DA58 0 0 5px;
+          box-shadow: #F9DA58 0 0 5px;
+}
+
+.welcome .btn-placer .drum-btn:hover span {
+  color: #F9DA58;
+}
+
+.welcome .btn-placer .more {
+  position: absolute;
+  bottom: 8px;
+  right: 15px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+@media (max-width: 1199.98px) {
+  .welcome .btn-placer .more {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .welcome .btn-placer .more {
+    font-size: 14px;
+  }
+}
+
+.welcome .btn-placer .more:hover {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+@media (max-width: 1199.98px) {
+  .welcome .btn-placer .more:hover {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .welcome .btn-placer .more:hover {
+    font-size: 16px;
+  }
+}
+
+.welcome .btn-placer .more .arr {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border: #ffffff 1px solid;
+  border-radius: 100%;
+  -webkit-box-shadow: #141414 0 0 0;
+          box-shadow: #141414 0 0 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.welcome .btn-placer .more .arr i {
+  display: inline-block;
+  -webkit-transform: translateX(35%);
+          transform: translateX(35%);
+  font-size: 25px;
+  color: #141414;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.welcome .btn-placer .more .arr.hover {
+  background-color: #141414;
+  border: #ffffff 1px solid;
+  -webkit-box-shadow: #ffffff 0 0 5px;
+          box-shadow: #ffffff 0 0 5px;
+}
+
+.welcome .btn-placer .more .arr.hover i {
+  color: #ffffff;
+}
+
+.service {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.service .grid {
+  /*img{
+      max-height: 250px;
+    }*/
+}
+
+.service .grid .ico {
+  background-color: #F9DA58;
+}
+
+.service .grid .row {
+  margin: 2rem 0;
+}
+
+.service .grid .row:nth-child(odd) {
+  background-color: #A3A3A3;
+}
+
+.service .grid .p-header {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+@media (max-width: 991.98px) {
+  .service .grid .p-header {
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
+
+.service .grid .r {
+  text-align: right;
+}
+
+@media (max-width: 991.98px) {
+  .service .grid .r {
+    text-align: center;
+  }
+}
+
+.get-started {
+  font-size: 22px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
+  color: #141414;
+}
+
+@media (max-width: 1199.98px) {
+  .get-started {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .get-started {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .get-started p {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .get-started p {
+    margin-bottom: 0;
+  }
+}
+
+.get-started img {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  width: 51%;
+}
+
+@media (max-width: 767.98px) {
+  .get-started img {
+    position: relative;
+    width: 100%;
+  }
+}
+
+.get-started .get-contact {
+  position: absolute;
+  bottom: 0;
+  background-color: #F9DA58;
+  width: 100%;
+  z-index: 1;
+}
+
+@media (max-width: 767.98px) {
+  .get-started .get-contact {
+    position: relative;
+  }
+}
+
+.get-started .get-contact h3 {
+  font-size: 110px;
+}
+
+@media (max-width: 1199.98px) {
+  .get-started .get-contact h3 {
+    font-size: 90px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .get-started .get-contact h3 {
+    font-size: 60px;
+  }
+}
+
+.get-started .get-contact .left p, .get-started .get-contact .left a {
+  text-align: left;
+  display: block;
+  color: #141414;
+}
+
+@media (max-width: 767.98px) {
+  .get-started .get-contact .left p, .get-started .get-contact .left a {
+    text-align: center;
+  }
+}
+
+.get-started .get-contact .right p, .get-started .get-contact .right a {
+  text-align: right;
+  display: block;
+  color: #141414;
+  margin: 0 2rem 0 0;
+}
+
+@media (max-width: 991.98px) {
+  .get-started .get-contact .right p, .get-started .get-contact .right a {
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .get-started .get-contact .right p, .get-started .get-contact .right a {
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+}
+
+.get-started .get-contact .pl p, .get-started .get-contact .pl a {
+  padding-left: 2rem;
+}
+
+@media (max-width: 991.98px) {
+  .get-started .get-contact .pl p, .get-started .get-contact .pl a {
+    padding-left: 0;
+  }
+}
+
+.get-started .get-contact .bold p, .get-started .get-contact .bold a {
+  font-weight: bold;
+}
+
+.get-started .get-contact .drum-btn {
+  width: 100%;
+  padding: 10px 2px;
+  background-color: #141414;
+  color: #F9DA58;
+  font-size: 22px;
+  border-radius: 30px;
+}
+
+@media (max-width: 1199.98px) {
+  .get-started .get-contact .drum-btn {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .get-started .get-contact .drum-btn {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .get-started .get-contact .drum-btn {
+    min-width: 40%;
+    max-width: 60%;
+  }
+}
+
+.get-started .get-contact .info {
+  text-align: right;
+  font-size: 15px;
+  margin: 1rem 2rem 1rem 0;
+}
+
+@media (max-width: 1199.98px) {
+  .get-started .get-contact .info {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .get-started .get-contact .info {
+    font-size: 10px;
+    margin: 0.5rem 1rem 1rem 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .get-started .get-contact .info {
+    text-align: center;
+    margin-right: 0;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
