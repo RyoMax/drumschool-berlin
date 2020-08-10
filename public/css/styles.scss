@@ -33,9 +33,6 @@ body {
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  -webkit-background-attachment: fixed;
-  -o-background-attachment: fixed;
-  -moz-background-attachment:fixed;
   background-attachment: fixed;
   @include media-breakpoint-down(sm){
     -webkit-background-size: auto;
@@ -84,8 +81,13 @@ body {
     width: 60%;
     height: auto;
     bottom: 0;
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     z-index:1;
+    @include media-breakpoint-down(sm){
+      -webkit-transform: translateY(-70%);
+      transform: translateY(-70%);
+    }
     &.h-right{
       right:0;
     }
@@ -141,6 +143,7 @@ header{
     max-width: 40%;
     left: 50%;
     top: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     @include media-breakpoint-down(sm){
       max-width: 60%;
@@ -206,10 +209,10 @@ header{
       border-radius: 30px;
       line-height: 20px;
       box-shadow: 0 0 10px $drumblack;
-      transition: all 0.4s;
-      -moz-transition: all 0.4;
       -webkit-transition: all 0.4s;
+      -moz-transition: all 0.4;
       -o-transition: all 0.4s;
+      transition: all 0.4s;
       @include media-breakpoint-down(lg){
         font-size:12px;
       }
@@ -224,10 +227,10 @@ header{
       span{
         font-size: 18px;
         font-weight: bold;
-        transition: all 0.4s;
-        -moz-transition: all 0.4;
         -webkit-transition: all 0.4s;
-       -o-transition: all 0.4s;
+        -moz-transition: all 0.4;
+        -o-transition: all 0.4s;
+        transition: all 0.4s;
         
         @include media-breakpoint-down(lg){
           font-size: 16px;
@@ -253,10 +256,10 @@ header{
       color: $drumwhite;
       font-size: 18px;
       font-weight: 600;
-      transition: all 0.4s;
-      -moz-transition: all 0.4;
       -webkit-transition: all 0.4s;
+      -moz-transition: all 0.4;
       -o-transition: all 0.4s;
+      transition: all 0.4s;
       @include media-breakpoint-down(lg){
         font-size:16px;
       }
@@ -282,19 +285,20 @@ header{
         border: $drumwhite 1px solid;
         border-radius: 100%;
         box-shadow: $drumblack 0 0 0;
-        transition: all 0.4s;
-        -moz-transition: all 0.4;
         -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4;
         -o-transition: all 0.4s;
+        transition: all 0.4s;
         i{
           display: inline-block;
+          -webkit-transform: translateX(25%);
           transform: translateX(25%);
           font-size: 25px;
           color: $drumblack;
-          transition: all 0.4s;
-          -moz-transition: all 0.4;
           -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4;
           -o-transition: all 0.4s;
+          transition: all 0.4s;
         }
         &.hover{
             background-color: $drumblack;

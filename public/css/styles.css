@@ -22,9 +22,6 @@ body h1, body h2, body h3 {
   background-image: url("/media/drums-2599508_1280.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  -webkit-background-attachment: fixed;
-  -o-background-attachment: fixed;
-  -moz-background-attachment: fixed;
   background-attachment: fixed;
 }
 
@@ -89,8 +86,15 @@ body h1, body h2, body h3 {
   height: auto;
   bottom: 0;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   z-index: 1;
+}
+
+@media (max-width: 767.98px) {
+  .headliner .down-line {
+    -webkit-transform: translateY(-70%);
+    transform: translateY(-70%);
+  }
 }
 
 .headliner .down-line.h-right {
@@ -154,7 +158,7 @@ header .drum-logo {
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 @media (max-width: 767.98px) {
@@ -254,10 +258,8 @@ header .drum-logo {
   line-height: 20px;
   -webkit-box-shadow: 0 0 10px #141414;
           box-shadow: 0 0 10px #141414;
-  transition: all 0.4s;
-  -moz-transition: all 0.4;
   -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 @media (max-width: 1199.98px) {
@@ -282,10 +284,8 @@ header .drum-logo {
 .welcome .btn-placer .drum-btn span {
   font-size: 18px;
   font-weight: bold;
-  transition: all 0.4s;
-  -moz-transition: all 0.4;
   -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 @media (max-width: 1199.98px) {
@@ -319,10 +319,8 @@ header .drum-logo {
   color: #ffffff;
   font-size: 18px;
   font-weight: 600;
-  transition: all 0.4s;
-  -moz-transition: all 0.4;
   -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 @media (max-width: 1199.98px) {
@@ -363,22 +361,18 @@ header .drum-logo {
   border-radius: 100%;
   -webkit-box-shadow: #141414 0 0 0;
           box-shadow: #141414 0 0 0;
-  transition: all 0.4s;
-  -moz-transition: all 0.4;
   -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .welcome .btn-placer .more .arr i {
   display: inline-block;
   -webkit-transform: translateX(25%);
-          transform: translateX(25%);
+  transform: translateX(25%);
   font-size: 25px;
   color: #141414;
-  transition: all 0.4s;
-  -moz-transition: all 0.4;
   -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .welcome .btn-placer .more .arr.hover {
