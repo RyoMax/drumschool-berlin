@@ -297,6 +297,10 @@ header{
         -moz-transition: all 0.4;
         -o-transition: all 0.4s;
         transition: all 0.4s;
+        @include media-breakpoint-down(sm){
+          width: 35px;
+          height: 35px;
+        }
         i{
           display: inline-block;
           -webkit-transform: translateX(25%);
@@ -307,6 +311,9 @@ header{
           -moz-transition: all 0.4;
           -o-transition: all 0.4s;
           transition: all 0.4s;
+          @include media-breakpoint-down(sm){
+            font-size: 21px;
+          }
         }
         &.hover{
             background-color: $drumblack;

@@ -379,6 +379,13 @@ header .drum-logo {
   transition: all 0.4s;
 }
 
+@media (max-width: 767.98px) {
+  .welcome .btn-placer .more .arr {
+    width: 35px;
+    height: 35px;
+  }
+}
+
 .welcome .btn-placer .more .arr i {
   display: inline-block;
   -webkit-transform: translateX(25%);
@@ -387,6 +394,12 @@ header .drum-logo {
   color: #141414;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+}
+
+@media (max-width: 767.98px) {
+  .welcome .btn-placer .more .arr i {
+    font-size: 21px;
+  }
 }
 
 .welcome .btn-placer .more .arr.hover {
