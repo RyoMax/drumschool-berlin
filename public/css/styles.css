@@ -68,7 +68,7 @@ body h1, body h2, body h3 {
 
 @media (max-width: 767.98px) {
   .headliner .section-line {
-    font-size: 38px;
+    font-size: 36px;
   }
 }
 
@@ -144,6 +144,12 @@ header nav #nav-logo {
   height: 70px;
 }
 
+@media (max-width: 767.98px) {
+  header nav #nav-logo {
+    height: 40px;
+  }
+}
+
 header nav .navbar-toggler .navbar-toggler-icon {
   color: #ffffff;
 }
@@ -154,7 +160,7 @@ header nav ul {
 
 header .drum-logo {
   position: absolute;
-  max-width: 40%;
+  max-width: 35%;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -164,6 +170,22 @@ header .drum-logo {
 @media (max-width: 767.98px) {
   header .drum-logo {
     max-width: 60%;
+    max-height: 55%;
+  }
+}
+
+header .arrow-down {
+  position: absolute;
+  max-width: 20%;
+  left: 50%;
+  bottom: 5%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+@media (max-width: 767.98px) {
+  header .arrow-down {
+    max-width: 30%;
   }
 }
 
