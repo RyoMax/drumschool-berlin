@@ -278,6 +278,7 @@ header .drum-logo {
   .welcome .btn-placer .drum-btn {
     font-size: 10px;
     position: relative;
+    padding: 6px 12px;
   }
 }
 
@@ -335,9 +336,16 @@ header .drum-logo {
   }
 }
 
+@media (max-width: 991.98px) {
+  .welcome .btn-placer .more {
+    font-size: 14px;
+  }
+}
+
 .welcome .btn-placer .more:hover {
   text-decoration: none;
   font-size: 20px;
+  color: #F9DA58;
 }
 
 @media (max-width: 1199.98px) {
@@ -349,6 +357,12 @@ header .drum-logo {
 @media (max-width: 991.98px) {
   .welcome .btn-placer .more:hover {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .welcome .btn-placer .more:hover {
+    font-size: 14px;
   }
 }
 

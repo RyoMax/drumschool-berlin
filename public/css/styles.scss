@@ -223,6 +223,7 @@ header{
       @include media-breakpoint-down(sm){
         font-size:10px;
         position: relative;
+        padding: 6px 12px;
       }
       span{
         font-size: 18px;
@@ -266,14 +267,21 @@ header{
       @include media-breakpoint-down(md) {
         font-size: 14px;
       }
+      @include media-breakpoint-down(md) {
+        font-size: 14px;
+      }
       &:hover{
         text-decoration: none;
         font-size: 20px;
+        color: $drumyellow;
         @include media-breakpoint-down(lg){
           font-size:18px;
         }
         @include media-breakpoint-down(md) {
           font-size: 16px;
+        }
+        @include media-breakpoint-down(md) {
+          font-size: 14px;
         }
       }
       .arr{
