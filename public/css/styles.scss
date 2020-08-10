@@ -163,6 +163,7 @@ header{
         font-size:20px;
       }
       @include media-breakpoint-down(sm){
+        font-size: 14px;
         text-align: center;
       }
     }
@@ -177,7 +178,7 @@ header{
         font-size:50px;
       }
       @include media-breakpoint-down(sm){
-        font-size:53px ;
+        font-size:43px ;
         text-align: center;
       }
     }
@@ -287,7 +288,7 @@ header{
         -o-transition: all 0.4s;
         i{
           display: inline-block;
-          transform: translateX(35%);
+          transform: translateX(25%);
           font-size: 25px;
           color: $drumblack;
           transition: all 0.4s;

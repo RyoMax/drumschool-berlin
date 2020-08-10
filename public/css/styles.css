@@ -192,6 +192,7 @@ header .drum-logo {
 
 @media (max-width: 767.98px) {
   .welcome .btn-placer h2 {
+    font-size: 14px;
     text-align: center;
   }
 }
@@ -216,7 +217,7 @@ header .drum-logo {
 
 @media (max-width: 767.98px) {
   .welcome .btn-placer h1 {
-    font-size: 53px;
+    font-size: 43px;
     text-align: center;
   }
 }
@@ -370,8 +371,8 @@ header .drum-logo {
 
 .welcome .btn-placer .more .arr i {
   display: inline-block;
-  -webkit-transform: translateX(35%);
-          transform: translateX(35%);
+  -webkit-transform: translateX(25%);
+          transform: translateX(25%);
   font-size: 25px;
   color: #141414;
   transition: all 0.4s;
