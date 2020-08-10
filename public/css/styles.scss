@@ -155,13 +155,23 @@ header{
   }
   .arrow-down{
     position: absolute;
+    position: fixed;
+    opacity: 1;
+    visibility: visible;
     max-width: 20%;
     left: 50%;
     bottom: 5%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    z-index: 99;
     @include media-breakpoint-down(sm){
       max-width: 30%;
+    }
+    &.scroll{
+      opacity: 0;
+      visibility: hidden;
     }
   }
 }

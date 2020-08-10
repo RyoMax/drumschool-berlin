@@ -19,7 +19,13 @@ $( document ).ready(function() {
     */
     
 
-    
+    function fadeScroll(){
+        $("header .arrow-down").addClass("scroll");
+    }
+
+    function fadeScrollOut(){
+        $("header .arrow-down").removeClass("scroll");
+    }
 
     function welcomeHover(){ 
         $(".welcome .arr").toggleClass("hover"); 
@@ -46,6 +52,7 @@ $( document ).ready(function() {
 
     }
     var sections = [".service", ".locations", ".teacher", ".news"];
+    var timer;
 
     //welcomeResizer();
     
@@ -57,7 +64,7 @@ $( document ).ready(function() {
 
     $(".welcome .more").hover(welcomeHover);
 
-    $( window).on("load", function(){
+    $( window ).on("load", function(){
         sections.forEach(function(e) {
             console.log("Beim Laden der Seite wurde die Höhe angepasst");
             headerResizer(e);
@@ -65,7 +72,7 @@ $( document ).ready(function() {
         getStartedResizer();
     })
 
-    $(window).resize(function() {
+    $( window ).resize(function() {
         //console.log("Bildschirm Größe hat sich verändert!");
         //welcomeResizer();
         getStartedResizer();
@@ -74,6 +81,12 @@ $( document ).ready(function() {
             headerResizer(e);
         });
     });
+
+    $( window ).scroll(function(){
+        window.clearTimeout(timer);
+        fadeScroll();
+        timer = window.setTimeout(function(){ fadeScrollOut(); }, 500);
+    })
     
     
 });

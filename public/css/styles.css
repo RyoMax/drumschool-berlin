@@ -176,17 +176,28 @@ header .drum-logo {
 
 header .arrow-down {
   position: absolute;
+  position: fixed;
+  opacity: 1;
+  visibility: visible;
   max-width: 20%;
   left: 50%;
   bottom: 5%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  z-index: 99;
 }
 
 @media (max-width: 767.98px) {
   header .arrow-down {
     max-width: 30%;
   }
+}
+
+header .arrow-down.scroll {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .welcome {
