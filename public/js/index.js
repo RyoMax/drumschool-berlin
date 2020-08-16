@@ -42,15 +42,26 @@ $( document ).ready(function() {
     function getStartedResizer(){
         var imgHeight = $(".get-started img").height();
         var contactHeight = $(".get-started .get-contact").height();
-        if (imgHeight >= contactHeight){
+        var screen = $( window ).width();
+        if ( screen <= 750){
+            console.log("window width equals: " + screen);
+            $(".get-started").height(imgHeight + contactHeight);
+        }else if (imgHeight > contactHeight){
             $(".get-started").height(imgHeight);
-        }else{
+        }else if (imgHeight < contactHeight){
             $(".get-started").height(contactHeight);
         }
         console.log("the picture is " + imgHeight + "pixels big");
         console.log("the contact is " + contactHeight + "pixels big");
 
     }
+
+    function newsResizer(){
+        var img = $(".news .soon img").height();
+        //console.log("The height of the headline section is: " + hHeight);
+        $(".news .soon").height(img);
+    }
+
     var sections = [".service", ".locations", ".teacher", ".news"];
     var timer;
 
@@ -70,12 +81,14 @@ $( document ).ready(function() {
             headerResizer(e);
         });
         getStartedResizer();
+        newsResizer();
     })
 
     $( window ).resize(function() {
         //console.log("Bildschirm Größe hat sich verändert!");
         //welcomeResizer();
         getStartedResizer();
+        newsResizer();
         sections.forEach(function(e) {
             //console.log(e);
             headerResizer(e);
