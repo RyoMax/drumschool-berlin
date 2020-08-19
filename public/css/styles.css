@@ -9,6 +9,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   background-color: #141414;
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
@@ -74,7 +75,7 @@ body h1, body h2, body h3 {
 
 @media (max-width: 767.98px) {
   .headliner .section-line {
-    font-size: 36px;
+    font-size: 28px;
   }
 }
 
@@ -522,6 +523,43 @@ header .arrow-down.scroll {
   margin-bottom: 100px;
 }
 
+.locations #map {
+  width: 90%;
+}
+
+@media (max-width: 767.98px) {
+  .locations #map {
+    margin: auto;
+  }
+}
+
+.locations .mloc {
+  padding-left: 2rem;
+}
+
+@media (max-width: 767.98px) {
+  .locations .mloc {
+    margin-top: 2rem;
+    padding-left: 0;
+  }
+}
+
+.locations .mloc .location {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #F9DA58;
+  border-bottom: 1px solid #F9DA58;
+}
+
+.locations .mloc .adress {
+  font-style: italic;
+}
+
+.locations .mloc .card {
+  background-color: #141414;
+  border: #F9DA58 solid 1px;
+}
+
 .get-started {
   font-size: 22px;
   margin-top: 100px;
@@ -745,6 +783,12 @@ header .arrow-down.scroll {
   z-index: 4;
 }
 
+@media (max-width: 767.98px) {
+  .news .soon h3 {
+    font-size: 2.5rem;
+  }
+}
+
 .news .soon:hover .bg-grey {
   opacity: 0.8;
 }
@@ -773,7 +817,7 @@ footer .newsletter-form {
 
 footer .newsletter-form label {
   color: #F9DA58;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
 }
 
@@ -783,6 +827,13 @@ footer .newsletter-form .email {
   border: none;
   border-top-left-radius: 40px;
   border-bottom-left-radius: 40px;
+}
+
+@media (max-width: 767.98px) {
+  footer .newsletter-form .email {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
 }
 
 footer .newsletter-form .submit {
@@ -800,6 +851,13 @@ footer .newsletter-form .submit {
   transition: all 0.2s;
 }
 
+@media (max-width: 767.98px) {
+  footer .newsletter-form .submit {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}
+
 footer .newsletter-form .submit:hover {
   background-color: #141414;
   color: #F9DA58;
@@ -810,6 +868,7 @@ footer .newsletter-form .submit:hover {
 footer .social {
   font-family: 'Montserrat', sans-serif;
   color: #F9DA58;
+  font-size: 24px;
   font-weight: bold;
 }
 
