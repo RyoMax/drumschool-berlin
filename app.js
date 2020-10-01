@@ -14,7 +14,7 @@ app.get("/unterricht", function(req, res){
     res.sendFile(__dirname + "/unterricht.html");
 });
 
-app.get("/lehrkräfte", function(req, res){
+app.get("/lehrkraefte", function(req, res){
     res.sendFile(__dirname + "/lehrkräfte.html")
 })
 
