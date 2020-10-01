@@ -8,8 +8,16 @@ app.use(bodyParser.urlencoded({extended : true}));
 
 app.get("/", function(req, res){
     res.sendFile(__dirname + "/landingpage.html");
+});
+
+app.get("/unterricht", function(req, res){
+    res.sendFile(__dirname + "/unterricht.html");
+});
+
+app.get("/lehrkräfte", function(req, res){
+    res.sendFile(__dirname + "/lehrkräfte.html")
 })
 
 app.listen(process.env.PORT || 3000, function(){
     console.log("Server is running localy on Port 3000");
-})
+});
