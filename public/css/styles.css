@@ -10,7 +10,7 @@ html {
 
 body {
   overflow-x: hidden;
-  background-color: #141414;
+  background-color: #1D1D1D;
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
 }
@@ -129,13 +129,81 @@ body h1, body h2, body h3 {
   z-index: 1;
 }
 
-header {
+.lesslon-btn {
+  position: absolute;
+  bottom: 0;
+  margin-top: auto;
+  padding: 6px 25px;
+  background-color: #BF2231;
+  color: #1D1D1D;
+  font-size: 14px;
+  border: #BF2231 solid 1px;
+  border-radius: 30px;
+  line-height: 20px;
+  -webkit-box-shadow: 0 0 10px #1D1D1D;
+          box-shadow: 0 0 10px #1D1D1D;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+@media (max-width: 1199.98px) {
+  .lesslon-btn {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .lesslon-btn {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .lesslon-btn {
+    font-size: 10px;
+    position: relative;
+    padding: 6px 12px;
+  }
+}
+
+.lesslon-btn span {
+  font-size: 18px;
+  font-weight: bold;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+@media (max-width: 1199.98px) {
+  .lesslon-btn span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .lesslon-btn span {
+    font-size: 13px;
+  }
+}
+
+.lesslon-btn:hover {
+  background-color: #1D1D1D;
+  color: #ffffff;
+  border: #BF2231 1px solid;
+  -webkit-box-shadow: #BF2231 0 0 5px;
+          box-shadow: #BF2231 0 0 5px;
+}
+
+.lesslon-btn:hover span {
+  color: #BF2231;
+}
+
+header.lp {
   position: relative;
   height: 100vh;
   margin-bottom: 100px;
 }
 
-header li a {
+header.lp li a {
   color: #ffffff;
 }
 
@@ -242,7 +310,7 @@ header .arrow-down.scroll {
 }
 
 .welcome .btn-placer h1 {
-  color: #F9DA58;
+  color: #BF2231;
   font-size: 82px;
   margin-bottom: 2rem;
 }
@@ -285,74 +353,6 @@ header .arrow-down.scroll {
   }
 }
 
-.welcome .btn-placer .drum-btn {
-  position: absolute;
-  bottom: 0;
-  margin-top: auto;
-  padding: 6px 25px;
-  background-color: #F9DA58;
-  color: #141414;
-  font-size: 14px;
-  border: #F9DA58 solid 1px;
-  border-radius: 30px;
-  line-height: 20px;
-  -webkit-box-shadow: 0 0 10px #141414;
-          box-shadow: 0 0 10px #141414;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-@media (max-width: 1199.98px) {
-  .welcome .btn-placer .drum-btn {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .welcome .btn-placer .drum-btn {
-    font-size: 10px;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .welcome .btn-placer .drum-btn {
-    font-size: 10px;
-    position: relative;
-    padding: 6px 12px;
-  }
-}
-
-.welcome .btn-placer .drum-btn span {
-  font-size: 18px;
-  font-weight: bold;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-@media (max-width: 1199.98px) {
-  .welcome .btn-placer .drum-btn span {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .welcome .btn-placer .drum-btn span {
-    font-size: 13px;
-  }
-}
-
-.welcome .btn-placer .drum-btn:hover {
-  background-color: #141414;
-  color: #ffffff;
-  border: #F9DA58 1px solid;
-  -webkit-box-shadow: #F9DA58 0 0 5px;
-          box-shadow: #F9DA58 0 0 5px;
-}
-
-.welcome .btn-placer .drum-btn:hover span {
-  color: #F9DA58;
-}
-
 .welcome .btn-placer .more {
   position: absolute;
   bottom: 8px;
@@ -385,7 +385,7 @@ header .arrow-down.scroll {
 .welcome .btn-placer .more:hover {
   text-decoration: none;
   font-size: 20px;
-  color: #F9DA58;
+  color: #BF2231;
 }
 
 @media (max-width: 1199.98px) {
@@ -413,8 +413,8 @@ header .arrow-down.scroll {
   background-color: #ffffff;
   border: #ffffff 1px solid;
   border-radius: 100%;
-  -webkit-box-shadow: #141414 0 0 0;
-          box-shadow: #141414 0 0 0;
+  -webkit-box-shadow: #1D1D1D 0 0 0;
+          box-shadow: #1D1D1D 0 0 0;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -431,7 +431,7 @@ header .arrow-down.scroll {
   -webkit-transform: translateX(25%);
   transform: translateX(25%);
   font-size: 25px;
-  color: #141414;
+  color: #1D1D1D;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -443,7 +443,7 @@ header .arrow-down.scroll {
 }
 
 .welcome .btn-placer .more .arr.hover {
-  background-color: #141414;
+  background-color: #1D1D1D;
   border: #ffffff 1px solid;
   -webkit-box-shadow: #ffffff 0 0 5px;
           box-shadow: #ffffff 0 0 5px;
@@ -547,8 +547,8 @@ header .arrow-down.scroll {
 .locations .mloc .location {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  color: #F9DA58;
-  border-bottom: 1px solid #F9DA58;
+  color: #BF2231;
+  border-bottom: 1px solid #BF2231;
 }
 
 .locations .mloc .adress {
@@ -556,8 +556,8 @@ header .arrow-down.scroll {
 }
 
 .locations .mloc .card {
-  background-color: #141414;
-  border: #F9DA58 solid 1px;
+  background-color: #1D1D1D;
+  border: #BF2231 solid 1px;
 }
 
 .get-started {
@@ -565,7 +565,7 @@ header .arrow-down.scroll {
   margin-top: 100px;
   margin-bottom: 100px;
   position: relative;
-  color: #141414;
+  color: #1D1D1D;
 }
 
 @media (max-width: 1199.98px) {
@@ -609,7 +609,7 @@ header .arrow-down.scroll {
 .get-started .get-contact {
   position: absolute;
   bottom: 0;
-  background-color: #F9DA58;
+  background-color: #BF2231;
   width: 100%;
   z-index: 1;
 }
@@ -639,7 +639,7 @@ header .arrow-down.scroll {
 .get-started .get-contact .left p, .get-started .get-contact .left a {
   text-align: left;
   display: block;
-  color: #141414;
+  color: #1D1D1D;
 }
 
 @media (max-width: 767.98px) {
@@ -651,7 +651,7 @@ header .arrow-down.scroll {
 .get-started .get-contact .right p, .get-started .get-contact .right a {
   text-align: right;
   display: block;
-  color: #141414;
+  color: #1D1D1D;
   margin: 0 2rem 0 0;
 }
 
@@ -686,10 +686,10 @@ header .arrow-down.scroll {
 .get-started .get-contact .drum-btn {
   width: 100%;
   padding: 7px 2px;
-  background-color: #141414;
-  color: #F9DA58;
+  background-color: #1D1D1D;
+  color: #BF2231;
   font-size: 22px;
-  border: #141414 solid 3px;
+  border: #1D1D1D solid 3px;
   border-radius: 30px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -715,8 +715,8 @@ header .arrow-down.scroll {
 }
 
 .get-started .get-contact .drum-btn:hover {
-  background-color: #F9DA58;
-  color: #141414;
+  background-color: #BF2231;
+  color: #1D1D1D;
 }
 
 .get-started .get-contact .info {
@@ -794,7 +794,15 @@ header .arrow-down.scroll {
 }
 
 .news .soon:hover h3 {
-  color: #141414;
+  color: #1D1D1D;
+}
+
+.lesslons #trapezoid {
+  width: 150px;
+  height: 100px;
+  -webkit-transform: skew(20deg);
+          transform: skew(20deg);
+  background: red;
 }
 
 footer {
@@ -816,7 +824,7 @@ footer .newsletter-form {
 }
 
 footer .newsletter-form label {
-  color: #F9DA58;
+  color: #BF2231;
   font-size: 28px;
   font-weight: bold;
 }
@@ -838,7 +846,7 @@ footer .newsletter-form .email {
 
 footer .newsletter-form .submit {
   padding: 8px 20px;
-  background-color: #F9DA58;
+  background-color: #BF2231;
   font-weight: bold;
   border: none;
   border-top-right-radius: 40px;
@@ -859,15 +867,15 @@ footer .newsletter-form .submit {
 }
 
 footer .newsletter-form .submit:hover {
-  background-color: #141414;
-  color: #F9DA58;
-  -webkit-box-shadow: #F9DA58 0 0 10px;
-          box-shadow: #F9DA58 0 0 10px;
+  background-color: #1D1D1D;
+  color: #BF2231;
+  -webkit-box-shadow: #BF2231 0 0 10px;
+          box-shadow: #BF2231 0 0 10px;
 }
 
 footer .social {
   font-family: 'Montserrat', sans-serif;
-  color: #F9DA58;
+  color: #BF2231;
   font-size: 24px;
   font-weight: bold;
 }
@@ -878,7 +886,7 @@ footer .icon-link {
 
 footer .icon-link i {
   font-size: 2rem;
-  color: #F9DA58;
+  color: #BF2231;
   margin: 12px;
   margin-left: 0;
 }
