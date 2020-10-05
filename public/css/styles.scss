@@ -130,10 +130,10 @@ body {
   background-color: $drumyellow;
   color: $drumblack;
   font-size: 14px;
-  border: $drumyellow solid 1px;
+  border: $drumblack solid 3px;
   border-radius: 30px;
   line-height: 20px;
-  box-shadow: 0 0 10px $drumblack;
+  //box-shadow: 0 0 10px $drumblack;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4;
   -o-transition: all 0.4s;
@@ -168,8 +168,8 @@ body {
   &:hover{
     background-color: $drumblack;
     color: $drumwhite;
-    border: $drumyellow 1px solid;
-    box-shadow: $drumyellow 0 0 5px;
+    border: $drumyellow 3px solid;
+    //box-shadow: $drumyellow 0 0 5px;
     span{
       color: $drumyellow;
     }
@@ -634,11 +634,43 @@ header{
   }
 }
 .lesslons{
-  #trapezoid {
+  /*#trapezoid {
       width: 150px;
       height: 100px;
       transform: skew(20deg);
       background: red;
+  }*/
+  .row{
+    margin: 0;
+    background-color: $drumyellow;
+  }
+  .content{
+    //width: 50%;
+    margin: 1rem 0;
+    padding: 1rem 4rem 1rem 1rem;
+    background-color: $drumyellow;
+    
+    button{
+      position: relative;
+      margin-top: 1rem;
+      &:hover{
+        border: $drumwhite 3px solid;
+      }
+    }
+  }
+  .lesslon-img{
+    margin: 1rem 0;
+    padding: 1rem 1rem 1rem 0;
+    clip-path: polygon(
+    20% 0,
+    100% 0,
+    100% 100%,
+    0 100%
+    );
+    .img-fit{
+      object-fit: cover;
+      max-height: inherit;
+    }
   }
 }
 footer{

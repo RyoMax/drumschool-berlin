@@ -137,11 +137,9 @@ body h1, body h2, body h3 {
   background-color: #BF2231;
   color: #1D1D1D;
   font-size: 14px;
-  border: #BF2231 solid 1px;
+  border: #1D1D1D solid 3px;
   border-radius: 30px;
   line-height: 20px;
-  -webkit-box-shadow: 0 0 10px #1D1D1D;
-          box-shadow: 0 0 10px #1D1D1D;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -188,9 +186,7 @@ body h1, body h2, body h3 {
 .lesslon-btn:hover {
   background-color: #1D1D1D;
   color: #ffffff;
-  border: #BF2231 1px solid;
-  -webkit-box-shadow: #BF2231 0 0 5px;
-          box-shadow: #BF2231 0 0 5px;
+  border: #BF2231 3px solid;
 }
 
 .lesslon-btn:hover span {
@@ -797,12 +793,46 @@ header .arrow-down.scroll {
   color: #1D1D1D;
 }
 
-.lesslons #trapezoid {
-  width: 150px;
-  height: 100px;
-  -webkit-transform: skew(20deg);
-          transform: skew(20deg);
-  background: red;
+.lesslons {
+  /*#trapezoid {
+      width: 150px;
+      height: 100px;
+      transform: skew(20deg);
+      background: red;
+  }*/
+}
+
+.lesslons .row {
+  margin: 0;
+  background-color: #BF2231;
+}
+
+.lesslons .content {
+  margin: 1rem 0;
+  padding: 1rem 4rem 1rem 1rem;
+  background-color: #BF2231;
+}
+
+.lesslons .content button {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.lesslons .content button:hover {
+  border: #ffffff 3px solid;
+}
+
+.lesslons .lesslon-img {
+  margin: 1rem 0;
+  padding: 1rem 1rem 1rem 0;
+  -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.lesslons .lesslon-img .img-fit {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: inherit;
 }
 
 footer {

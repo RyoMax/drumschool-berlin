@@ -67,14 +67,9 @@ $( document ).ready(function() {
         $(".news .soon").height(img);
     }
 
-    function initMap() {
-        // The location of Uluru
-        var uluru = {lat: -25.344, lng: 131.036};
-        // The map, centered at Uluru
-        var map = new google.maps.Map(
-            document.getElementById('map'), {zoom: 4, center: uluru});
-        // The marker, positioned at Uluru
-        var marker = new google.maps.Marker({position: uluru, map: map});
+    function lesslonResizer(){
+        var content = $(".lesslons .content").height();
+        $(".lesslons .lesslon-img").height(content);
     }
 
     jQuery.expr.filters.offscreen = function(el) {
@@ -91,6 +86,7 @@ $( document ).ready(function() {
 
     //welcomeResizer();
     
+    lesslonResizer();
     getStartedResizer();
     mapResizer();
     sections.forEach(function(e) {
@@ -108,6 +104,7 @@ $( document ).ready(function() {
         mapResizer();
         getStartedResizer();
         newsResizer();
+        lesslonResizer();
     })
 
     $( window ).resize(function() {
@@ -116,6 +113,7 @@ $( document ).ready(function() {
         mapResizer();
         getStartedResizer();
         newsResizer();
+        lesslonResizer();
         sections.forEach(function(e) {
             //console.log(e);
             headerResizer(e);
