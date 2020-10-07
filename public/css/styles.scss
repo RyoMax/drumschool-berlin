@@ -644,10 +644,9 @@ header{
     margin: 0;
     background-color: $drumyellow;
   }
+  
   .content{
-    //width: 50%;
-    margin: 1rem 0;
-    padding: 1rem 4rem 1rem 1rem;
+    padding: 4rem 0 4rem 3rem;
     background-color: $drumyellow;
     
     button{
@@ -659,17 +658,18 @@ header{
     }
   }
   .lesslon-img{
-    margin: 1rem 0;
-    padding: 1rem 1rem 1rem 0;
+    padding: 0;
     clip-path: polygon(
-    20% 0,
-    100% 0,
-    100% 100%,
-    0 100%
-    );
+      20% 0,
+      100% 0,
+      100% 100%,
+      0 100%
+      );
+      @include media-breakpoint-down(sm){
+        clip-path: none;
+      }
     .img-fit{
       object-fit: cover;
-      max-height: inherit;
     }
   }
 }

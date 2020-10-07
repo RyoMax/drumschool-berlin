@@ -68,8 +68,10 @@ $( document ).ready(function() {
     }
 
     function lesslonResizer(){
+        $(".lesslons .img-fit").height(100);
         var content = $(".lesslons .content").height();
-        $(".lesslons .lesslon-img").height(content);
+        console.log("The temp heihgt is: " + content);
+        $(".lesslons .img-fit").height(content + 128); //128 is the sum of the padding(top&bottom)
     }
 
     jQuery.expr.filters.offscreen = function(el) {
@@ -85,7 +87,6 @@ $( document ).ready(function() {
     var timer;
 
     //welcomeResizer();
-    
     lesslonResizer();
     getStartedResizer();
     mapResizer();

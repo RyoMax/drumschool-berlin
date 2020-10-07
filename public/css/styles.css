@@ -808,8 +808,7 @@ header .arrow-down.scroll {
 }
 
 .lesslons .content {
-  margin: 1rem 0;
-  padding: 1rem 4rem 1rem 1rem;
+  padding: 4rem 0 4rem 3rem;
   background-color: #BF2231;
 }
 
@@ -823,16 +822,21 @@ header .arrow-down.scroll {
 }
 
 .lesslons .lesslon-img {
-  margin: 1rem 0;
-  padding: 1rem 1rem 1rem 0;
+  padding: 0;
   -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
           clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+@media (max-width: 767.98px) {
+  .lesslons .lesslon-img {
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
 }
 
 .lesslons .lesslon-img .img-fit {
   -o-object-fit: cover;
      object-fit: cover;
-  max-height: inherit;
 }
 
 footer {
