@@ -13,16 +13,32 @@ $margin: 100px;
   font-family: druk-text-wide;
   src: url("/fonts/Druk Text Wide Web Medium Regular.ttf");
 }*/
+@font-face {
+  font-family: futuraBook;
+  src: url("/fonts/futura/Futura Book.ttf");
+}
+/*@font-face {
+  font-family: futuraBold;
+  src: url("/fonts/futura/Futura Bold.ttf");
+  font-weight: bold;
+}*/
+@font-face {
+  font-family: futuraItalic;
+  src: url("/fonts/futura/Futura Std Medium Oblique.ttf");
+}
 /*------------------------------------------------- */
 
 html{
   overflow-x: hidden;
 }
 body {
+  
+  
+
     overflow-x: hidden;
     background-color: $drumblack;
     color: $drumwhite;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'futuraBook';
     h1, h2, h3{
       font-family: 'Bebas Neue', cursive;
     }
