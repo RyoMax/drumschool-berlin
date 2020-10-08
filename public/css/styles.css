@@ -812,6 +812,25 @@ header .arrow-down.scroll {
   background-color: #BF2231;
 }
 
+.lesslons .content h1 {
+  -webkit-text-decoration: underline #ffffff;
+          text-decoration: underline #ffffff;
+  font-size: 20px;
+  z-index: 1;
+}
+
+.lesslons .content h1 .ul {
+  position: relative;
+  text-align: right;
+  text-decoration: none;
+  font-size: 28px;
+  background-color: #BF2231;
+}
+
+.lesslons .content p {
+  font-size: 13px;
+}
+
 .lesslons .content button {
   position: relative;
   margin-top: 1rem;
@@ -821,22 +840,42 @@ header .arrow-down.scroll {
   border: #ffffff 3px solid;
 }
 
-.lesslons .lesslon-img {
+.lesslons .contain {
+  background-image: url("/media/AdobeStock_213870943.jpg");
+  background-size: cover;
+  background-position: right;
   padding: 0;
-  -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
-          clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+  z-index: 3;
+  /*.img-fit{
+      object-fit: cover;
+    }*/
+}
+
+.lesslons .contain .row {
+  background-color: transparent;
+}
+
+.lesslons .contain .shadow-box {
+  padding: 0;
+  margin: 0;
+  -webkit-filter: drop-shadow(10px 10px 5px #1D1D1D);
+          filter: drop-shadow(10px 10px 5px #1D1D1D);
+}
+
+.lesslons .contain .shadow-box .slash {
+  background-color: #BF2231;
+  height: 100%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 0 100%);
+  z-index: 4;
 }
 
 @media (max-width: 767.98px) {
-  .lesslons .lesslon-img {
+  .lesslons .contain .shadow-box .slash {
     -webkit-clip-path: none;
             clip-path: none;
+    background-color: transparent;
   }
-}
-
-.lesslons .lesslon-img .img-fit {
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 footer {
