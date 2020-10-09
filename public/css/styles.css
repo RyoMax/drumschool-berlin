@@ -145,9 +145,8 @@ body h1, body h2, body h3 {
 }
 
 .lesslon-btn {
-  position: absolute;
-  bottom: 0;
-  margin-top: auto;
+  position: relative;
+  margin-top: 1rem;
   padding: 6px 25px;
   background-color: #1D1D1D;
   color: #ffffff;
@@ -333,84 +332,43 @@ header .arrow-down.scroll {
   margin: 100px 0;
 }
 
-.welcome .btn-placer {
+.welcome .row {
+  margin: 0;
+  background-color: #BF2231;
+}
+
+.welcome .row .content {
   position: relative;
+  padding: 4rem 0 4rem 3rem;
+  background-color: #BF2231;
 }
 
-.welcome .btn-placer h2 {
-  font-size: 30px;
-  font-family: 'Montserrat', sans-serif;
-  margin-top: 1rem;
-  font-weight: 700;
+.welcome .row .content h1 {
+  font-family: 'futuraItalic';
+  color: #1D1D1D;
+  font-size: 20px;
 }
 
-@media (max-width: 1199.98px) {
-  .welcome .btn-placer h2 {
-    font-size: 25px;
-  }
+.welcome .row .content h1 .head-liner {
+  display: block;
+  width: 100%;
+  text-align: right;
+  font-family: 'Bebas Neue';
 }
 
-@media (max-width: 991.98px) {
-  .welcome .btn-placer h2 {
-    font-size: 20px;
-  }
+.welcome .row .content h1 .head-liner .ul {
+  font-size: 28px;
+  background-color: #BF2231;
 }
 
-@media (max-width: 767.98px) {
-  .welcome .btn-placer h2 {
-    font-size: 14px;
-    text-align: center;
-  }
+.welcome .row .content p {
+  font-size: 20px;
 }
 
-.welcome .btn-placer h1 {
-  color: #BF2231;
-  font-size: 82px;
-  margin-bottom: 2rem;
-}
-
-@media (max-width: 1199.98px) {
-  .welcome .btn-placer h1 {
-    font-size: 68px;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .welcome .btn-placer h1 {
-    font-size: 50px;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .welcome .btn-placer h1 {
-    font-size: 43px;
-    text-align: center;
-  }
-}
-
-.welcome .btn-placer p {
-  text-align: justify;
-  font-size: 18px;
-  line-height: 25px;
-}
-
-@media (max-width: 1199.98px) {
-  .welcome .btn-placer p {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .welcome .btn-placer p {
-    font-size: 12px;
-    line-height: 22px;
-  }
-}
-
-.welcome .btn-placer .more {
+.welcome .row .more {
   position: absolute;
-  bottom: 8px;
-  right: 15px;
+  bottom: calc(8px + 4rem);
+  right: 0;
   color: #ffffff;
   font-size: 18px;
   font-weight: 600;
@@ -419,44 +377,89 @@ header .arrow-down.scroll {
 }
 
 @media (max-width: 1199.98px) {
-  .welcome .btn-placer .more {
+  .welcome .row .more {
     font-size: 16px;
   }
 }
 
 @media (max-width: 991.98px) {
-  .welcome .btn-placer .more {
+  .welcome .row .more {
     font-size: 14px;
   }
 }
 
 @media (max-width: 991.98px) {
-  .welcome .btn-placer .more {
+  .welcome .row .more {
     font-size: 14px;
   }
 }
 
-.welcome .btn-placer .more:hover {
+.welcome .row .more:hover {
   text-decoration: none;
   font-size: 20px;
-  color: #BF2231;
+  color: #1D1D1D;
 }
 
 @media (max-width: 1199.98px) {
-  .welcome .btn-placer .more:hover {
+  .welcome .row .more:hover {
     font-size: 18px;
   }
 }
 
 @media (max-width: 991.98px) {
-  .welcome .btn-placer .more:hover {
+  .welcome .row .more:hover {
     font-size: 16px;
   }
 }
 
 @media (max-width: 991.98px) {
-  .welcome .btn-placer .more:hover {
+  .welcome .row .more:hover {
     font-size: 14px;
+  }
+}
+
+.welcome .row .more:hover .arr {
+  background-color: #1D1D1D;
+  border: #ffffff 3px solid;
+}
+
+.welcome .row .more:hover .arr i {
+  color: #ffffff;
+}
+
+.welcome .row .contain {
+  background-image: url("/media/DrummerSW-2.jpg");
+  background-size: cover;
+  background-position: left;
+  padding: 0;
+  z-index: 3;
+}
+
+.welcome .row .contain .row {
+  background-color: transparent;
+}
+
+.welcome .row .contain .shadow-box {
+  padding: 0;
+  margin: 0;
+  -webkit-filter: drop-shadow(10px 10px 5px #1D1D1D);
+          filter: drop-shadow(10px 10px 5px #1D1D1D);
+}
+
+.welcome .row .contain .shadow-box .slash {
+  position: relative;
+  background-color: #BF2231;
+  height: 100%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 0 100%);
+  z-index: 4;
+}
+
+@media (max-width: 767.98px) {
+  .welcome .row .contain .shadow-box .slash {
+    -webkit-clip-path: none;
+            clip-path: none;
+    background-color: transparent;
   }
 }
 
@@ -846,11 +849,6 @@ header .arrow-down.scroll {
   font-size: 13px;
 }
 
-.lesslons .content button {
-  position: relative;
-  margin-top: 1rem;
-}
-
 .lesslons .content .arr-l {
   position: absolute;
   right: calc(0px - 8%);
@@ -901,9 +899,6 @@ header .arrow-down.scroll {
   background-position: right;
   padding: 0;
   z-index: 3;
-  /*.img-fit{
-      object-fit: cover;
-    }*/
 }
 
 .lesslons .contain .row {

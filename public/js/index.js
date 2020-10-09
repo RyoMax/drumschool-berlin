@@ -67,16 +67,16 @@ $( document ).ready(function() {
         $(".news .soon").height(img);
     }
 
-    function lesslonResizer(){/*
-        
-        $(".lesslons .img-fit").height(100);
-        var content = $(".lesslons .content").height();
-        console.log("The temp heihgt is: " + content);
-        $(".lesslons .img-fit").height(content + 128); //128 is the sum of the padding(top&bottom)
-    }*/
-        var parent = $(".lesslons .content").height();;
+    function lesslonResizer(){
+        var parent = $(".lesslons .content").height();
         var child = $(".lesslons .contain .shadow-box");
-        child.height(parent + 128);
+        if (parent != null){
+            child.height(parent + 128);
+        }else{
+            parent = $(".welcome .content").height();
+            child = $(".welcome .contain .shadow-box");
+            child.height(parent + 128);
+        }
     }
 
     jQuery.expr.filters.offscreen = function(el) {

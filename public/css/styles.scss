@@ -139,9 +139,8 @@ body {
 }
 
 .lesslon-btn{
-  position: absolute;
-  bottom: 0;
-  margin-top: auto;
+  position: relative;
+  margin-top: 1rem;
   padding: 6px 25px;
   background-color: $drumblack;
   color: $drumwhite;
@@ -300,55 +299,36 @@ header{
 }
 .welcome{
   margin: $margin 0;
-  .btn-placer{
-    position: relative;
-    h2{
-      font-size: 30px;
-      font-family: 'Montserrat', sans-serif;
-      margin-top: 1rem;
-      font-weight: 700;
-      @include media-breakpoint-down(lg){
-        font-size:25px;
+  .row{
+    margin: 0;
+    background-color: $drumyellow;
+    .content{
+      position: relative;
+      padding: 4rem 0 4rem 3rem;
+      background-color: $drumyellow;
+      h1{
+        font-family: 'futuraItalic';
+        color: $drumblack;
+        font-size: 20px;
+        .head-liner{
+          display: block;
+          width: 100%;
+          text-align: right;
+          font-family: 'Bebas Neue';
+          .ul{
+            font-size: 28px;
+            background-color: $drumyellow;
+          }
+        }
       }
-      @include media-breakpoint-down(md){
-        font-size:20px;
-      }
-      @include media-breakpoint-down(sm){
-        font-size: 14px;
-        text-align: center;
-      }
-    }
-    h1{
-      color: $drumyellow;
-      font-size: 82px;
-      margin-bottom: 2rem;
-      @include media-breakpoint-down(lg){
-        font-size:68px
-      }
-      @include media-breakpoint-down(md){
-        font-size:50px;
-      }
-      @include media-breakpoint-down(sm){
-        font-size:43px ;
-        text-align: center;
-      }
-    }
-    p{
-      text-align: justify;
-      font-size: 18px;
-      line-height: 25px;
-      @include media-breakpoint-down(lg){
-        font-size:16px;
-      }
-      @include media-breakpoint-down(md){
-        font-size:12px;
-        line-height: 22px;
+      p{
+        font-size: 20px;
       }
     }
     .more{
       position: absolute;
-      bottom: 8px;
-      right: 15px;
+      bottom: calc(8px + 4rem);
+      right: 0;
       color: $drumwhite;
       font-size: 18px;
       font-weight: 600;
@@ -368,7 +348,7 @@ header{
       &:hover{
         text-decoration: none;
         font-size: 20px;
-        color: $drumyellow;
+        color: $drumblack;
         @include media-breakpoint-down(lg){
           font-size:18px;
         }
@@ -378,10 +358,46 @@ header{
         @include media-breakpoint-down(md) {
           font-size: 14px;
         }
+        .arr{
+          background-color: $drumblack;
+          border: $drumwhite 3px solid;
+          i{
+            color: $drumwhite;
+          }
+        }
+      }
+    }
+    .contain{
+      background-image: url("/media/DrummerSW-2.jpg");
+      background-size: cover;
+      background-position: left;
+      padding: 0;
+      z-index: 3;
+      .row{
+        background-color: transparent;
+      }
+      .shadow-box{
+        padding: 0;
+        margin: 0;
+        filter: drop-shadow(10px 10px 5px $drumblack);
+        .slash{
+          position: relative;
+          background-color: $drumyellow;
+          height: 100%;
+          clip-path: polygon(
+            0 0,
+            100% 0,
+            0 100%
+          );
+          z-index: 4;
+          @include media-breakpoint-down(sm){
+            clip-path: none;
+            background-color: transparent;
+          }
+        }
       }
     }
   }
-  
 }
 .service{
   margin-top: $margin;
@@ -684,11 +700,6 @@ header{
     p{
       font-size: 13px;
     }
-    
-    button{
-      position: relative;
-      margin-top: 1rem;
-    }
     .arr-l{
       position: absolute;
       right: calc(0px - 8%);
@@ -757,11 +768,6 @@ header{
         }
       }
     }
-      
-      
-    /*.img-fit{
-      object-fit: cover;
-    }*/
   }
 }
 footer{
