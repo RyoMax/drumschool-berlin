@@ -253,7 +253,6 @@ body h1, body h2, body h3 {
 header.lp {
   position: relative;
   height: 100vh;
-  margin-bottom: 100px;
 }
 
 header.lp li a {
@@ -326,10 +325,6 @@ header .arrow-down {
 header .arrow-down.scroll {
   opacity: 0;
   visibility: hidden;
-}
-
-.welcome {
-  margin: 100px 0;
 }
 
 .welcome .row {
@@ -466,6 +461,25 @@ header .arrow-down.scroll {
 .service {
   margin-top: 100px;
   margin-bottom: 100px;
+}
+
+.service .card {
+  background-color: #1D1D1D;
+}
+
+.service .card .circ {
+  position: relative;
+  width: 100%;
+  background-color: #BF2231;
+  border-radius: 100%;
+}
+
+.service .card .circ .ico {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  -webkit-transform: translate(-50%, 45%);
+  transform: translate(-50%, 45%);
 }
 
 .service .grid {
@@ -697,7 +711,7 @@ header .arrow-down.scroll {
   width: 100%;
   padding: 7px 2px;
   background-color: #1D1D1D;
-  color: #BF2231;
+  color: #ffffff;
   font-size: 22px;
   border: #1D1D1D solid 3px;
   border-radius: 30px;
@@ -725,8 +739,9 @@ header .arrow-down.scroll {
 }
 
 .get-started .get-contact .drum-btn:hover {
-  background-color: #BF2231;
-  color: #1D1D1D;
+  background-color: #ffffff;
+  color: #BF2231;
+  border: solid 3px #1D1D1D;
 }
 
 .get-started .get-contact .info {
@@ -865,9 +880,9 @@ header .arrow-down.scroll {
 .lesslons .content .arr-l .arr i {
   position: absolute;
   left: 50%;
-  bottom: 5%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+  bottom: 50%;
+  -webkit-transform: translate(-50%, 45%);
+  transform: translate(-50%, 45%);
   font-size: 50px;
 }
 
@@ -887,9 +902,9 @@ header .arrow-down.scroll {
 .lesslons .content .arr-r .arr i {
   position: absolute;
   left: 50%;
-  bottom: 5%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+  bottom: 50%;
+  -webkit-transform: translate(-50%, 45%);
+  transform: translate(-50%, 45%);
   font-size: 50px;
 }
 

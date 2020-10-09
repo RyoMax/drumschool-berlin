@@ -78,6 +78,10 @@ $( document ).ready(function() {
             child.height(parent + 128);
         }
     }
+    function cardResizer(){
+        var cardW = $(".service .circ").width();
+        $(".service .circ").height(cardW);
+    }
 
     jQuery.expr.filters.offscreen = function(el) {
         var rect = el.getBoundingClientRect();
@@ -92,6 +96,7 @@ $( document ).ready(function() {
     var timer;
 
     //welcomeResizer();
+    cardResizer();
     lesslonResizer();
     getStartedResizer();
     mapResizer();
@@ -111,6 +116,7 @@ $( document ).ready(function() {
         getStartedResizer();
         newsResizer();
         lesslonResizer();
+        cardResizer();
     })
 
     $( window ).resize(function() {
@@ -120,6 +126,7 @@ $( document ).ready(function() {
         getStartedResizer();
         newsResizer();
         lesslonResizer();
+        cardResizer();
         sections.forEach(function(e) {
             //console.log(e);
             headerResizer(e);

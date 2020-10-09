@@ -235,7 +235,6 @@ header{
   &.lp{
     position: relative;
     height: 100vh;
-    margin-bottom: $margin;
     li a{
       color: $drumwhite
     }
@@ -298,7 +297,6 @@ header{
   }
 }
 .welcome{
-  margin: $margin 0;
   .row{
     margin: 0;
     background-color: $drumyellow;
@@ -402,7 +400,23 @@ header{
 .service{
   margin-top: $margin;
   margin-bottom: $margin;
-  
+  .card{
+    background-color: $drumblack;
+    .circ{
+      position: relative;
+      width: 100%;
+      background-color: $drumyellow;
+      border-radius: 100%;
+      .ico{
+        position: absolute;
+        left: 50%;
+        bottom: 50%;
+        -webkit-transform: translate(-50%, 45%);
+        transform: translate(-50%, 45%);
+      }
+    }
+    
+  }
   
   .grid{
     .ico{
@@ -576,7 +590,7 @@ header{
       width: 100%;
       padding: 7px 2px;
       background-color: $drumblack;
-      color: $drumyellow;
+      color: $drumwhite;
       font-size: 22px;
       border: $drumblack solid 3px;
       border-radius: 30px;
@@ -593,8 +607,9 @@ header{
         max-width: 60%;
       }
       &:hover{
-        background-color: $drumyellow;
-        color: $drumblack;
+        background-color: $drumwhite;
+        color: $drumyellow;
+        border: solid 3px $drumblack;
       }
       
       //box-shadow: 0 0 10px $drumyellow;
@@ -712,9 +727,9 @@ header{
         i{
           position: absolute;
           left: 50%;
-          bottom: 5%;
-          -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+          bottom: 50%;
+          -webkit-transform: translate(-50%, 45%);
+          transform: translate(-50%, 45%);
           font-size: 50px;
         }
       }
@@ -731,9 +746,9 @@ header{
         i{
           position: absolute;
           left: 50%;
-          bottom: 5%;
-          -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+          bottom: 50%;
+          -webkit-transform: translate(-50%, 45%);
+          transform: translate(-50%, 45%);
           font-size: 50px;
         }
       }
