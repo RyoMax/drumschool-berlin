@@ -402,6 +402,7 @@ header{
   margin-bottom: $margin;
   .card{
     background-color: $drumblack;
+    padding: 0 2rem;
     .circ{
       position: relative;
       width: 100%;
@@ -413,7 +414,15 @@ header{
         bottom: 50%;
         -webkit-transform: translate(-50%, 45%);
         transform: translate(-50%, 45%);
+        padding: 15%;
       }
+    }
+    p{
+      
+      //;
+    }
+    h2{
+      font-size: 20px;
     }
     
   }
@@ -480,8 +489,11 @@ header{
     .location{
       font-family: 'Montserrat', sans-serif;
       font-weight: bold;
-      color: $drumyellow;
+      color: $drumwhite;
       border-bottom: 1px solid $drumyellow;
+      &:hover{
+        color: $drumyellow;
+      }
     }
     .adress{
       font-style: italic;

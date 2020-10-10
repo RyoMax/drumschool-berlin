@@ -465,6 +465,7 @@ header .arrow-down.scroll {
 
 .service .card {
   background-color: #1D1D1D;
+  padding: 0 2rem;
 }
 
 .service .card .circ {
@@ -480,6 +481,11 @@ header .arrow-down.scroll {
   bottom: 50%;
   -webkit-transform: translate(-50%, 45%);
   transform: translate(-50%, 45%);
+  padding: 15%;
+}
+
+.service .card h2 {
+  font-size: 20px;
 }
 
 .service .grid {
@@ -571,8 +577,12 @@ header .arrow-down.scroll {
 .locations .mloc .location {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  color: #BF2231;
+  color: #ffffff;
   border-bottom: 1px solid #BF2231;
+}
+
+.locations .mloc .location:hover {
+  color: #BF2231;
 }
 
 .locations .mloc .adress {

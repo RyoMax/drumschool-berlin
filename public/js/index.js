@@ -82,6 +82,15 @@ $( document ).ready(function() {
         var cardW = $(".service .circ").width();
         $(".service .circ").height(cardW);
     }
+    function locationToggle(e){
+        var current = e.target.id;
+        var collapsables = ["#collapse1", "#collapse2", "#collapse3", "#collapse4", "#collapse5", "#collapse6", ];
+        collapsables.forEach(i => {
+            if($('.locations .mloc ' + i).hasClass("collapse show") && i != current){
+                $('.locations .mloc ' + i).collapse('toggle');
+            }
+        });         
+    }
 
     jQuery.expr.filters.offscreen = function(el) {
         var rect = el.getBoundingClientRect();
@@ -96,6 +105,7 @@ $( document ).ready(function() {
     var timer;
 
     //welcomeResizer();
+    $(".locations .mloc").click(locationToggle);
     cardResizer();
     lesslonResizer();
     getStartedResizer();
