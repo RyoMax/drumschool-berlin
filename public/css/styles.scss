@@ -209,8 +209,8 @@ body {
   }
   i{
     display: inline-block;
-    -webkit-transform: translateX(25%);
-    transform: translateX(25%);
+    -webkit-transform: translate(25%, -5%);
+    transform: translate(25%, -5%);
     font-size: 25px;
     color: $drumblack;
     -webkit-transition: all 0.4s;
@@ -416,10 +416,6 @@ header{
         transform: translate(-50%, 45%);
         padding: 15%;
       }
-    }
-    p{
-      
-      //;
     }
     h2{
       font-size: 20px;

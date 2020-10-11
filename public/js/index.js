@@ -68,12 +68,12 @@ $( document ).ready(function() {
     }
 
     function lesslonResizer(){
-        var parent = $(".lesslons .content").height();
+        var parent = $(".lesslons .content-box").height();
         var child = $(".lesslons .contain .shadow-box");
         if (parent != null){
             child.height(parent + 128);
         }else{
-            parent = $(".welcome .content").height();
+            parent = $(".welcome .content-box").height();
             child = $(".welcome .contain .shadow-box");
             child.height(parent + 128);
         }

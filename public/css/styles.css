@@ -227,8 +227,8 @@ body h1, body h2, body h3 {
 
 .arr i {
   display: inline-block;
-  -webkit-transform: translateX(25%);
-  transform: translateX(25%);
+  -webkit-transform: translate(25%, -5%);
+  transform: translate(25%, -5%);
   font-size: 25px;
   color: #1D1D1D;
   -webkit-transition: all 0.4s;
