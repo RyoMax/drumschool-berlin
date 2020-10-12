@@ -504,30 +504,18 @@ header{
 }
 
 .get-started{
-  font-size: 22px;
+  position: relative;
   margin-top: $margin;
   margin-bottom: $margin;
-  position: relative;
-  color: $drumblack;
-  @include media-breakpoint-down(lg){
-    font-size:18px;
-  }
-  @include media-breakpoint-down(md){
-    font-size:14px;
-  }
-  p{
-    @include media-breakpoint-down(lg){
-      margin-bottom: 0.5rem;
-    }
-    @include media-breakpoint-down(sm){
-      margin-bottom: 0;
-    }
-  }
+  color: $drumwhite;
   img{
     position: absolute;
     bottom: 0;
     z-index: 2;
     width: 51%;
+    @include media-breakpoint-down(md){
+      width: 58%;
+    }
     @include media-breakpoint-down(sm){
       position: relative;
       width: 100%;
@@ -543,22 +531,63 @@ header{
     @include media-breakpoint-down(sm){
       position: relative;
     }
-    h3{
-      font-size: 110px;
-      //font-weight: bold;
-      
-      @include media-breakpoint-down(lg){
-        font-size:90px;
-      }
+    .row{
+      padding: 2rem 0;
+      text-align: center;
       @include media-breakpoint-down(md){
-        font-size:60px;
+        padding: 1rem 0;
       }
+      p{
+        font-size: 20px;
+        @include media-breakpoint-down(lg){
+          //font-size: 18px;
+          margin-bottom: 0.5rem;
+        }
+        @include media-breakpoint-down(md){
+          font-size: 18px;
+        }
+        @include media-breakpoint-down(sm){
+          font-size: 16px;
+          margin-bottom:1rem;
+        }
+      }
+      a{
+        display: block;
+        margin-bottom: 1.5rem;
+        color: $drumwhite;
+        font-size: 24px;
+        //font-family: 'futuraBold';
+        font-weight: bold;
+        @include media-breakpoint-down(lg){
+          font-size: 22px;
+          margin-bottom: 1rem;
+        }
+        @include media-breakpoint-down(md){
+          font-size: 20px;
+        }
+        @include media-breakpoint-down(sm){
+          margin-bottom: 1.5rem;
+          &:last-of-type{
+            margin-bottom: 0;
+          }
+        }
+      }
+      .lesslon-btn{
+        padding: 12px 25px;
+        margin: 0;
+        font-size: 18px;
+        @include media-breakpoint-down(md){
+          font-size: 16px;
+        }
+        @include media-breakpoint-down(sm){
+          font-size: 14px;
+        }
+      }      
     }
-    .left{
+    /*.left{
       p, a{
         text-align: left;
         display: block;
-        color: $drumblack;
         @include media-breakpoint-down(sm){
           text-align: center;
         }
@@ -568,7 +597,6 @@ header{
       p, a{
         text-align: right;
         display: block;
-        color: $drumblack;
         margin: 0 2rem 0 0;
         @include media-breakpoint-down(md){
           margin-right: 1rem;
@@ -621,24 +649,7 @@ header{
       }
       
       //box-shadow: 0 0 10px $drumyellow;
-    }
-    .info{
-      text-align: right;
-      font-size: 15px;
-      margin: 1rem 2rem 1rem 0;
-      @include media-breakpoint-down(lg){
-        font-size:12px;
-      }
-      @include media-breakpoint-down(md){
-        //margin-bottom: 1rem;
-        font-size: 10px;
-        margin: 0.5rem 1rem 1rem 0;
-      }
-      @include media-breakpoint-down(sm){
-        text-align: center;
-        margin-right: 0;
-      }
-    }
+    }*/
   }
 }
 

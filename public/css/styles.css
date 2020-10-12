@@ -595,35 +595,10 @@ header .arrow-down.scroll {
 }
 
 .get-started {
-  font-size: 22px;
+  position: relative;
   margin-top: 100px;
   margin-bottom: 100px;
-  position: relative;
-  color: #1D1D1D;
-}
-
-@media (max-width: 1199.98px) {
-  .get-started {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .get-started {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 1199.98px) {
-  .get-started p {
-    margin-bottom: 0.5rem;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .get-started p {
-    margin-bottom: 0;
-  }
+  color: #ffffff;
 }
 
 .get-started img {
@@ -631,6 +606,12 @@ header .arrow-down.scroll {
   bottom: 0;
   z-index: 2;
   width: 51%;
+}
+
+@media (max-width: 991.98px) {
+  .get-started img {
+    width: 58%;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -646,6 +627,72 @@ header .arrow-down.scroll {
   background-color: #BF2231;
   width: 100%;
   z-index: 1;
+  /*.left{
+      p, a{
+        text-align: left;
+        display: block;
+        @include media-breakpoint-down(sm){
+          text-align: center;
+        }
+      }
+    }
+    .right{
+      p, a{
+        text-align: right;
+        display: block;
+        margin: 0 2rem 0 0;
+        @include media-breakpoint-down(md){
+          margin-right: 1rem;
+        }
+        @include media-breakpoint-down(sm){
+          text-align: center;
+          margin-bottom: 1rem;
+          margin-right: 0;
+        }
+      }
+    }
+    .pl{
+      p, a{
+        padding-left: 2rem;
+        @include media-breakpoint-down(md){
+          padding-left: 0;
+        }
+      }
+    }
+    .bold{
+      p, a{
+        font-weight: bold;
+      }
+      
+    }
+    .drum-btn{
+      width: 100%;
+      padding: 7px 2px;
+      background-color: $drumblack;
+      color: $drumwhite;
+      font-size: 22px;
+      border: $drumblack solid 3px;
+      border-radius: 30px;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+      @include media-breakpoint-down(lg){
+        font-size:18px;
+      }
+      @include media-breakpoint-down(md){
+        font-size:14px;
+      }
+      @include media-breakpoint-down(sm){
+        min-width: 40%;
+        max-width: 60%;
+      }
+      &:hover{
+        background-color: $drumwhite;
+        color: $drumyellow;
+        border: solid 3px $drumblack;
+      }
+      
+      //box-shadow: 0 0 10px $drumyellow;
+    }*/
 }
 
 @media (max-width: 767.98px) {
@@ -654,129 +701,85 @@ header .arrow-down.scroll {
   }
 }
 
-.get-started .get-contact h3 {
-  font-size: 110px;
+.get-started .get-contact .row {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+@media (max-width: 991.98px) {
+  .get-started .get-contact .row {
+    padding: 1rem 0;
+  }
+}
+
+.get-started .get-contact .row p {
+  font-size: 20px;
 }
 
 @media (max-width: 1199.98px) {
-  .get-started .get-contact h3 {
-    font-size: 90px;
+  .get-started .get-contact .row p {
+    margin-bottom: 0.5rem;
   }
 }
 
 @media (max-width: 991.98px) {
-  .get-started .get-contact h3 {
-    font-size: 60px;
-  }
-}
-
-.get-started .get-contact .left p, .get-started .get-contact .left a {
-  text-align: left;
-  display: block;
-  color: #1D1D1D;
-}
-
-@media (max-width: 767.98px) {
-  .get-started .get-contact .left p, .get-started .get-contact .left a {
-    text-align: center;
-  }
-}
-
-.get-started .get-contact .right p, .get-started .get-contact .right a {
-  text-align: right;
-  display: block;
-  color: #1D1D1D;
-  margin: 0 2rem 0 0;
-}
-
-@media (max-width: 991.98px) {
-  .get-started .get-contact .right p, .get-started .get-contact .right a {
-    margin-right: 1rem;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .get-started .get-contact .right p, .get-started .get-contact .right a {
-    text-align: center;
-    margin-bottom: 1rem;
-    margin-right: 0;
-  }
-}
-
-.get-started .get-contact .pl p, .get-started .get-contact .pl a {
-  padding-left: 2rem;
-}
-
-@media (max-width: 991.98px) {
-  .get-started .get-contact .pl p, .get-started .get-contact .pl a {
-    padding-left: 0;
-  }
-}
-
-.get-started .get-contact .bold p, .get-started .get-contact .bold a {
-  font-weight: bold;
-}
-
-.get-started .get-contact .drum-btn {
-  width: 100%;
-  padding: 7px 2px;
-  background-color: #1D1D1D;
-  color: #ffffff;
-  font-size: 22px;
-  border: #1D1D1D solid 3px;
-  border-radius: 30px;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-@media (max-width: 1199.98px) {
-  .get-started .get-contact .drum-btn {
+  .get-started .get-contact .row p {
     font-size: 18px;
   }
 }
 
-@media (max-width: 991.98px) {
-  .get-started .get-contact .drum-btn {
-    font-size: 14px;
-  }
-}
-
 @media (max-width: 767.98px) {
-  .get-started .get-contact .drum-btn {
-    min-width: 40%;
-    max-width: 60%;
+  .get-started .get-contact .row p {
+    font-size: 16px;
+    margin-bottom: 1rem;
   }
 }
 
-.get-started .get-contact .drum-btn:hover {
-  background-color: #ffffff;
-  color: #BF2231;
-  border: solid 3px #1D1D1D;
-}
-
-.get-started .get-contact .info {
-  text-align: right;
-  font-size: 15px;
-  margin: 1rem 2rem 1rem 0;
+.get-started .get-contact .row a {
+  display: block;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 @media (max-width: 1199.98px) {
-  .get-started .get-contact .info {
-    font-size: 12px;
+  .get-started .get-contact .row a {
+    font-size: 22px;
+    margin-bottom: 1rem;
   }
 }
 
 @media (max-width: 991.98px) {
-  .get-started .get-contact .info {
-    font-size: 10px;
-    margin: 0.5rem 1rem 1rem 0;
+  .get-started .get-contact .row a {
+    font-size: 20px;
   }
 }
 
 @media (max-width: 767.98px) {
-  .get-started .get-contact .info {
-    text-align: center;
-    margin-right: 0;
+  .get-started .get-contact .row a {
+    margin-bottom: 1.5rem;
+  }
+  .get-started .get-contact .row a:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.get-started .get-contact .row .lesslon-btn {
+  padding: 12px 25px;
+  margin: 0;
+  font-size: 18px;
+}
+
+@media (max-width: 991.98px) {
+  .get-started .get-contact .row .lesslon-btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .get-started .get-contact .row .lesslon-btn {
+    font-size: 14px;
   }
 }
 
