@@ -707,6 +707,10 @@ header .arrow-down.scroll {
   color: #ffffff;
 }
 
+.get-started .content {
+  position: relative;
+}
+
 .get-started img {
   position: absolute;
   bottom: 0;
@@ -812,6 +816,12 @@ header .arrow-down.scroll {
   text-align: center;
 }
 
+@media (max-width: 1199.98px) {
+  .get-started .get-contact .row {
+    padding: 1.5rem 0;
+  }
+}
+
 @media (max-width: 991.98px) {
   .get-started .get-contact .row {
     padding: 1rem 0;
@@ -830,7 +840,7 @@ header .arrow-down.scroll {
 
 @media (max-width: 991.98px) {
   .get-started .get-contact .row p {
-    font-size: 22px;
+    font-size: 19px;
   }
 }
 
@@ -1065,6 +1075,7 @@ header .arrow-down.scroll {
 footer {
   padding-top: 100px;
   padding-bottom: 100px;
+  background-color: #BF2231;
 }
 
 footer a {
@@ -1102,10 +1113,11 @@ footer .newsletter-form .email {
 }
 
 footer .newsletter-form .submit {
-  padding: 8px 20px;
-  background-color: #BF2231;
+  padding: 8px 24px;
+  background-color: #1D1D1D;
+  color: #ffffff;
   font-weight: bold;
-  border: none;
+  border: transparent 3px solid;
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
   border-top-left-radius: 5px;
@@ -1124,10 +1136,9 @@ footer .newsletter-form .submit {
 }
 
 footer .newsletter-form .submit:hover {
-  background-color: #1D1D1D;
-  color: #BF2231;
-  -webkit-box-shadow: #BF2231 0 0 10px;
-          box-shadow: #BF2231 0 0 10px;
+  background-color: #ffffff;
+  color: #1D1D1D;
+  border: #1D1D1D 3px solid;
 }
 
 footer .social {

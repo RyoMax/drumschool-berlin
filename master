@@ -1,0 +1,287 @@
+[33mcommit 8db69e220160659e45628376e205cb99adca7798[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Tue Oct 13 21:59:12 2020 +0200
+
+    updating section headlines, locations font, services font and grit and get started ordery and design
+
+[33mcommit 1511a6c2eed3c6f7b88ca05cf7e83a29a2fb11a5[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Mon Oct 12 15:44:34 2020 +0200
+
+    finishing updtade of GET STARTED section
+
+[33mcommit 5ceda4f6d589742aa18acaed22969a544f651161[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Sun Oct 11 12:12:52 2020 +0200
+
+    bugfixing of the content boxes on landingpage and unterricht
+
+[33mcommit 8b630410c66e02dc530ff4e263512b87b69eab38[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Sat Oct 10 19:00:34 2020 +0200
+
+    optical change of the service section and update of the js code for the locations to dismiss the text fields, when a new location is clicked
+
+[33mcommit a2c81eb2bf9d67bf0a324d63b6139e77dca303b4[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Fri Oct 9 18:00:44 2020 +0200
+
+    updating the service section with new design
+
+[33mcommit f9dde9e999abc106c5abbc4c740d971a25bb4c0b[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Fri Oct 9 17:07:29 2020 +0200
+
+    refurbished the welcome section but responsive behavior and the headlines
+
+[33mcommit 7dbe0978271acfd077433bd2bfb98a50ccc0548c[m[33m ([m[1;32munterricht[m[33m)[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Thu Oct 8 23:41:43 2020 +0200
+
+    implementation of the 2 buttons, preparation of the headline, change of the 'lesslon-btn' design
+
+[33mcommit 65803c67c925881d752f59afdeb688e7bc6bedb9[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Thu Oct 8 15:17:40 2020 +0200
+
+    New font: futura
+
+[33mcommit 4c68fe72242b9f232ee906b822b6fbb0d75afe17[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Thu Oct 8 14:12:56 2020 +0200
+
+    finished the 'slashy' look
+
+[33mcommit 4419d9014ad93d4e131ed8c4239f44dea0d2364a[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Wed Oct 7 14:24:07 2020 +0200
+
+    overall design revision, edit of text padding
+
+[33mcommit 1d1b892fce25bb4c234d1b8cb0f9bb27bde28e16[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Mon Oct 5 22:46:15 2020 +0200
+
+    change of the rough design, addition of responsive behavior and experimenting with the clip-path function
+
+[33mcommit 61c75be65527f055cd2801da55cb00d20dcb7b78[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Sat Oct 3 19:14:06 2020 +0200
+
+    creating rough content without much of design
+
+[33mcommit 9b1f007ddd4d99c8fb6f916b972cc16e9497cbcd[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Sat Oct 3 17:49:35 2020 +0200
+
+    changed links
+
+[33mcommit 9d49d0501690d829620e2d90d08c826314ad733b[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Thu Oct 1 21:59:37 2020 +0200
+
+    preparing the unterricht page with nav and footer
+
+[33mcommit e246db424d95382215917dd92655bfca66fbdb33[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Thu Oct 1 21:48:23 2020 +0200
+
+    create unterricht.html
+
+[33mcommit 6d583676610ec315260f103a90fab761575566b6[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Thu Oct 1 22:13:58 2020 +0200
+
+    adding working links inside landingpage.html and changed spelling of the LEHRKRÄFTE path in app.js
+
+[33mcommit 46b15acbe5a824479467f62aa0a3cf054888f663[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Thu Oct 1 22:03:55 2020 +0200
+
+    adding working links for the UNTERRICHT and LEHRKRÄFTE pages inside app.js
+
+[33mcommit 2289ffad010ea01bf0362147d44d80b80226e8bf[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Thu Oct 1 21:41:39 2020 +0200
+
+    fixing typo of js paths in landingpage.html
+
+[33mcommit bb7d9fa0d1c011396227ca23b668cba0c7ec355f[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Thu Oct 1 21:17:14 2020 +0200
+
+    added the downloaded js plugins for developement
+
+[33mcommit 2a6fdc0df400d40570c66599acd12d6a9adc9964[m[33m ([m[1;31mheroku/master[m[33m)[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Wed Aug 19 20:42:35 2020 +0200
+
+    added location section with interactive map plus various fixers v1
+
+[33mcommit 7b2cc4d0e4d2acc31588b7af4063227d4b2f7388[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Sun Aug 16 18:19:22 2020 +0200
+
+    added footer and the future news-section v1
+
+[33mcommit 7d31ef47913042752ee9c3b5115a6a538ffd381a[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Mon Aug 10 13:19:26 2020 +0200
+
+    made title screen blackn'n white
+
+[33mcommit adb2c74596c66f31fc587d8eaa9bd5c6edb2748a[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Mon Aug 10 13:16:26 2020 +0200
+
+    updating the arrow to fade while scrolling
+
+[33mcommit 0c9dc71f4d32825f8a02531a5567d1485af196c3[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Mon Aug 10 12:38:15 2020 +0200
+
+    adding an arrow at the bottom of the title screen
+
+[33mcommit 593a7cee8f91701ac7cbb5d61070b4ece7c2397d[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Mon Aug 10 12:19:16 2020 +0200
+
+    fixing Buttons in welcome section on mobile view v4
+
+[33mcommit 906911c2fe02191dc9d56506d5c224a05adc670e[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Mon Aug 10 12:13:23 2020 +0200
+
+    fixing Buttons in welcome section on mobile view v3
+
+[33mcommit 3f9c6a08290e7c2c8ae333cd1f7d664347137bd9[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Mon Aug 10 11:50:02 2020 +0200
+
+    fixing Buttons in welcome section on mobile view v2
+
+[33mcommit 2aa9329b7664aea47a7d214a8bd2ac5ca24eaf48[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Mon Aug 10 11:25:00 2020 +0200
+
+    fixing Buttons in welcome section on mobile view
+
+[33mcommit 47429ef3702d16642176e98078ad94c44ab214df[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Sun Aug 9 18:40:11 2020 +0200
+
+    attemp to fix the background in header section in mobile view v4
+
+[33mcommit 1bda1db81f1b321f4aa2fa73eb2d092ba3bb1daa[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Sun Aug 9 18:28:04 2020 +0200
+
+    attemp to fix the background in header section in mobile view v3
+
+[33mcommit a5957639e9d6ca3239c6c3c78c6a96f1dc7f0438[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Sun Aug 9 18:23:35 2020 +0200
+
+    attemp to fix the background in header section in mobile view v2
+
+[33mcommit baaefaee3d03948a5534edf351c7058d08dabbde[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Sun Aug 9 18:13:43 2020 +0200
+
+    attemp to fix the background in header section in mobile view v1
+
+[33mcommit 525373f0b96f8087eae0453ce192a8da2c721f02[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Sun Aug 9 18:04:52 2020 +0200
+
+    updated browser support for transitions and improved index.js to wait until site is ready v7
+
+[33mcommit b42b462534b96a6c4094f311c48a4896ca5bdfae[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Sun Aug 9 18:01:28 2020 +0200
+
+    updated browser support for transitions and improved index.js to wait until site is ready v6
+
+[33mcommit 2d9363ee1ceeb995cb4a5ed2f7027a602f7d8697[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Sun Aug 9 17:45:59 2020 +0200
+
+    updated browser support for transitions and improved index.js to wait until site is ready v5
+
+[33mcommit 6fd91d32ed1575c6f995074a1ae699cf05a0ffa6[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Sun Aug 9 17:40:34 2020 +0200
+
+    updated browser support for transitions and improved index.js to wait until site is ready v4
+
+[33mcommit 35b4f42e33f0ea5133c06d8561cd1a310e4a4dfb[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Sun Aug 9 17:32:20 2020 +0200
+
+    updated browser support for transitions and improved index.js to wait until site is ready v3
+
+[33mcommit ec8a992a5b73dcbddf714f872727ef3b27d29076[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Sun Aug 9 17:23:25 2020 +0200
+
+    updated browser support for transitions and improved index.js to wait until site is ready v2
+
+[33mcommit 94cb255bf55cda0d42a08912f71e75e26fbd4233[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Sun Aug 9 17:15:39 2020 +0200
+
+    updated browser support for transitions and improved index.js to wait until site is ready
+
+[33mcommit 88f4e94115bc8ae386271e0bbfd2dfb817faa2ce[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Sun Aug 9 17:11:55 2020 +0200
+
+    updated browser support for transitions
+
+[33mcommit 6314c4fe4c81a203952417e915726e621ca7b61b[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Sun Aug 9 17:03:07 2020 +0200
+
+    changed Icon and row sizes in the service section v2
+
+[33mcommit 216924c77905c0d1fa6def2a9ea6045cb32905b0[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Sun Aug 9 16:58:54 2020 +0200
+
+    changed Icon and row sizes in the service section
+
+[33mcommit 619217399fc998a5a3e838ba6712f3c0629ffccf[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Sun Aug 9 04:03:02 2020 +0200
+
+    just another testversion v&
+
+[33mcommit 158a71acbcee81124f05b25652047be6798b9e15[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Sun Aug 9 04:01:58 2020 +0200
+
+    just another testversion v5
+
+[33mcommit 713cb347c566ea362f3daa6e564f3f4e809fde60[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Sun Aug 9 03:56:28 2020 +0200
+
+    Unfinished Drumschool Website, just so that others can see progress for now... v4
+
+[33mcommit 115ac6aee55f87d837fc2b540185ab47097cfc85[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Sun Aug 9 03:47:10 2020 +0200
+
+    Unfinished Drumschool Website, just so that others can see progress for now... v3
+
+[33mcommit 60e0b1dbfcf01d8295dda561856f1e1b6ced671e[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Sun Aug 9 03:34:01 2020 +0200
+
+    Unfinished Drumschool Website, just so that others can see progress for now... v2
+
+[33mcommit eec0bcd2456396c54a9069d80c385a0a2276109a[m
+Author: Maximilian Faust <BsHr_Faust@web.de>
+Date:   Sun Aug 9 03:19:01 2020 +0200
+
+    Unfinished Drumschool Website, just so that others can see progress for now...

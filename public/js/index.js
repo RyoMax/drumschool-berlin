@@ -50,11 +50,13 @@ $( document ).ready(function() {
         var screen = $( window ).width();
         if ( screen <= 750){
             console.log("window width equals: " + screen);
-            $(".get-started").height(imgHeight + contactHeight);
-        }else if (imgHeight > contactHeight){
-            $(".get-started").height(imgHeight);
-        }else if (imgHeight < contactHeight){
-            $(".get-started").height(contactHeight);
+            $(".get-started .content").height(imgHeight + contactHeight);
+            $
+        }/*else if (imgHeight > contactHeight){
+            $(".content").height(imgHeight);
+        }*/
+        else {
+            $(".get-started .content").height(contactHeight);
         }
         console.log("the picture is " + imgHeight + "pixels big");
         console.log("the contact is " + contactHeight + "pixels big");

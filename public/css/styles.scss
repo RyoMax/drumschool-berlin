@@ -578,6 +578,9 @@ header{
   margin-top: $margin;
   margin-bottom: $margin;
   color: $drumwhite;
+  .content{
+    position: relative;
+  }
   img{
     position: absolute;
     bottom: 0;
@@ -604,6 +607,9 @@ header{
     .row{
       padding: 2rem 0;
       text-align: center;
+      @include media-breakpoint-down(lg){
+        padding: 1.5rem 0;
+      }
       @include media-breakpoint-down(md){
         padding: 1rem 0;
       }
@@ -614,7 +620,7 @@ header{
           margin-bottom: 0.5rem;
         }
         @include media-breakpoint-down(md){
-          font-size: 22px;
+          font-size: 19px;
         }
         @include media-breakpoint-down(sm){
           margin-bottom:1rem;
@@ -876,6 +882,7 @@ header{
 footer{
   padding-top: $margin;
   padding-bottom: $margin;
+  background-color: $drumyellow;
   a{
     color: $drumwhite;
     &:hover{
@@ -902,10 +909,11 @@ footer{
       }
     }
     .submit{
-      padding: 8px 20px;
-      background-color: $drumyellow;
+      padding: 8px 24px;
+      background-color: $drumblack;
+      color: $drumwhite;
       font-weight: bold;
-      border: none;
+      border: transparent 3px solid;
       border-top-right-radius: 40px;
       border-bottom-right-radius: 40px;
       border-top-left-radius: 5px;
@@ -918,9 +926,9 @@ footer{
         padding: 8px 12px;
       }
       &:hover{
-        background-color: $drumblack;
-        color: $drumyellow;
-        box-shadow: $drumyellow 0 0 10px;
+        background-color: $drumwhite;
+        color: $drumblack;
+        border: $drumblack 3px solid;
       }
       
     }
