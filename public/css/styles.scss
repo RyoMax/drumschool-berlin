@@ -17,11 +17,11 @@ $margin: 100px;
   font-family: futuraBook;
   src: url("/fonts/futura/Futura Book.ttf");
 }
-/*@font-face {
+@font-face {
   font-family: futuraBold;
-  src: url("/fonts/futura/Futura Bold.ttf");
+  src: url("/fonts/futura/FuturaStd Bold.ttf");
   font-weight: bold;
-}*/
+}
 @font-face {
   font-family: futuraItalic;
   src: url("/fonts/futura/Futura Std Medium Oblique.ttf");
@@ -81,28 +81,67 @@ body {
 
 .headliner{
   position: relative;
-  .section-line{
-    position: absolute;
-    font-size: 110px;
-    top: 0;
+  .bb{
+    position: relative;
+    width:100%;
+    border-bottom: $drumyellow 3px solid ;
+    z-index: 1;
+  }
+  .foreheader{
+    position: inherit;
+    width: 100%;
+    margin-bottom: 0;
+    font-family: 'futuraItalic';
+    font-size: 28px;
     z-index: 3;
     @include media-breakpoint-down(lg){
+      font-size: 22px;
+    }
+    @include media-breakpoint-down(md){
+      font-size: 16px;
+    }
+    @include media-breakpoint-down(sm){
+      font-size: 12px;
+    }
+    &.fh-right{
+      right: -45%;
+    }
+    &.fh-left{
+      margin-left: auto;
+      width: max-content;
+      margin-right: 45%;
+    }
+  }
+  .section-header{
+    position: inherit;
+    width: max-content;
+    font-size: 110px;
+    background-color: $drumblack;
+    transform: translateY(-24px);
+    z-index: 2;
+    @include media-breakpoint-down(lg){
       font-size: 80px;
+      transform: translateY(-18px);
     }
     @include media-breakpoint-down(md){
       font-size: 50px;
+      transform: translateY(-12px);
     }
     @include media-breakpoint-down(sm){
-      font-size: 28px;
+      font-size: 38px;
+      transform: translateY(-9px);
     }
-    &.h-right{
-      left:50%;
+    &.sh-right{
+      margin-left: auto;
+      padding-right: 5%;
+      padding-left: 6px;
     }
-    &.h-left{
-      right:50%;
+    &.sh-left{
+      padding-left: 5%;
+      padding-right: 6px;
     }
   }
-  .down-line{
+  /*.down-line{
     position: absolute;
     width: 60%;
     height: auto;
@@ -120,10 +159,10 @@ body {
     &.h-left{
       left:0;
     }
-  }
+  }*/
 }
 
-.headliner-left{
+/*.headliner-left{
   position: relative;
   .section-line{
     position: absolute;
@@ -136,7 +175,7 @@ body {
     margin-left: auto;
     z-index:1;
   }
-}
+}*/
 
 .lesslon-btn{
   position: relative;
@@ -153,17 +192,8 @@ body {
   -moz-transition: all 0.4;
   -o-transition: all 0.4s;
   transition: all 0.4s;
-  @include media-breakpoint-down(lg){
-    font-size:12px;
-  }
   @include media-breakpoint-down(md){
-    font-size:10px;
-    //position: relative;
-  }
-  @include media-breakpoint-down(sm){
-    font-size:10px;
-    position: relative;
-    padding: 6px 12px;
+    font-size: 12px;
   }
   span{
     font-size: 18px;
@@ -172,12 +202,8 @@ body {
     -moz-transition: all 0.4;
     -o-transition: all 0.4s;
     transition: all 0.4s;
-    
-    @include media-breakpoint-down(lg){
-      font-size: 16px;
-    }
     @include media-breakpoint-down(md){
-      font-size: 13px;
+      font-size: 16px;
     }
   }
   &:hover{
@@ -300,27 +326,52 @@ header{
   .row{
     margin: 0;
     background-color: $drumyellow;
+    color: $drumwhite;
     .content{
       position: relative;
       padding: 4rem 0 4rem 3rem;
       background-color: $drumyellow;
+      @include media-breakpoint-down(sm){
+        padding: 4rem 1rem 4rem 1rem;
+      }
       h1{
         font-family: 'futuraItalic';
-        color: $drumblack;
-        font-size: 20px;
+        font-size: 26px;
+        @include media-breakpoint-down(lg){
+          font-size: 22px;
+        }
+        @include media-breakpoint-down(md){
+          font-size: 18px;
+        }
+        @include media-breakpoint-down(sm){
+          font-size: 16px;
+        }
         .head-liner{
           display: block;
           width: 100%;
           text-align: right;
-          font-family: 'Bebas Neue';
           .ul{
-            font-size: 28px;
+            font-family: 'Bebas Neue';
+            font-size: 90px;
             background-color: $drumyellow;
+            @include media-breakpoint-down(lg){
+              font-size: 60px;
+            }
+            @include media-breakpoint-down(md){
+              font-size: 50px;
+            }
+            @include media-breakpoint-down(sm){
+              font-size: 50px;
+            }
           }
         }
       }
       p{
         font-size: 20px;
+        line-height: 25px;
+        @include media-breakpoint-down(sm){
+          font-size: 16px;
+        }
       }
     }
     .more{
@@ -334,27 +385,18 @@ header{
       -moz-transition: all 0.4;
       -o-transition: all 0.4s;
       transition: all 0.4s;
-      @include media-breakpoint-down(lg){
-        font-size:16px;
-      }
       @include media-breakpoint-down(md) {
-        font-size: 14px;
+        font-size: 16px;
       }
-      @include media-breakpoint-down(md) {
-        font-size: 14px;
+      @include media-breakpoint-down(sm) {
+        right: .5rem;
       }
       &:hover{
         text-decoration: none;
         font-size: 20px;
         color: $drumblack;
-        @include media-breakpoint-down(lg){
-          font-size:18px;
-        }
         @include media-breakpoint-down(md) {
-          font-size: 16px;
-        }
-        @include media-breakpoint-down(md) {
-          font-size: 14px;
+          font-size: 17px;
         }
         .arr{
           background-color: $drumblack;
@@ -368,7 +410,7 @@ header{
     .contain{
       background-image: url("/media/DrummerSW-2.jpg");
       background-size: cover;
-      background-position: left;
+      background-position: center;
       padding: 0;
       z-index: 3;
       .row{
@@ -400,9 +442,22 @@ header{
 .service{
   margin-top: $margin;
   margin-bottom: $margin;
+  .container{
+    @include media-breakpoint-down(md){
+      margin-left: 0;
+      margin-right: 0;
+      max-width: none;
+    }
+    @include media-breakpoint-down(sm){
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 540px;
+    }
+  }
   .card{
     background-color: $drumblack;
     padding: 0 2rem;
+    text-align: center;
     .circ{
       position: relative;
       width: 100%;
@@ -418,9 +473,20 @@ header{
       }
     }
     h2{
-      font-size: 20px;
+      font-size: 18px;
+      margin-bottom: 0;
+      font-family: 'futuraBold';
+      @include media-breakpoint-down(sm){
+        font-size: 16px;
+      }
     }
-    
+    p{
+      font-size: 16px;
+      margin-bottom: 0;
+      @include media-breakpoint-down(sm){
+        font-size: 14px;
+      }
+    }
   }
   
   .grid{
@@ -483,16 +549,20 @@ header{
       padding-left: 0;
     }
     .location{
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'futuraBold';
       font-weight: bold;
       color: $drumwhite;
       border-bottom: 1px solid $drumyellow;
+      cursor: pointer;
+      @include media-breakpoint-down(sm){
+        font-size: 22px;
+      }
       &:hover{
         color: $drumyellow;
       }
     }
     .adress{
-      font-style: italic;
+      font-family: 'futuraItalic';
 
     }
     .card{
@@ -511,7 +581,7 @@ header{
   img{
     position: absolute;
     bottom: 0;
-    z-index: 2;
+    z-index: 5;
     width: 51%;
     @include media-breakpoint-down(md){
       width: 58%;
@@ -526,7 +596,7 @@ header{
     bottom: 0;
     background-color: $drumyellow;
     width: 100%;
-    z-index: 1;
+    z-index: 4;
     //margin-bottom: 2rem;
     @include media-breakpoint-down(sm){
       position: relative;
@@ -538,16 +608,15 @@ header{
         padding: 1rem 0;
       }
       p{
-        font-size: 20px;
+        font-size: 24px;
         @include media-breakpoint-down(lg){
           //font-size: 18px;
           margin-bottom: 0.5rem;
         }
         @include media-breakpoint-down(md){
-          font-size: 18px;
+          font-size: 22px;
         }
         @include media-breakpoint-down(sm){
-          font-size: 16px;
           margin-bottom:1rem;
         }
       }
@@ -556,8 +625,7 @@ header{
         margin-bottom: 1.5rem;
         color: $drumwhite;
         font-size: 24px;
-        //font-family: 'futuraBold';
-        font-weight: bold;
+        font-family: 'futuraBold';
         @include media-breakpoint-down(lg){
           font-size: 22px;
           margin-bottom: 1rem;
@@ -576,6 +644,7 @@ header{
         padding: 12px 25px;
         margin: 0;
         font-size: 18px;
+        font-family: 'futuraBook';
         @include media-breakpoint-down(md){
           font-size: 16px;
         }
