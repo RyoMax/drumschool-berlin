@@ -347,9 +347,11 @@ header{
           font-size: 16px;
         }
         .head-liner{
+          position: relative;
           display: block;
           width: 100%;
           text-align: right;
+          z-index: 4;
           .ul{
             font-family: 'Bebas Neue';
             font-size: 90px;
@@ -880,7 +882,7 @@ header{
   }
 }
 footer{
-  padding-top: $margin;
+  padding-top: calc($margin / 2);
   padding-bottom: $margin;
   background-color: $drumyellow;
   a{
@@ -893,9 +895,8 @@ footer{
   .newsletter-form{
     margin-bottom: 2rem;
     label{
-      color: $drumyellow;
+      font-family: 'futuraBold';
       font-size: 28px;
-      font-weight: bold;
     }
     .email{
       padding: 8px 20px;
@@ -934,8 +935,7 @@ footer{
     }
   }
   .social{
-    font-family: 'Montserrat', sans-serif;
-    color: $drumyellow;
+    font-family: 'futuraBold';
     font-size: 24px;
     font-weight: bold;
   }
@@ -957,7 +957,7 @@ footer{
     }
     .thin{
       margin-top: 1.5rem;
-      font-style: italic;
+      font-family: 'futuraItalic';
       font-weight: 400;
     }
   }
