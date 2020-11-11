@@ -105,11 +105,17 @@ body {
     }
     &.fh-right{
       right: -45%;
+      @include media-breakpoint-down(lg){
+        right: -55%;
+      }
     }
     &.fh-left{
       margin-left: auto;
       width: max-content;
       margin-right: 45%;
+      @include media-breakpoint-down(lg){
+        margin-right: 55%;
+      }
     }
   }
   .section-header{
@@ -790,6 +796,61 @@ header{
   .content{
     padding: 4rem 0 4rem 3rem;
     background-color: $drumyellow;
+    @include media-breakpoint-down(sm){
+      padding: 4rem 3rem 4rem 3rem;
+    }
+    .headliner{
+      color: $drumblack;
+      .bb{
+        border-bottom: $drumwhite 3px solid ;
+      }
+      .foreheader{
+        font-size: 24px;
+        z-index: 5;
+        @include media-breakpoint-down(lg){
+          font-size: 21px;
+        }
+        @include media-breakpoint-down(md){
+          font-size: 16px;
+        }
+        @include media-breakpoint-down(sm){
+          font-size: 16px;
+        }
+        &.fh-left{
+          margin-right: auto;
+          margin-left: 0;
+          @include media-breakpoint-down(sm){
+            margin: auto;
+          }
+        }
+      }
+      .section-header{
+        font-size: 80px;
+        background-color: $drumyellow;
+        transform: translate(10%, -19px);
+        @include media-breakpoint-down(lg){
+          font-size: 60px;
+          transform: translate(15%, -15px);
+        }
+        @include media-breakpoint-down(md){
+          font-size: 50px;
+          transform: translate(7%, -12px);
+        }
+        @include media-breakpoint-down(sm){
+          font-size: 50px;
+          transform: translate(0%, -12px);
+        }
+        &.sh-right{
+          margin-left: auto;
+          padding-right: 0%;
+          padding-left: 0px;
+          z-index: 4;
+          @include media-breakpoint-down(sm){
+            margin: auto;
+          }
+        }
+      }
+    }
     h1{
       font-family: 'futuraItalic';
       color: $drumblack;
@@ -816,6 +877,9 @@ header{
       right: calc(0px - 8%);
       bottom: 1rem;
       z-index: 4;
+      @include media-breakpoint-down(sm){
+        transform: translateX(-90%);
+      }
       .arr{
         position: relative;
         width: 60px;
@@ -835,6 +899,9 @@ header{
       right: calc(0px - 8%);
       bottom: calc(2rem + 60px);
       z-index: 4;
+      @include media-breakpoint-down(sm){
+        transform: translateX(-90%);
+      }
       .arr{
         position: relative;
         width: 60px;
@@ -882,7 +949,7 @@ header{
   }
 }
 footer{
-  padding-top: calc($margin / 2);
+  margin-top: $margin;
   padding-bottom: $margin;
   background-color: $drumyellow;
   a{
