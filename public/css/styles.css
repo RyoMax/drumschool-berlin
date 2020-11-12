@@ -215,7 +215,6 @@ body h1, body h2, body h3 {
   background-color: #1D1D1D;
   color: #ffffff;
   font-size: 14px;
-  border: #1D1D1D solid 3px;
   border-radius: 30px;
   line-height: 20px;
   -webkit-transition: all 0.4s;
@@ -230,7 +229,7 @@ body h1, body h2, body h3 {
 
 .lesslon-btn span {
   font-size: 18px;
-  font-weight: bold;
+  font-family: 'futuraBold';
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -244,7 +243,6 @@ body h1, body h2, body h3 {
 .lesslon-btn:hover {
   background-color: #ffffff;
   color: #1D1D1D;
-  border: #1D1D1D 3px solid;
 }
 
 .lesslon-btn:hover span {
@@ -287,7 +285,7 @@ body h1, body h2, body h3 {
 
 .arr:hover {
   background-color: #1D1D1D;
-  border: #ffffff 3px solid;
+  border: #1D1D1D 3px solid;
 }
 
 .arr:hover i {
@@ -492,7 +490,7 @@ header .arrow-down.scroll {
 
 .welcome .row .more:hover .arr {
   background-color: #1D1D1D;
-  border: #ffffff 3px solid;
+  border: #1D1D1D 3px solid;
 }
 
 .welcome .row .more:hover .arr i {
@@ -1236,13 +1234,14 @@ footer .newsletter-form .submit {
   background-color: #1D1D1D;
   color: #ffffff;
   font-weight: bold;
-  border: transparent 3px solid;
+  border: none;
+  border-left: #1D1D1D 2px solid;
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  -webkit-transform: translateX(-5px);
-          transform: translateX(-5px);
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  -webkit-transform: translateX(-6px);
+          transform: translateX(-6px);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -1257,7 +1256,6 @@ footer .newsletter-form .submit {
 footer .newsletter-form .submit:hover {
   background-color: #ffffff;
   color: #1D1D1D;
-  border: #1D1D1D 3px solid;
 }
 
 footer .social {

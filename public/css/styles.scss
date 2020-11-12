@@ -190,7 +190,7 @@ body {
   background-color: $drumblack;
   color: $drumwhite;
   font-size: 14px;
-  border: $drumblack solid 3px;
+  //border: $drumblack solid 3px;
   border-radius: 30px;
   line-height: 20px;
   //box-shadow: 0 0 10px $drumblack;
@@ -203,7 +203,7 @@ body {
   }
   span{
     font-size: 18px;
-    font-weight: bold;
+    font-family: 'futuraBold';
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4;
     -o-transition: all 0.4s;
@@ -215,7 +215,7 @@ body {
   &:hover{
     background-color: $drumwhite;
     color: $drumblack;
-    border: $drumblack 3px solid;
+    //border: $drumblack 3px solid;
     //box-shadow: $drumyellow 0 0 5px;
     span{
       color: $drumyellow;
@@ -255,7 +255,7 @@ body {
   }
   &:hover{
       background-color: $drumblack;
-      border: $drumwhite 3px solid;
+      border: $drumblack 3px solid;
       //box-shadow: $drumwhite 0 0 5px;
       i{
         color: $drumwhite;
@@ -408,7 +408,7 @@ header{
         }
         .arr{
           background-color: $drumblack;
-          border: $drumwhite 3px solid;
+          border: $drumblack 3px solid;
           i{
             color: $drumwhite;
           }
@@ -981,12 +981,13 @@ footer{
       background-color: $drumblack;
       color: $drumwhite;
       font-weight: bold;
-      border: transparent 3px solid;
+      border: none;
+      border-left: $drumblack 2px solid;
       border-top-right-radius: 40px;
       border-bottom-right-radius: 40px;
-      border-top-left-radius: 5px;
-      border-bottom-left-radius: 5px;
-      transform: translateX(-5px);
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      transform: translateX(-6px);
       -webkit-transition: all 0.2s;
       transition: all 0.2s;
       @include media-breakpoint-down(sm){
@@ -996,7 +997,6 @@ footer{
       &:hover{
         background-color: $drumwhite;
         color: $drumblack;
-        border: $drumblack 3px solid;
       }
       
     }
