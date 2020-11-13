@@ -217,6 +217,8 @@ body h1, body h2, body h3 {
   font-size: 14px;
   border-radius: 30px;
   line-height: 20px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -243,6 +245,8 @@ body h1, body h2, body h3 {
 .lesslon-btn:hover {
   background-color: #ffffff;
   color: #1D1D1D;
+  -webkit-box-shadow: 10px 10px 10px #1D1D1D;
+          box-shadow: 10px 10px 10px #1D1D1D;
 }
 
 .lesslon-btn:hover span {
@@ -555,9 +559,11 @@ header .arrow-down.scroll {
 }
 
 .service .card {
+  position: relative;
   background-color: #1D1D1D;
   padding: 0 2rem;
   text-align: center;
+  z-index: 3;
 }
 
 .service .card .circ {
@@ -571,8 +577,8 @@ header .arrow-down.scroll {
   position: absolute;
   left: 50%;
   bottom: 50%;
-  -webkit-transform: translate(-50%, 45%);
-  transform: translate(-50%, 45%);
+  -webkit-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
   padding: 15%;
 }
 
@@ -1193,7 +1199,11 @@ header .arrow-down.scroll {
 footer {
   margin-top: 100px;
   padding-bottom: 100px;
+  background-image: url("/media/FooterGrafik_min.png");
   background-color: #BF2231;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
 }
 
 footer a {
@@ -1268,8 +1278,9 @@ footer .icon-link {
   font-size: 14px;
 }
 
-footer .icon-link i {
-  font-size: 2rem;
+footer .icon-link .icon {
+  width: 25px;
+  height: 25px;
   color: #BF2231;
   margin: 12px;
   margin-left: 0;

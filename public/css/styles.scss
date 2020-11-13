@@ -193,7 +193,7 @@ body {
   //border: $drumblack solid 3px;
   border-radius: 30px;
   line-height: 20px;
-  //box-shadow: 0 0 10px $drumblack;
+  box-shadow: none;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4;
   -o-transition: all 0.4s;
@@ -216,7 +216,7 @@ body {
     background-color: $drumwhite;
     color: $drumblack;
     //border: $drumblack 3px solid;
-    //box-shadow: $drumyellow 0 0 5px;
+    box-shadow: 10px 10px 10px $drumblack;
     span{
       color: $drumyellow;
     }
@@ -463,9 +463,11 @@ header{
     }
   }
   .card{
+    position: relative;
     background-color: $drumblack;
     padding: 0 2rem;
     text-align: center;
+    z-index: 3;
     .circ{
       position: relative;
       width: 100%;
@@ -475,8 +477,8 @@ header{
         position: absolute;
         left: 50%;
         bottom: 50%;
-        -webkit-transform: translate(-50%, 45%);
-        transform: translate(-50%, 45%);
+        -webkit-transform: translate(-50%, 50%);
+        transform: translate(-50%, 50%);
         padding: 15%;
       }
     }
@@ -951,7 +953,11 @@ header{
 footer{
   margin-top: $margin;
   padding-bottom: $margin;
+  background-image: url("/media/FooterGrafik_min.png");
   background-color: $drumyellow;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
   a{
     color: $drumwhite;
     &:hover{
@@ -1008,8 +1014,9 @@ footer{
   }
   .icon-link{
     font-size: 14px;
-    i{
-      font-size: 2rem;
+    .icon{
+      width: 25px;
+      height: 25px;
       color: $drumyellow;
       margin: 12px;
       margin-left: 0;
