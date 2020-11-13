@@ -11,7 +11,7 @@ app.get("/", function(req, res){
 });
 
 app.get("/unterricht", function(req, res){
-    res.sendFile(__dirname + "/unterricht_profi.html");
+    res.sendFile(__dirname + "/unterricht_fortgeschritten.html");
 });
 
 app.get("/lehrkraefte", function(req, res){
