@@ -331,6 +331,19 @@ header nav ul {
   width: 80%;
 }
 
+header nav ul .dropdown-menu {
+  background-color: rgba(29, 29, 29, 0.5);
+}
+
+header nav ul .dropdown-menu a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+header nav ul .dropdown-menu a:hover {
+  color: white;
+  background-color: unset;
+}
+
 header .drum-logo {
   position: absolute;
   max-width: 35%;
