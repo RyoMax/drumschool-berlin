@@ -10,13 +10,22 @@ app.get("/", function(req, res){
     res.sendFile(__dirname + "/landingpage.html");
 });
 
-app.get("/unterricht", function(req, res){
+app.get("/unterricht_fortgeschritten", function(req, res){
     res.sendFile(__dirname + "/unterricht_fortgeschritten.html");
+});
+
+app.get("/unterricht_anfaenger", function(req, res){
+    res.sendFile(__dirname + "/unterricht_anfaenger.html");
+});
+
+app.get("/unterricht_kinder", function(req, res){
+    res.sendFile(__dirname + "/unterricht_kinder.html");
 });
 
 app.get("/lehrkraefte", function(req, res){
     res.sendFile(__dirname + "/lehrkräfte.html")
 })
+
 
 app.listen(process.env.PORT || 3000, function(){
     console.log("Server is running localy on Port 3000");
