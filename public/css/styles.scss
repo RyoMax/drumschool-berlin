@@ -39,8 +39,8 @@ body {
     background-color: $drumblack;
     color: $drumwhite;
     font-family: 'futuraBook';
-    h1, h2, h3{
-      font-family: 'Bebas Neue', cursive;
+    h1, h2{
+      font-family: 'FuturaBold', cursive;
     }
   }
 .background-1{
@@ -960,6 +960,33 @@ header{
     }
   }
 }
+.teachers{
+  margin-top: $margin;
+  margin-bottom: $margin;
+  .teacher{
+    margin-bottom: 3rem;
+    text-align: center;
+    img{
+      padding: 1.5rem;
+    }
+    h3{
+      font-size: 28px;
+      @include media-breakpoint-down(lg){
+        font-size: 24px;
+      }
+      @include media-breakpoint-down(md){
+        font-size: 16px;
+      }
+      @include media-breakpoint-down(sm){
+        font-size: 24px;
+      }
+      .bold{
+        font-family: 'futuraBold';
+      }
+    }
+  }
+}
+
 footer{
   margin-top: $margin;
   padding-bottom: $margin;
