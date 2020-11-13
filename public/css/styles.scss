@@ -108,6 +108,10 @@ body {
       @include media-breakpoint-down(lg){
         right: -55%;
       }
+      @include media-breakpoint-down(sm){
+        right: 5%;
+        text-align: right;
+      } 
     }
     &.fh-left{
       margin-left: auto;
@@ -116,25 +120,28 @@ body {
       @include media-breakpoint-down(lg){
         margin-right: 55%;
       }
+      @include media-breakpoint-down(sm){
+        margin-left: 5%;
+      }
     }
   }
   .section-header{
     position: inherit;
     width: max-content;
-    font-size: 110px;
+    font-size: 75px;
     background-color: $drumblack;
-    transform: translateY(-24px);
+    transform: translateY(-20px);
     z-index: 2;
     @include media-breakpoint-down(lg){
-      font-size: 80px;
-      transform: translateY(-18px);
+      font-size: 60px;
+      transform: translateY(-16px);
     }
     @include media-breakpoint-down(md){
-      font-size: 50px;
-      transform: translateY(-12px);
+      font-size: 40px;
+      transform: translateY(-13px);
     }
     @include media-breakpoint-down(sm){
-      font-size: 38px;
+      font-size: 28px;
       transform: translateY(-9px);
     }
     &.sh-right{
@@ -212,7 +219,7 @@ body {
       font-size: 16px;
     }
   }
-  &:hover{
+  &:hover, &:focus{
     background-color: $drumwhite;
     color: $drumblack;
     //border: $drumblack 3px solid;
@@ -253,7 +260,7 @@ body {
       font-size: 21px;
     }
   }
-  &:hover{
+  &:hover, &:focus{
       background-color: $drumblack;
       border: $drumblack 3px solid;
       //box-shadow: $drumwhite 0 0 5px;
@@ -282,7 +289,7 @@ header{
     #nav-logo{
       width: auto;
       height:70px;
-      @include media-breakpoint-down(sm){
+      @include media-breakpoint-down(md){
         height: 40px;
       }
     }
@@ -295,7 +302,7 @@ header{
         background-color: rgba(29, 29, 29, 0.5);
         a{
           color:  rgba(255, 255, 255, 0.5);
-          &:hover{
+          &:hover, &:focus{
             color:  rgba(255, 255, 255, 1);
             background-color: unset;
           }
@@ -345,14 +352,19 @@ header{
     color: $drumwhite;
     .content{
       position: relative;
-      padding: 4rem 0 4rem 3rem;
+      padding: 4rem 0 4rem 6rem;
       background-color: $drumyellow;
+      @include media-breakpoint-down(md){
+        padding-right: 1rem;
+        padding-left: 3rem;
+      }
       @include media-breakpoint-down(sm){
-        padding: 4rem 1rem 4rem 1rem;
+        padding: 4rem 2rem;
       }
       h1{
         font-family: 'futuraItalic';
-        font-size: 26px;
+        font-size: 22px;
+        margin-bottom: 3rem;
         @include media-breakpoint-down(lg){
           font-size: 22px;
         }
@@ -366,20 +378,19 @@ header{
           position: relative;
           display: block;
           width: 100%;
-          text-align: right;
           z-index: 4;
           .ul{
-            font-family: 'Bebas Neue';
-            font-size: 90px;
+            font-family: 'FuturaBold';
+            font-size: 50px;
             background-color: $drumyellow;
             @include media-breakpoint-down(lg){
-              font-size: 60px;
+              font-size: 40px;
             }
             @include media-breakpoint-down(md){
-              font-size: 50px;
+              font-size: 30px;
             }
             @include media-breakpoint-down(sm){
-              font-size: 50px;
+              font-size: 40px;
             }
           }
         }
@@ -387,34 +398,52 @@ header{
       p{
         font-size: 20px;
         line-height: 25px;
+        margin-bottom: 3rem;
+        @include media-breakpoint-down(lg){
+          margin-bottom: 6rem;        }
+        @include media-breakpoint-down(md){
+          font-size: 16px;
+        }
         @include media-breakpoint-down(sm){
           font-size: 16px;
+          margin-bottom: 3rem;
         }
       }
     }
+    
     .more{
       position: absolute;
       bottom: calc(8px + 4rem);
-      right: 0;
+      right: 6rem;
       color: $drumwhite;
       font-size: 18px;
       font-weight: 600;
+      transform: translateX(4rem);
       -webkit-transition: all 0.4s;
       -moz-transition: all 0.4;
       -o-transition: all 0.4s;
       transition: all 0.4s;
-      @include media-breakpoint-down(md) {
-        font-size: 16px;
-      }
-      @include media-breakpoint-down(sm) {
-        right: .5rem;
-      }
-      &:hover{
-        text-decoration: none;
+      @include media-breakpoint-down(lg) {
         font-size: 20px;
+        left: 7rem;
+        bottom: calc(90px + 4rem);
+        transform: translateX(0);
+      }
+       @include media-breakpoint-down(md){
+         font-size: 17px;
+         left: 4rem;
+       }
+      @include media-breakpoint-down(sm) {
+        left: unset;
+        right: 2rem;
+        bottom: calc(8px + 4rem);
+      }
+      &:hover, &:focus{
+        text-decoration: none;
+        //font-size: 20px;
         color: $drumblack;
-        @include media-breakpoint-down(md) {
-          font-size: 17px;
+        @include media-breakpoint-up(lg) {
+          font-size: 20px;
         }
         .arr{
           background-color: $drumblack;
@@ -492,19 +521,26 @@ header{
         padding: 15%;
       }
     }
-    h2{
-      font-size: 18px;
-      margin-bottom: 0;
-      font-family: 'futuraBold';
-      @include media-breakpoint-down(sm){
-        font-size: 16px;
+    .card-body{
+      padding: 0;
+      padding-top: 2rem;
+      h2{
+        font-size: 18px;
+        margin-bottom: 0;
+        font-family: 'futuraBold';
+        @include media-breakpoint-down(md){
+          font-size: 14px;
+        }
+        @include media-breakpoint-down(sm){
+          font-size: 16px;
+        }
       }
-    }
-    p{
-      font-size: 16px;
-      margin-bottom: 0;
-      @include media-breakpoint-down(sm){
-        font-size: 14px;
+      p{
+        font-size: 16px;
+        margin-bottom: 0;
+        @include media-breakpoint-down(sm){
+          font-size: 14px;
+        }
       }
     }
   }
@@ -577,7 +613,7 @@ header{
       @include media-breakpoint-down(sm){
         font-size: 22px;
       }
-      &:hover{
+      &:hover, &:focus{
         color: $drumyellow;
       }
     }
@@ -783,7 +819,7 @@ header{
       }
 
     }
-    &:hover{
+    &:hover, &:focus{
       .bg-grey{
         opacity: 0.8;
       }
@@ -817,17 +853,17 @@ header{
         border-bottom: $drumwhite 3px solid ;
       }
       .foreheader{
-        font-size: 24px;
+        font-size: 18px;
         z-index: 5;
         @include media-breakpoint-down(lg){
-          font-size: 21px;
+          font-size: 15px;
         }
-        @include media-breakpoint-down(md){
+        /*@include media-breakpoint-down(md){
           font-size: 16px;
         }
         @include media-breakpoint-down(sm){
           font-size: 16px;
-        }
+        }*/
         &.fh-left{
           margin-right: auto;
           margin-left: 0;
@@ -837,19 +873,19 @@ header{
         }
       }
       .section-header{
-        font-size: 80px;
+        font-size: 48px;
         background-color: $drumyellow;
-        transform: translate(10%, -19px);
+        transform: translate(10%, -14px);
         @include media-breakpoint-down(lg){
-          font-size: 60px;
-          transform: translate(15%, -15px);
+          font-size: 38px;
+          transform: translate(12%, -10.5px);
         }
         @include media-breakpoint-down(md){
-          font-size: 50px;
-          transform: translate(7%, -12px);
+          font-size: 30px;
+          transform: translate(7%, -8.5px);
         }
         @include media-breakpoint-down(sm){
-          font-size: 50px;
+          font-size: 40px;
           transform: translate(0%, -12px);
         }
         &.sh-right{
@@ -989,6 +1025,7 @@ header{
 
 footer{
   margin-top: $margin;
+  padding-top: 44px;
   padding-bottom: $margin;
   background-image: url("/media/FooterGrafik_min.png");
   background-color: $drumyellow;
@@ -997,7 +1034,7 @@ footer{
   background-size: contain;
   a{
     color: $drumwhite;
-    &:hover{
+    &:hover, &:focus{
       text-decoration: none;
       color: $drumwhite;
     }
@@ -1037,7 +1074,7 @@ footer{
         font-size: 12px;
         padding: 8px 12px;
       }
-      &:hover{
+      &:hover, &:focus{
         background-color: $drumwhite;
         color: $drumblack;
       }
@@ -1060,7 +1097,7 @@ footer{
     }
   }
   .bold{
-    padding-top: 44px;
+    //padding-top: 44px;
     font-weight: bold;
     font-size: 20px;
     @include media-breakpoint-down(md){
