@@ -44,7 +44,7 @@ body {
     }
   }
 .background-1{
-  background-image: url("/media/drums-2599508_1280.jpg");
+  background-image: url("/media/home_bg_min.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -287,7 +287,7 @@ header{
     z-index: 3;
     #nav-logo{
       width: auto;
-      height:70px;
+      height:50px;
       @include media-breakpoint-down(md){
         height: 40px;
       }
@@ -400,7 +400,10 @@ header{
         line-height: 25px;
         margin-bottom: 3rem;
         @include media-breakpoint-down(lg){
-          margin-bottom: 6rem;        }
+          margin-bottom: 6rem;
+          font-size: 18px;
+          line-height: 22px;
+        }
         @include media-breakpoint-down(md){
           font-size: 16px;
         }
