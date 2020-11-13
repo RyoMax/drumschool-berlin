@@ -831,6 +831,11 @@ header .arrow-down.scroll {
 .locations .mloc .card {
   background-color: #1D1D1D;
   border: #BF2231 solid 1px;
+  margin-bottom: 2rem;
+}
+
+.locations .mloc .card.no-mb {
+  margin-bottom: 0;
 }
 
 .get-started {

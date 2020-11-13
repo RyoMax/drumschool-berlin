@@ -649,6 +649,10 @@ header{
     .card{
       background-color: $drumblack;
       border: $drumyellow solid 1px;
+      margin-bottom: 2rem;
+      &.no-mb{
+        margin-bottom: 0;
+      }
     }
   }
   
