@@ -92,7 +92,7 @@ body h1, body h2 {
 .headliner .bb {
   position: relative;
   width: 100%;
-  border-bottom: #BF2231 3px solid;
+  border-bottom: #BF2231 2px solid;
   z-index: 1;
 }
 
@@ -101,7 +101,7 @@ body h1, body h2 {
   width: 100%;
   margin-bottom: 0;
   font-family: 'futuraItalic';
-  font-size: 28px;
+  font-size: 22px;
   z-index: 3;
 }
 
@@ -165,26 +165,26 @@ body h1, body h2 {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  font-size: 75px;
+  font-size: 65px;
   background-color: #1D1D1D;
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
+  -webkit-transform: translateY(-17px);
+          transform: translateY(-17px);
   z-index: 2;
 }
 
 @media (max-width: 1199.98px) {
   .headliner .section-header {
     font-size: 60px;
-    -webkit-transform: translateY(-16px);
-            transform: translateY(-16px);
+    -webkit-transform: translateY(-14px);
+            transform: translateY(-14px);
   }
 }
 
 @media (max-width: 991.98px) {
   .headliner .section-header {
     font-size: 40px;
-    -webkit-transform: translateY(-13px);
-            transform: translateY(-13px);
+    -webkit-transform: translateY(-11px);
+            transform: translateY(-11px);
   }
 }
 
@@ -362,6 +362,8 @@ header .drum-logo {
   max-width: 35%;
   left: 50%;
   top: 50%;
+  -webkit-filter: drop-shadow(0px 0px 100px #1D1D1D);
+          filter: drop-shadow(0px 0px 100px #1D1D1D);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
@@ -601,8 +603,12 @@ header .arrow-down.scroll {
 }
 
 .service {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.service .container {
+  margin: 5rem auto;
 }
 
 @media (max-width: 991.98px) {
@@ -629,6 +635,18 @@ header .arrow-down.scroll {
   z-index: 3;
 }
 
+@media (max-width: 991.98px) {
+  .service .card {
+    padding: unset;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .service .card {
+    padding: 0 2rem 4rem;
+  }
+}
+
 .service .card .circ {
   position: relative;
   width: 100%;
@@ -651,20 +669,20 @@ header .arrow-down.scroll {
 }
 
 .service .card .card-body h2 {
-  font-size: 18px;
+  font-size: 24px;
   margin-bottom: 0;
   font-family: 'futuraBold';
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .service .card .card-body h2 {
-    font-size: 14px;
+    font-size: 20px;
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .service .card .card-body h2 {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -740,8 +758,24 @@ header .arrow-down.scroll {
 }
 
 .locations {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.locations .container {
+  margin-top: 7rem;
+}
+
+@media (max-width: 991.98px) {
+  .locations .container {
+    padding: unset;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .locations .container {
+    padding: 0 2rem;
+  }
 }
 
 .locations #map {
@@ -768,14 +802,21 @@ header .arrow-down.scroll {
 .locations .mloc .location {
   font-family: 'futuraBold';
   font-weight: bold;
+  font-size: 24px;
   color: #ffffff;
   border-bottom: 1px solid #BF2231;
   cursor: pointer;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 1199.98px) {
   .locations .mloc .location {
-    font-size: 22px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .locations .mloc .location {
+    font-size: 18px;
   }
 }
 
@@ -794,8 +835,8 @@ header .arrow-down.scroll {
 
 .get-started {
   position: relative;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 200px;
+  margin-bottom: 200px;
   color: #ffffff;
 }
 
@@ -992,12 +1033,13 @@ header .arrow-down.scroll {
 }
 
 .news {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 
 .news .soon {
   position: relative;
+  margin-top: 7rem;
 }
 
 .news .soon .bg-grey {
@@ -1018,6 +1060,7 @@ header .arrow-down.scroll {
 
 .news .soon h3 {
   position: absolute;
+  font-family: 'futuraBold';
   font-size: 3rem;
   top: 50%;
   right: 50%;
@@ -1265,8 +1308,8 @@ header .arrow-down.scroll {
 }
 
 .teachers {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 
 .teachers .teacher {
@@ -1305,9 +1348,9 @@ header .arrow-down.scroll {
 }
 
 footer {
-  margin-top: 100px;
+  margin-top: 200px;
   padding-top: 44px;
-  padding-bottom: 100px;
+  padding-bottom: 2rem;
   background-image: url("/media/FooterGrafik_min.png");
   background-color: #BF2231;
   background-repeat: no-repeat;
