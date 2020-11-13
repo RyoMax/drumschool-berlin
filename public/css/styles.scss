@@ -282,10 +282,9 @@ header{
   
   nav{
     //mittels DOM manipulation komplette Hintergrund Farbe mittels transition toggeln
-    @include media-breakpoint-down(md){
-      background:rgba(0, 0, 0, 0.6);
-      z-index: 3;
-    }
+    background: rgba(191, 34, 49, 1);
+    font-family: 'futuraBold';
+    z-index: 3;
     #nav-logo{
       width: auto;
       height:70px;
@@ -299,7 +298,8 @@ header{
     ul{
       width: 80%;
       .dropdown-menu{
-        background-color: rgba(29, 29, 29, 0.5);
+        background-color:rgba(191, 34, 49, 0.7);
+        border: unset;
         a{
           color:  rgba(255, 255, 255, 0.5);
           &:hover, &:focus{
@@ -850,7 +850,7 @@ header{
     .headliner{
       color: $drumblack;
       .bb{
-        border-bottom: $drumwhite 3px solid ;
+        border-bottom: $drumwhite 2px solid ;
       }
       .foreheader{
         font-size: 18px;

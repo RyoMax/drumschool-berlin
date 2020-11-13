@@ -318,11 +318,10 @@ header.lp li a {
   color: #ffffff;
 }
 
-@media (max-width: 991.98px) {
-  header nav {
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 3;
-  }
+header nav {
+  background: #bf2231;
+  font-family: 'futuraBold';
+  z-index: 3;
 }
 
 header nav #nav-logo {
@@ -345,7 +344,8 @@ header nav ul {
 }
 
 header nav ul .dropdown-menu {
-  background-color: rgba(29, 29, 29, 0.5);
+  background-color: rgba(191, 34, 49, 0.7);
+  border: unset;
 }
 
 header nav ul .dropdown-menu a {
@@ -1071,7 +1071,7 @@ header .arrow-down.scroll {
 }
 
 .lesslons .content .headliner .bb {
-  border-bottom: #ffffff 3px solid;
+  border-bottom: #ffffff 2px solid;
 }
 
 .lesslons .content .headliner .foreheader {
