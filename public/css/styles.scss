@@ -859,22 +859,59 @@ header{
     }
   }
 }
-.lesslons{
+.lesslons, .teacher{
   /*#trapezoid {
       width: 150px;
       height: 100px;
       transform: skew(20deg);
       background: red;
   }*/
+  position: relative;
+  .close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    opacity: 1;
+    z-index: 6;
+    i{
+      color: $drumyellow;
+      border: $drumblack;
+      font-size: 40px;
+      text-shadow: none;
+      -moz-transition: all 0.2s;
+      transition: all 0.2s;
+      &:hover{
+        color: $drumwhite;
+      }
+    }
+  }
+  .fullscreen{
+    min-height: 100vh;
+  }
   .row{
     margin: 0;
     background-color: $drumyellow;
+    
   }
   .headline{
     position: relative;
     margin-bottom: 3rem;
     font-size: 32px;
     z-index: 4;
+    span{
+      font-family: 'futuraBook';
+    }
+    &::before{
+      position: absolute;
+      content: "";
+      background-image: url("/media/IconUnterseiten_min.jpg");
+      background-size: contain;
+      width: 3rem;
+      height: 3rem;
+      left: 0;
+      transform: translateX(-100%);
+      z-index: 6;
+    }
     @include media-breakpoint-down(md){
       font-size: 28px;
     };
@@ -958,10 +995,28 @@ header{
     }*/
     p{
       font-size: 13px;
+      a{
+        color: $drumwhite;
+        font-size: 15px;
+        font-family: 'futuraBold';
+        -moz-transition: all 0,2s;
+        transition: all 0.2s;
+        &:hover{
+          color: $drumblack;
+          text-decoration: unset;
+        }
+      }
     }
     h3{
       font-size: 13px;
       font-family: 'futuraBold';
+    }
+    .lesslon-btn{
+      @include media-breakpoint-up(lg){
+        position: absolute;
+        left: 3rem;
+        bottom: 3rem;
+      }
     }
     .arr-l{
       position: absolute;
@@ -1022,6 +1077,18 @@ header{
     &#konzept{
       background-image: url("/media/konzept_min.jpg");
     }
+    &#micha-maass{
+      background-image: url("/media/micha-maass2.jpeg");
+      background-position: center;
+    }
+    &#mesut-guersoy{
+      background-image: url("/media/MesutGuersoy2.jpg");
+      background-position: center;
+    }
+    &#chris-heiny{
+      background-image: url("/media/ChrisHeiny2.jpg");
+      background-position: center;
+    }
     background-size: cover;
     background-position: right;
     padding: 0;
@@ -1056,6 +1123,15 @@ header{
   .teacher{
     margin-bottom: 3rem;
     text-align: center;
+    .about-teacher{
+      color: $drumwhite;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+      &:hover{
+        color: $drumyellow;
+        text-decoration: none;
+      }
+    }
     img{
       padding: 1.5rem;
     }

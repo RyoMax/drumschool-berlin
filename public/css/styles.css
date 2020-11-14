@@ -1091,34 +1091,77 @@ header .arrow-down.scroll {
   color: #1D1D1D;
 }
 
-.lesslons {
+.lesslons, .teacher {
   /*#trapezoid {
       width: 150px;
       height: 100px;
       transform: skew(20deg);
       background: red;
   }*/
+  position: relative;
 }
 
-.lesslons .row {
+.lesslons .close, .teacher .close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  opacity: 1;
+  z-index: 6;
+}
+
+.lesslons .close i, .teacher .close i {
+  color: #BF2231;
+  border: #1D1D1D;
+  font-size: 40px;
+  text-shadow: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.lesslons .close i:hover, .teacher .close i:hover {
+  color: #ffffff;
+}
+
+.lesslons .fullscreen, .teacher .fullscreen {
+  min-height: 100vh;
+}
+
+.lesslons .row, .teacher .row {
   margin: 0;
   background-color: #BF2231;
 }
 
-.lesslons .headline {
+.lesslons .headline, .teacher .headline {
   position: relative;
   margin-bottom: 3rem;
   font-size: 32px;
   z-index: 4;
 }
 
+.lesslons .headline span, .teacher .headline span {
+  font-family: 'futuraBook';
+}
+
+.lesslons .headline::before, .teacher .headline::before {
+  position: absolute;
+  content: "";
+  background-image: url("/media/IconUnterseiten_min.jpg");
+  background-size: contain;
+  width: 3rem;
+  height: 3rem;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  z-index: 6;
+}
+
 @media (max-width: 991.98px) {
-  .lesslons .headline {
+  .lesslons .headline, .teacher .headline {
     font-size: 28px;
   }
 }
 
-.lesslons .content {
+.lesslons .content, .teacher .content {
   padding: 4rem 0 4rem 3rem;
   background-color: #BF2231;
   /*.headliner{
@@ -1194,21 +1237,42 @@ header .arrow-down.scroll {
 }
 
 @media (max-width: 767.98px) {
-  .lesslons .content {
+  .lesslons .content, .teacher .content {
     padding: 4rem 3rem 4rem 3rem;
   }
 }
 
-.lesslons .content p {
+.lesslons .content p, .teacher .content p {
   font-size: 13px;
 }
 
-.lesslons .content h3 {
+.lesslons .content p a, .teacher .content p a {
+  color: #ffffff;
+  font-size: 15px;
+  font-family: 'futuraBold';
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.lesslons .content p a:hover, .teacher .content p a:hover {
+  color: #1D1D1D;
+  text-decoration: unset;
+}
+
+.lesslons .content h3, .teacher .content h3 {
   font-size: 13px;
   font-family: 'futuraBold';
 }
 
-.lesslons .content .arr-l {
+@media (min-width: 992px) {
+  .lesslons .content .lesslon-btn, .teacher .content .lesslon-btn {
+    position: absolute;
+    left: 3rem;
+    bottom: 3rem;
+  }
+}
+
+.lesslons .content .arr-l, .teacher .content .arr-l {
   position: absolute;
   right: calc(0px - 8%);
   bottom: 1rem;
@@ -1216,19 +1280,19 @@ header .arrow-down.scroll {
 }
 
 @media (max-width: 767.98px) {
-  .lesslons .content .arr-l {
+  .lesslons .content .arr-l, .teacher .content .arr-l {
     -webkit-transform: translateX(-90%);
             transform: translateX(-90%);
   }
 }
 
-.lesslons .content .arr-l .arr {
+.lesslons .content .arr-l .arr, .teacher .content .arr-l .arr {
   position: relative;
   width: 60px;
   height: 60px;
 }
 
-.lesslons .content .arr-l .arr i {
+.lesslons .content .arr-l .arr i, .teacher .content .arr-l .arr i {
   position: absolute;
   left: 50%;
   bottom: 50%;
@@ -1237,7 +1301,7 @@ header .arrow-down.scroll {
   font-size: 50px;
 }
 
-.lesslons .content .arr-r {
+.lesslons .content .arr-r, .teacher .content .arr-r {
   position: absolute;
   right: calc(0px - 8%);
   bottom: calc(2rem + 60px);
@@ -1245,19 +1309,19 @@ header .arrow-down.scroll {
 }
 
 @media (max-width: 767.98px) {
-  .lesslons .content .arr-r {
+  .lesslons .content .arr-r, .teacher .content .arr-r {
     -webkit-transform: translateX(-90%);
             transform: translateX(-90%);
   }
 }
 
-.lesslons .content .arr-r .arr {
+.lesslons .content .arr-r .arr, .teacher .content .arr-r .arr {
   position: relative;
   width: 60px;
   height: 60px;
 }
 
-.lesslons .content .arr-r .arr i {
+.lesslons .content .arr-r .arr i, .teacher .content .arr-r .arr i {
   position: absolute;
   left: 50%;
   bottom: 50%;
@@ -1266,41 +1330,56 @@ header .arrow-down.scroll {
   font-size: 50px;
 }
 
-.lesslons .contain {
+.lesslons .contain, .teacher .contain {
   background-size: cover;
   background-position: right;
   padding: 0;
   z-index: 3;
 }
 
-.lesslons .contain#fortgeschritten {
+.lesslons .contain#fortgeschritten, .teacher .contain#fortgeschritten {
   background-image: url("/media/fortgeschritten_min.jpg");
 }
 
-.lesslons .contain#anfaenger {
+.lesslons .contain#anfaenger, .teacher .contain#anfaenger {
   background-image: url("/media/anfaenger_min.jpg");
 }
 
-.lesslons .contain#kinder {
+.lesslons .contain#kinder, .teacher .contain#kinder {
   background-image: url("/media/kinder_min.jpg");
 }
 
-.lesslons .contain#konzept {
+.lesslons .contain#konzept, .teacher .contain#konzept {
   background-image: url("/media/konzept_min.jpg");
 }
 
-.lesslons .contain .row {
+.lesslons .contain#micha-maass, .teacher .contain#micha-maass {
+  background-image: url("/media/micha-maass2.jpeg");
+  background-position: center;
+}
+
+.lesslons .contain#mesut-guersoy, .teacher .contain#mesut-guersoy {
+  background-image: url("/media/MesutGuersoy2.jpg");
+  background-position: center;
+}
+
+.lesslons .contain#chris-heiny, .teacher .contain#chris-heiny {
+  background-image: url("/media/ChrisHeiny2.jpg");
+  background-position: center;
+}
+
+.lesslons .contain .row, .teacher .contain .row {
   background-color: transparent;
 }
 
-.lesslons .contain .shadow-box {
+.lesslons .contain .shadow-box, .teacher .contain .shadow-box {
   padding: 0;
   margin: 0;
   -webkit-filter: drop-shadow(10px 10px 5px #1D1D1D);
           filter: drop-shadow(10px 10px 5px #1D1D1D);
 }
 
-.lesslons .contain .shadow-box .slash {
+.lesslons .contain .shadow-box .slash, .teacher .contain .shadow-box .slash {
   background-color: #BF2231;
   height: 100%;
   -webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
@@ -1309,7 +1388,7 @@ header .arrow-down.scroll {
 }
 
 @media (max-width: 767.98px) {
-  .lesslons .contain .shadow-box .slash {
+  .lesslons .contain .shadow-box .slash, .teacher .contain .shadow-box .slash {
     -webkit-clip-path: none;
             clip-path: none;
     background-color: transparent;
@@ -1324,6 +1403,17 @@ header .arrow-down.scroll {
 .teachers .teacher {
   margin-bottom: 3rem;
   text-align: center;
+}
+
+.teachers .teacher .about-teacher {
+  color: #ffffff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.teachers .teacher .about-teacher:hover {
+  color: #BF2231;
+  text-decoration: none;
 }
 
 .teachers .teacher img {

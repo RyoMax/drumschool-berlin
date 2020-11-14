@@ -27,9 +27,20 @@ app.get("/unterricht_kinder", function(req, res){
 });
 
 app.get("/lehrkraefte", function(req, res){
-    res.sendFile(__dirname + "/lehrkräfte.html")
-})
+    res.sendFile(__dirname + "/lehrkräfte.html");
+});
 
+app.get("/lehrkraefte/michamaass", function(req, res){
+    res.sendFile(__dirname + "/micha_maass.html");
+});
+
+app.get("/lehrkraefte/mesutguersoy", function(req, res){
+    res.sendFile(__dirname + "/mesut_guersoy.html");
+});
+
+app.get("/lehrkraefte/chrisheiny", function(req, res){
+    res.sendFile(__dirname + "/chris_heiny.html");
+});
 
 app.listen(process.env.PORT || 3000, function(){
     console.log("Server is running localy on Port 3000");
