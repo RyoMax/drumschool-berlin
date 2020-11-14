@@ -321,7 +321,7 @@ header.lp li a {
 header nav {
   background: #bf2231;
   font-family: 'futuraBold';
-  z-index: 3;
+  z-index: 6;
 }
 
 header nav #nav-logo {
@@ -1105,9 +1105,92 @@ header .arrow-down.scroll {
   background-color: #BF2231;
 }
 
+.lesslons .headline {
+  position: relative;
+  margin-bottom: 3rem;
+  font-size: 32px;
+  z-index: 4;
+}
+
+@media (max-width: 991.98px) {
+  .lesslons .headline {
+    font-size: 28px;
+  }
+}
+
 .lesslons .content {
   padding: 4rem 0 4rem 3rem;
   background-color: #BF2231;
+  /*.headliner{
+      color: $drumblack;
+      .bb{
+        border-bottom: $drumwhite 2px solid ;
+      }
+      .foreheader{
+        font-size: 18px;
+        z-index: 5;
+        @include media-breakpoint-down(lg){
+          font-size: 15px;
+        }
+        /*@include media-breakpoint-down(md){
+          font-size: 16px;
+        }
+        @include media-breakpoint-down(sm){
+          font-size: 16px;
+        }
+        &.fh-left{
+          margin-right: auto;
+          margin-left: 0;
+          @include media-breakpoint-down(sm){
+            margin: auto;
+          }
+        }
+      }
+      .section-header{
+        font-size: 48px;
+        background-color: $drumyellow;
+        transform: translate(10%, -14px);
+        @include media-breakpoint-down(lg){
+          font-size: 38px;
+          transform: translate(12%, -10.5px);
+        }
+        @include media-breakpoint-down(md){
+          font-size: 30px;
+          transform: translate(7%, -8.5px);
+        }
+        @include media-breakpoint-down(sm){
+          font-size: 40px;
+          transform: translate(0%, -12px);
+        }
+        &.sh-right{
+          margin-left: auto;
+          padding-right: 0%;
+          padding-left: 0px;
+          z-index: 4;
+          @include media-breakpoint-down(sm){
+            margin: auto;
+          }
+        }
+      }
+    }
+    h1{
+      font-family: 'futuraItalic';
+      color: $drumblack;
+      font-size: 20px;
+      .head-liner{
+        display: block;
+        width: 100%;
+        text-align: right;
+        font-family: 'Bebas Neue';
+        border-top: 1px solid $drumwhite;
+        .ul{
+          //width: 100%;
+          //text-align: right;
+          font-size: 28px;
+          background-color: $drumyellow;
+        }
+      }
+    }*/
 }
 
 @media (max-width: 767.98px) {
@@ -1116,107 +1199,13 @@ header .arrow-down.scroll {
   }
 }
 
-.lesslons .content .headliner {
-  color: #1D1D1D;
-}
-
-.lesslons .content .headliner .bb {
-  border-bottom: #ffffff 2px solid;
-}
-
-.lesslons .content .headliner .foreheader {
-  font-size: 18px;
-  z-index: 5;
-  /*@include media-breakpoint-down(md){
-          font-size: 16px;
-        }
-        @include media-breakpoint-down(sm){
-          font-size: 16px;
-        }*/
-}
-
-@media (max-width: 1199.98px) {
-  .lesslons .content .headliner .foreheader {
-    font-size: 15px;
-  }
-}
-
-.lesslons .content .headliner .foreheader.fh-left {
-  margin-right: auto;
-  margin-left: 0;
-}
-
-@media (max-width: 767.98px) {
-  .lesslons .content .headliner .foreheader.fh-left {
-    margin: auto;
-  }
-}
-
-.lesslons .content .headliner .section-header {
-  font-size: 48px;
-  background-color: #BF2231;
-  -webkit-transform: translate(10%, -14px);
-          transform: translate(10%, -14px);
-}
-
-@media (max-width: 1199.98px) {
-  .lesslons .content .headliner .section-header {
-    font-size: 38px;
-    -webkit-transform: translate(12%, -10.5px);
-            transform: translate(12%, -10.5px);
-  }
-}
-
-@media (max-width: 991.98px) {
-  .lesslons .content .headliner .section-header {
-    font-size: 30px;
-    -webkit-transform: translate(7%, -8.5px);
-            transform: translate(7%, -8.5px);
-  }
-}
-
-@media (max-width: 767.98px) {
-  .lesslons .content .headliner .section-header {
-    font-size: 40px;
-    -webkit-transform: translate(0%, -12px);
-            transform: translate(0%, -12px);
-  }
-}
-
-.lesslons .content .headliner .section-header.sh-right {
-  margin-left: auto;
-  padding-right: 0%;
-  padding-left: 0px;
-  z-index: 4;
-}
-
-@media (max-width: 767.98px) {
-  .lesslons .content .headliner .section-header.sh-right {
-    margin: auto;
-  }
-}
-
-.lesslons .content h1 {
-  font-family: 'futuraItalic';
-  color: #1D1D1D;
-  font-size: 20px;
-}
-
-.lesslons .content h1 .head-liner {
-  display: block;
-  width: 100%;
-  text-align: right;
-  font-family: 'Bebas Neue';
-  border-top: 1px solid #ffffff;
-}
-
-.lesslons .content h1 .head-liner .ul {
-  font-size: 28px;
-  background-color: #BF2231;
-}
-
 .lesslons .content p {
   font-size: 13px;
+}
+
+.lesslons .content h3 {
+  font-size: 13px;
+  font-family: 'futuraBold';
 }
 
 .lesslons .content .arr-l {
@@ -1278,11 +1267,26 @@ header .arrow-down.scroll {
 }
 
 .lesslons .contain {
-  background-image: url("/media/AdobeStock_213870943.jpg");
   background-size: cover;
   background-position: right;
   padding: 0;
   z-index: 3;
+}
+
+.lesslons .contain#fortgeschritten {
+  background-image: url("/media/fortgeschritten_min.jpg");
+}
+
+.lesslons .contain#anfaenger {
+  background-image: url("/media/anfaenger_min.jpg");
+}
+
+.lesslons .contain#kinder {
+  background-image: url("/media/kinder_min.jpg");
+}
+
+.lesslons .contain#konzept {
+  background-image: url("/media/konzept_min.jpg");
 }
 
 .lesslons .contain .row {

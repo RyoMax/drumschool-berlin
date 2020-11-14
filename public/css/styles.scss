@@ -285,7 +285,7 @@ header{
     //mittels DOM manipulation komplette Hintergrund Farbe mittels transition toggeln
     background: rgba(191, 34, 49, 1);
     font-family: 'futuraBold';
-    z-index: 3;
+    z-index: 6;
     #nav-logo{
       width: auto;
       height:50px;
@@ -870,6 +870,15 @@ header{
     margin: 0;
     background-color: $drumyellow;
   }
+  .headline{
+    position: relative;
+    margin-bottom: 3rem;
+    font-size: 32px;
+    z-index: 4;
+    @include media-breakpoint-down(md){
+      font-size: 28px;
+    };
+  }
   
   .content{
     padding: 4rem 0 4rem 3rem;
@@ -877,7 +886,7 @@ header{
     @include media-breakpoint-down(sm){
       padding: 4rem 3rem 4rem 3rem;
     }
-    .headliner{
+    /*.headliner{
       color: $drumblack;
       .bb{
         border-bottom: $drumwhite 2px solid ;
@@ -893,7 +902,7 @@ header{
         }
         @include media-breakpoint-down(sm){
           font-size: 16px;
-        }*/
+        }
         &.fh-left{
           margin-right: auto;
           margin-left: 0;
@@ -946,9 +955,13 @@ header{
           background-color: $drumyellow;
         }
       }
-    }
+    }*/
     p{
       font-size: 13px;
+    }
+    h3{
+      font-size: 13px;
+      font-family: 'futuraBold';
     }
     .arr-l{
       position: absolute;
@@ -997,7 +1010,18 @@ header{
     
   }
   .contain{
-    background-image: url("/media/AdobeStock_213870943.jpg");
+    &#fortgeschritten{
+      background-image: url("/media/fortgeschritten_min.jpg");
+    }
+    &#anfaenger{
+      background-image: url("/media/anfaenger_min.jpg");
+    }
+    &#kinder{
+      background-image: url("/media/kinder_min.jpg");
+    }
+    &#konzept{
+      background-image: url("/media/konzept_min.jpg");
+    }
     background-size: cover;
     background-position: right;
     padding: 0;

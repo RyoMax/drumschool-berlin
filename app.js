@@ -10,6 +10,10 @@ app.get("/", function(req, res){
     res.sendFile(__dirname + "/landingpage.html");
 });
 
+app.get("/unterricht_konzept", function(req, res){
+    res.sendFile(__dirname + "/unterricht_konzept.html");
+});
+
 app.get("/unterricht_fortgeschritten", function(req, res){
     res.sendFile(__dirname + "/unterricht_fortgeschritten.html");
 });
