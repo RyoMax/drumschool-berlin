@@ -1011,13 +1011,7 @@ header{
       font-size: 13px;
       font-family: 'futuraBold';
     }
-    .lesslon-btn{
-      @include media-breakpoint-up(lg){
-        position: absolute;
-        left: 3rem;
-        bottom: 3rem;
-      }
-    }
+    
     .arr-l{
       position: absolute;
       right: calc(0px - 8%);
@@ -1114,6 +1108,15 @@ header{
           background-color: transparent;
         }
       }
+    }
+  }
+}
+.teacher{
+  .lesslon-btn{
+    @include media-breakpoint-up(lg){
+      position: absolute;
+      left: 3rem;
+      bottom: 3rem;
     }
   }
 }

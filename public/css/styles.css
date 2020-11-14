@@ -1264,14 +1264,6 @@ header .arrow-down.scroll {
   font-family: 'futuraBold';
 }
 
-@media (min-width: 992px) {
-  .lesslons .content .lesslon-btn, .teacher .content .lesslon-btn {
-    position: absolute;
-    left: 3rem;
-    bottom: 3rem;
-  }
-}
-
 .lesslons .content .arr-l, .teacher .content .arr-l {
   position: absolute;
   right: calc(0px - 8%);
@@ -1392,6 +1384,14 @@ header .arrow-down.scroll {
     -webkit-clip-path: none;
             clip-path: none;
     background-color: transparent;
+  }
+}
+
+@media (min-width: 992px) {
+  .teacher .lesslon-btn {
+    position: absolute;
+    left: 3rem;
+    bottom: 3rem;
   }
 }
 
