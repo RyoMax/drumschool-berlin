@@ -513,6 +513,7 @@ header{
     padding: 0 2rem;
     text-align: center;
     z-index: 3;
+    border: unset;
     @include media-breakpoint-down(md){
       padding: unset;
     }
