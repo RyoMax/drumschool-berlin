@@ -1,3 +1,5 @@
+const { error } = require("jquery");
+
 $( document ).ready(function() {
     /*function timeout() {
         setTimeout(function () {
@@ -93,6 +95,27 @@ $( document ).ready(function() {
             }
         });         
     }
+    function generateLesslonLink(){
+        var pages = ["konzept", "anfaenger", "fortgeschrittene", "kinder"];
+        var lesslonsId = $(".lesslons").attr("id");
+        var linkBack = $(".lesslons .arr-l").attr("href");
+        var linkForeword = $(".lesslons .arr-r").attr("href");
+        var index = pages.indexOf(lesslonsId);
+        var length = pages.length();
+
+        if (index == 0){
+            linkBack = "/unterricht_" + pages[length-1];
+            linkForeword = "/unterricht_" + pages[index++]
+        }else if (index == length - 1) {
+            linkBack = "/unterricht_" + pages[index--];
+            linkForeword = "/unterricht_" + pages[0]
+        } else {
+            linkBack = "/unterricht_" + pages[index--];
+            linkForeword = "/unterricht_" + pages[index++];
+        }
+        
+        console.log("folgendes" + index);
+    }
 
     jQuery.expr.filters.offscreen = function(el) {
         var rect = el.getBoundingClientRect();
@@ -116,6 +139,7 @@ $( document ).ready(function() {
         console.log("Beim Laden der Seite wurde die Höhe angepasst");
         headerResizer(e);
     });
+    generateLesslonLink();
 
     $(".welcome .more").hover(welcomeHover);
 
@@ -129,6 +153,8 @@ $( document ).ready(function() {
         newsResizer();
         lesslonResizer();
         cardResizer();
+        
+        
     })
 
     $( window ).resize(function() {
