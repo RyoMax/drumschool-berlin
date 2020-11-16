@@ -1016,7 +1016,7 @@ header{
     .arr-l{
       position: absolute;
       right: calc(0px - 8%);
-      bottom: 1rem;
+      bottom: calc(2rem + 60px);
       z-index: 4;
       @include media-breakpoint-down(sm){
         transform: translateX(-90%);
@@ -1038,7 +1038,7 @@ header{
     .arr-r{
       position: absolute;
       right: calc(0px - 8%);
-      bottom: calc(2rem + 60px);
+      bottom: 1rem;
       z-index: 4;
       @include media-breakpoint-down(sm){
         transform: translateX(-90%);

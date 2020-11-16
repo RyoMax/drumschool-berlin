@@ -1268,7 +1268,7 @@ header .arrow-down.scroll {
 .lesslons .content .arr-l, .teacher .content .arr-l {
   position: absolute;
   right: calc(0px - 8%);
-  bottom: 1rem;
+  bottom: calc(2rem + 60px);
   z-index: 4;
 }
 
@@ -1297,7 +1297,7 @@ header .arrow-down.scroll {
 .lesslons .content .arr-r, .teacher .content .arr-r {
   position: absolute;
   right: calc(0px - 8%);
-  bottom: calc(2rem + 60px);
+  bottom: 1rem;
   z-index: 4;
 }
 

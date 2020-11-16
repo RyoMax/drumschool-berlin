@@ -1,5 +1,3 @@
-const { error } = require("jquery");
-
 $( document ).ready(function() {
     /*function timeout() {
         setTimeout(function () {
@@ -96,25 +94,24 @@ $( document ).ready(function() {
         });         
     }
     function generateLesslonLink(){
-        var pages = ["konzept", "anfaenger", "fortgeschrittene", "kinder"];
+        var pages = ["konzept", "anfaenger", "fortgeschritten", "kinder"];
         var lesslonsId = $(".lesslons").attr("id");
-        var linkBack = $(".lesslons .arr-l").attr("href");
-        var linkForeword = $(".lesslons .arr-r").attr("href");
+        var linkBack = $(".lesslons .arr-l");
+        var linkForeword = $(".lesslons .arr-r");
         var index = pages.indexOf(lesslonsId);
-        var length = pages.length();
+        var length = pages.length;
 
         if (index == 0){
-            linkBack = "/unterricht_" + pages[length-1];
-            linkForeword = "/unterricht_" + pages[index++]
+            linkBack.attr("href", "/unterricht_" + pages[length - 1]);
+            linkForeword.attr("href", "/unterricht_" + pages[index + 1]);
         }else if (index == length - 1) {
-            linkBack = "/unterricht_" + pages[index--];
-            linkForeword = "/unterricht_" + pages[0]
+            linkBack.attr("href", "/unterricht_" + pages[index - 1]);
+            linkForeword.attr("href", "/unterricht_" + pages[0]);
         } else {
-            linkBack = "/unterricht_" + pages[index--];
-            linkForeword = "/unterricht_" + pages[index++];
+            linkBack.attr("href", "/unterricht_" + pages[index - 1]);
+            linkForeword.attr("href", "/unterricht_" + pages[index + 1]);
         }
         
-        console.log("folgendes" + index);
     }
 
     jQuery.expr.filters.offscreen = function(el) {
