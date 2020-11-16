@@ -1119,7 +1119,13 @@ header .arrow-down.scroll {
   transition: all 0.2s;
 }
 
-.lesslons .close i:hover, .teacher .close i:hover {
+@media (max-width: 767.98px) {
+  .lesslons .close i, .teacher .close i {
+    color: #1D1D1D;
+  }
+}
+
+.lesslons .close i:hover, .lesslons .close i:focus, .teacher .close i:hover, .teacher .close i:focus {
   color: #ffffff;
 }
 
@@ -1148,12 +1154,26 @@ header .arrow-down.scroll {
   content: "";
   background-image: url("/media/IconUnterseiten_min.jpg");
   background-size: contain;
-  width: 3rem;
-  height: 3rem;
-  left: 0;
+  width: 5.5rem;
+  height: 5.5rem;
+  left: -0.5rem;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   z-index: 6;
+}
+
+@media (max-width: 991.98px) {
+  .lesslons .headline::before, .teacher .headline::before {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .lesslons .headline::before, .teacher .headline::before {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -1163,7 +1183,7 @@ header .arrow-down.scroll {
 }
 
 .lesslons .content, .teacher .content {
-  padding: 4rem 0 4rem 3rem;
+  padding: 4rem 0 4rem 6rem;
   background-color: #BF2231;
   /*.headliner{
       color: $drumblack;
@@ -1237,9 +1257,15 @@ header .arrow-down.scroll {
     }*/
 }
 
+@media (max-width: 991.98px) {
+  .lesslons .content, .teacher .content {
+    padding-left: 3rem;
+  }
+}
+
 @media (max-width: 767.98px) {
   .lesslons .content, .teacher .content {
-    padding: 4rem 3rem 4rem 3rem;
+    padding: 4rem 2rem;
   }
 }
 
@@ -1255,7 +1281,7 @@ header .arrow-down.scroll {
   transition: all 0.2s;
 }
 
-.lesslons .content p a:hover, .teacher .content p a:hover {
+.lesslons .content p a:hover, .lesslons .content p a:focus, .teacher .content p a:hover, .teacher .content p a:focus {
   color: #1D1D1D;
   text-decoration: unset;
 }
@@ -1412,7 +1438,7 @@ header .arrow-down.scroll {
   transition: all 0.2s;
 }
 
-.teachers .teacher .about-teacher:hover {
+.teachers .teacher .about-teacher:hover, .teachers .teacher .about-teacher:focus {
   color: #BF2231;
   text-decoration: none;
 }

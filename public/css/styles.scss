@@ -881,7 +881,10 @@ header{
       text-shadow: none;
       -moz-transition: all 0.2s;
       transition: all 0.2s;
-      &:hover{
+      @include media-breakpoint-down(sm){
+        color: $drumblack;
+      }
+      &:hover, &:focus{
         color: $drumwhite;
       }
     }
@@ -907,11 +910,19 @@ header{
       content: "";
       background-image: url("/media/IconUnterseiten_min.jpg");
       background-size: contain;
-      width: 3rem;
-      height: 3rem;
-      left: 0;
+      width: 5.5rem;
+      height: 5.5rem;
+      left: -0.5rem;
       transform: translateX(-100%);
       z-index: 6;
+      @include media-breakpoint-down(md){
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+      @include media-breakpoint-down(sm){
+        width: 1.5rem;
+        height: 1.5rem;
+      }
     }
     @include media-breakpoint-down(md){
       font-size: 28px;
@@ -919,11 +930,15 @@ header{
   }
   
   .content{
-    padding: 4rem 0 4rem 3rem;
+    padding: 4rem 0 4rem 6rem;
     background-color: $drumyellow;
-    @include media-breakpoint-down(sm){
-      padding: 4rem 3rem 4rem 3rem;
+    @include media-breakpoint-down(md){
+      padding-left: 3rem;
     }
+    @include media-breakpoint-down(sm){
+      padding: 4rem 2rem; 
+    }
+    
     /*.headliner{
       color: $drumblack;
       .bb{
@@ -1002,7 +1017,7 @@ header{
         font-family: 'futuraBold';
         -moz-transition: all 0,2s;
         transition: all 0.2s;
-        &:hover{
+        &:hover, &:focus{
           color: $drumblack;
           text-decoration: unset;
         }
@@ -1131,7 +1146,7 @@ header{
       color: $drumwhite;
       -webkit-transition: all 0.2s;
       transition: all 0.2s;
-      &:hover{
+      &:hover, &:focus{
         color: $drumyellow;
         text-decoration: none;
       }
