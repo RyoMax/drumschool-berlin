@@ -18,18 +18,33 @@ $( document ).ready(function() {
     }
     */
     
-
+/*      This one will make the down-pointing arrow in 
+        the main page disappear
+ */    
     function fadeScroll(){
         $("header .arrow-down").addClass("scroll");
     }
-
+        
+/*      This one will make the down-pointing arrow in 
+        the main page appear
+ */   
     function fadeScrollOut(){
         $("header .arrow-down").removeClass("scroll");
     }
 
+    
+/*      This one will make the  arrow in welcome section
+        hover
+ */       
     function welcomeHover(){ 
         $(".welcome .arr").toggleClass("hover"); 
     }
+       
+    
+// ALL FUNCTIONS WITH 'Reziser' ARE FOR ELEMTS WHICH POSITIONS ARE SET
+// TO ABSOLUTE AND THUS HAVE NO HEIGHT/WIDTH
+// RESIZER FUNCTIONS ARE MY SOLUTION TO GIVE THEM A SPECIFIED
+// HEIGHT/WIDTH DEPENDING ON ANOTHER ELEMENT THEY REFER TO
 
     function headerResizer(section){
         var hLine = $(section + " .section-line").height();
@@ -84,15 +99,30 @@ $( document ).ready(function() {
         var cardW = $(".service .circ").width();
         $(".service .circ").height(cardW);
     }
+
+    /* this one manages the collapses in the location section
+    to allow only one collapsed description at a time */
     function locationToggle(e){
         var current = e.target.id;
-        var collapsables = ["#collapse1", "#collapse2", "#collapse3", "#collapse4", "#collapse5", "#collapse6", ];
+        var collapsables = [
+            "#collapse1", "#collapse2", 
+            "#collapse3", "#collapse4", 
+            "#collapse5", "#collapse6", 
+        ];
         collapsables.forEach(i => {
-            if($('.locations .mloc ' + i).hasClass("collapse show") && i != current){
-                $('.locations .mloc ' + i).collapse('toggle');
+            if(
+                //checks, if collapse is active on an element
+                $('.locations .mloc ' + i).hasClass("collapse show") && 
+                i != current){
+                    //if so, it will remove this 'collapse' class
+                    $('.locations .mloc ' + i).collapse('toggle');
             }
         });         
     }
+
+    /* Generates the links for the next and previous page depending on the current page
+    the links are embed to the arrow buttons. 
+    works for the unterricht pages*/
     function generateLesslonLink(){
         var pages = ["konzept", "anfaenger", "fortgeschritten", "kinder"];
         var lesslonsId = $(".lesslons").attr("id");
@@ -117,9 +147,10 @@ $( document ).ready(function() {
     jQuery.expr.filters.offscreen = function(el) {
         var rect = el.getBoundingClientRect();
         return (
-                 (rect.x + rect.width) < 0 
-                   || (rect.y + rect.height) < 0
-                   || (rect.x > window.innerWidth || rect.y > window.innerHeight)
+                 (rect.x + rect.width) < 0 ||
+                    (rect.y + rect.height) < 0 || 
+                    (rect.x > window.innerWidth ||
+                    rect.y > window.innerHeight)
                );
       };
 

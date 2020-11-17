@@ -902,8 +902,18 @@ header{
     margin-bottom: 3rem;
     font-size: 32px;
     z-index: 4;
-    span{
+    &.teacher-name{
+      position: relative;
+      display: inline-block;
       font-family: 'futuraBook';
+      text-transform: uppercase;
+      .thick{
+        position: absolute;
+        font-family: 'futuraBold';
+        bottom: -40px;
+        right: 25px;
+        transform: translateX(100%);
+      }
     }
     &::before{
       position: absolute;
@@ -1011,16 +1021,18 @@ header{
     }*/
     p{
       font-size: 13px;
-      a{
-        color: $drumwhite;
-        font-size: 15px;
-        font-family: 'futuraBold';
-        -moz-transition: all 0,2s;
-        transition: all 0.2s;
-        &:hover, &:focus{
-          color: $drumblack;
-          text-decoration: unset;
-        }
+      
+    }
+    a{
+      display: block;
+      color: $drumwhite;
+      font-size: 15px;
+      font-family: 'futuraBold';
+      -moz-transition: all 0,2s;
+      transition: all 0.2s;
+      &:hover, &:focus{
+        color: $drumblack;
+        text-decoration: unset;
       }
     }
     h3{

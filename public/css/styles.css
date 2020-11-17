@@ -1145,8 +1145,20 @@ header .arrow-down.scroll {
   z-index: 4;
 }
 
-.lesslons .headline span, .teacher .headline span {
+.lesslons .headline.teacher-name, .teacher .headline.teacher-name {
+  position: relative;
+  display: inline-block;
   font-family: 'futuraBook';
+  text-transform: uppercase;
+}
+
+.lesslons .headline.teacher-name .thick, .teacher .headline.teacher-name .thick {
+  position: absolute;
+  font-family: 'futuraBold';
+  bottom: -40px;
+  right: 25px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 .lesslons .headline::before, .teacher .headline::before {
@@ -1273,7 +1285,8 @@ header .arrow-down.scroll {
   font-size: 13px;
 }
 
-.lesslons .content p a, .teacher .content p a {
+.lesslons .content a, .teacher .content a {
+  display: block;
   color: #ffffff;
   font-size: 15px;
   font-family: 'futuraBold';
@@ -1281,7 +1294,7 @@ header .arrow-down.scroll {
   transition: all 0.2s;
 }
 
-.lesslons .content p a:hover, .lesslons .content p a:focus, .teacher .content p a:hover, .teacher .content p a:focus {
+.lesslons .content a:hover, .lesslons .content a:focus, .teacher .content a:hover, .teacher .content a:focus {
   color: #1D1D1D;
   text-decoration: unset;
 }
