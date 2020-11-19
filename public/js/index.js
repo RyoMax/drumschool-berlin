@@ -124,22 +124,37 @@ $( document ).ready(function() {
     the links are embed to the arrow buttons. 
     works for the unterricht pages*/
     function generateLesslonLink(){
-        var pages = ["konzept", "anfaenger", "fortgeschritten", "kinder"];
-        var lesslonsId = $(".lesslons").attr("id");
-        var linkBack = $(".lesslons .arr-l");
-        var linkForeword = $(".lesslons .arr-r");
+        if ($("section").hasClass("lesslons")) {
+            var pages = ["konzept", "anfaenger", "fortgeschritten", "kinder"];
+            var partLink = "/unterricht_";
+            var lesslonsId = $(".lesslons").attr("id");
+            var linkBack = $(".lesslons .arr-l");
+            var linkForeword = $(".lesslons .arr-r");
+        } else {
+            var pages = [
+                "johanfink", "michaeldau", "dimitrischristides", 
+                "berndoezsevim", "felixastor", "jantuerk", 
+                "mesutguersoy", "emanuelhauptmann", "giancarlomura", 
+                "hannesstickel", "hansschlotter", "michamaass", 
+                "tomassvensson", "derekscherzer", "chrisheiny"
+            ];
+            var partLink = "/lehrkraefte/";
+            var lesslonsId = $(".teacher").attr("id");
+            var linkBack = $(".teacher .arr-l");
+            var linkForeword = $(".teacher .arr-r");
+        }
         var index = pages.indexOf(lesslonsId);
         var length = pages.length;
 
         if (index == 0){
-            linkBack.attr("href", "/unterricht_" + pages[length - 1]);
-            linkForeword.attr("href", "/unterricht_" + pages[index + 1]);
+            linkBack.attr("href", partLink + pages[length - 1]);
+            linkForeword.attr("href", partLink + pages[index + 1]);
         }else if (index == length - 1) {
-            linkBack.attr("href", "/unterricht_" + pages[index - 1]);
-            linkForeword.attr("href", "/unterricht_" + pages[0]);
+            linkBack.attr("href", partLink + pages[index - 1]);
+            linkForeword.attr("href", partLink + pages[0]);
         } else {
-            linkBack.attr("href", "/unterricht_" + pages[index - 1]);
-            linkForeword.attr("href", "/unterricht_" + pages[index + 1]);
+            linkBack.attr("href", partLink + pages[index - 1]);
+            linkForeword.attr("href", partLink + pages[index + 1]);
         }
         
     }
@@ -170,6 +185,10 @@ $( document ).ready(function() {
     generateLesslonLink();
 
     $(".welcome .more").hover(welcomeHover);
+    if($("section").hasClass("teacher")){
+        console.log("this is a teacher page!")
+        $("section").toggleClass("full-height");
+    };
 
     $( window ).on("load", function(){
         sections.forEach(function(e) {

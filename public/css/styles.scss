@@ -33,7 +33,9 @@ html{
 }
 body {
   
-  
+  .full-height{
+    height: 100vh;
+  }
 
     overflow-x: hidden;
     background-color: $drumblack;
@@ -43,6 +45,7 @@ body {
       font-family: 'FuturaBold', cursive;
     }
   }
+  
 .background-1{
   background-image: url("/media/home_bg_min.jpg");
   -webkit-background-size: cover;
@@ -890,7 +893,7 @@ header{
     }
   }
   .fullscreen{
-    min-height: 100vh;
+    min-height: 100%;
   }
   .row{
     margin: 0;
@@ -1139,7 +1142,7 @@ header{
     }
   }
 }
-.teacher{
+/*.teacher{
   .lesslon-btn{
     @include media-breakpoint-up(lg){
       position: absolute;
@@ -1147,11 +1150,11 @@ header{
       bottom: 3rem;
     }
   }
-}
+}*/
 .teachers{
   margin-top: $margin;
   margin-bottom: $margin;
-  .teacher{
+  .teacher-info{
     margin-bottom: 3rem;
     text-align: center;
     .about-teacher{

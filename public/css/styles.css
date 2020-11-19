@@ -31,6 +31,10 @@ body {
   font-family: 'futuraBook';
 }
 
+body .full-height {
+  height: 100vh;
+}
+
 body h1, body h2 {
   font-family: 'FuturaBold', cursive;
 }
@@ -1130,7 +1134,7 @@ header .arrow-down.scroll {
 }
 
 .lesslons .fullscreen, .teacher .fullscreen {
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 .lesslons .row, .teacher .row {
@@ -1427,62 +1431,63 @@ header .arrow-down.scroll {
   }
 }
 
-@media (min-width: 992px) {
-  .teacher .lesslon-btn {
-    position: absolute;
-    left: 3rem;
-    bottom: 3rem;
+/*.teacher{
+  .lesslon-btn{
+    @include media-breakpoint-up(lg){
+      position: absolute;
+      left: 3rem;
+      bottom: 3rem;
+    }
   }
-}
-
+}*/
 .teachers {
   margin-top: 200px;
   margin-bottom: 200px;
 }
 
-.teachers .teacher {
+.teachers .teacher-info {
   margin-bottom: 3rem;
   text-align: center;
 }
 
-.teachers .teacher .about-teacher {
+.teachers .teacher-info .about-teacher {
   color: #ffffff;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
-.teachers .teacher .about-teacher:hover, .teachers .teacher .about-teacher:focus {
+.teachers .teacher-info .about-teacher:hover, .teachers .teacher-info .about-teacher:focus {
   color: #BF2231;
   text-decoration: none;
 }
 
-.teachers .teacher img {
+.teachers .teacher-info img {
   padding: 1.5rem;
 }
 
-.teachers .teacher h3 {
+.teachers .teacher-info h3 {
   font-size: 28px;
 }
 
 @media (max-width: 1199.98px) {
-  .teachers .teacher h3 {
+  .teachers .teacher-info h3 {
     font-size: 24px;
   }
 }
 
 @media (max-width: 991.98px) {
-  .teachers .teacher h3 {
+  .teachers .teacher-info h3 {
     font-size: 16px;
   }
 }
 
 @media (max-width: 767.98px) {
-  .teachers .teacher h3 {
+  .teachers .teacher-info h3 {
     font-size: 24px;
   }
 }
 
-.teachers .teacher h3 .bold {
+.teachers .teacher-info h3 .bold {
   font-family: 'futuraBold';
 }
 
