@@ -83,7 +83,7 @@ $( document ).ready(function() {
         //console.log("The height of the headline section is: " + hHeight);
         $(".news .soon").height(img);
     }
-
+ /*THIS FUNCTION NEEDS TO BE FIXED!!!!!!!!!!!!!!!!!!!!!*/
     function lesslonResizer(){
         var parent = $(".lesslons .fullscreen");
         var nav = $("header").height();
@@ -142,7 +142,7 @@ $( document ).ready(function() {
                 "hannesstickel", "hansschlotter", "michamaass", 
                 "tomassvensson", "derekscherzer", "chrisheiny"
             ];
-            var partLink = "/lehrkraefte/";
+            var partLink = "/teacher/";
             var lesslonsId = $(".teacher").attr("id");
             var linkBack = $(".teacher .arr-l");
             var linkForeword = $(".teacher .arr-r");
@@ -151,14 +151,14 @@ $( document ).ready(function() {
         var length = pages.length;
 
         if (index == 0){
-            linkBack.attr("href", partLink + pages[length - 1]);
-            linkForeword.attr("href", partLink + pages[index + 1]);
+            linkBack.attr("href", partLink + pages[length - 1] + ".html");
+            linkForeword.attr("href", partLink + pages[index + 1] + ".html");
         }else if (index == length - 1) {
-            linkBack.attr("href", partLink + pages[index - 1]);
-            linkForeword.attr("href", partLink + pages[0]);
+            linkBack.attr("href", partLink + pages[index - 1] + ".html");
+            linkForeword.attr("href", partLink + pages[0] + ".html");
         } else {
-            linkBack.attr("href", partLink + pages[index - 1]);
-            linkForeword.attr("href", partLink + pages[index + 1]);
+            linkBack.attr("href", partLink + pages[index - 1] + ".html");
+            linkForeword.attr("href", partLink + pages[index + 1] + ".html");
         }
         
     }
