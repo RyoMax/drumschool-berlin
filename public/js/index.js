@@ -84,7 +84,7 @@ $( document ).ready(function() {
         $(".news .soon").height(img);
     }
 
-    function lessslonResizer(){
+    function lesslonResizer(){
         var parent = $(".lesslons .fullscreen");
         var nav = $("header").height();
         var diff = parent.height() - nav;

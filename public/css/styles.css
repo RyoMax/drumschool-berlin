@@ -1142,10 +1142,6 @@ header .arrow-down.scroll {
   min-height: 100vh;
 }
 
-.lesslons .inherit-height, .teacher .inherit-height {
-  height: inherit;
-}
-
 .lesslons .row, .teacher .row {
   margin: 0;
   background-color: #BF2231;

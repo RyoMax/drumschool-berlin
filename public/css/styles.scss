@@ -897,9 +897,7 @@ header{
   .fullscreen{
     min-height: 100vh;
   }
-  .inherit-height{
-    height: inherit;
-  }
+
   .row{
     margin: 0;
     background-color: $drumyellow;
@@ -946,6 +944,7 @@ header{
       font-size: 28px;
     };
   }
+  .lesslon .fullscreen .full{}
   
   .content{
     padding: 4rem 0 4rem 6rem;
