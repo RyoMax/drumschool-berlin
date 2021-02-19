@@ -15,16 +15,16 @@ $margin: 200px;
 }*/
 @font-face {
   font-family: futuraBook;
-  src: url("/fonts/futura/Futura Book.ttf");
+  src: url("../fonts/futura/Futura Book.ttf");
 }
 @font-face {
   font-family: futuraBold;
-  src: url("/fonts/futura/FuturaStd Bold.ttf");
+  src: url("../fonts/futura/FuturaStd Bold.ttf");
   font-weight: bold;
 }
 @font-face {
   font-family: futuraItalic;
-  src: url("/fonts/futura/Futura Std Medium Oblique.ttf");
+  src: url("../fonts/futura/Futura Std Medium Oblique.ttf");
 }
 /*------------------------------------------------- */
 *{
@@ -49,7 +49,7 @@ body {
   }
   
 .background-1{
-  background-image: url("/media/home_bg_min.jpg");
+  background-image: url("../media/home_bg_min.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -70,7 +70,7 @@ body {
   background-repeat: no-repeat;
 }*/
 .background-3{
-  background-image: url("/media/stage-2089831_1280.jpg");
+  background-image: url("../media/stage-2089831_1280.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -465,7 +465,7 @@ header{
       }
     }
     .contain{
-      background-image: url("/media/DrummerSW-2_min.jpg");
+      background-image: url("../media/DrummerSW-2_min.jpg");
       background-size: cover;
       background-position: center;
       padding: 0;
@@ -924,7 +924,7 @@ header{
     &::before{
       position: absolute;
       content: "";
-      background-image: url("/media/IconUnterseiten_min.jpg");
+      background-image: url("../media/IconUnterseiten_min.jpg");
       background-size: contain;
       width: 5.5rem;
       height: 5.5rem;
@@ -1094,27 +1094,27 @@ header{
   }
   .contain{
     &#fortgeschritten{
-      background-image: url("/media/fortgeschritten_min.jpg");
+      background-image: url("../media/fortgeschritten_min.jpg");
     }
     &#anfaenger{
-      background-image: url("/media/anfaenger_min.jpg");
+      background-image: url("../media/anfaenger_min.jpg");
     }
     &#kinder{
-      background-image: url("/media/kinder_min.jpg");
+      background-image: url("../media/kinder_min.jpg");
     }
     &#konzept{
-      background-image: url("/media/konzept_min.jpg");
+      background-image: url("../media/konzept_min.jpg");
     }
     &#micha-maass{
-      background-image: url("/media/micha-maass2.jpeg");
+      background-image: url("../media/micha-maass2.jpeg");
       background-position: center;
     }
     &#mesut-guersoy{
-      background-image: url("/media/MesutGuersoy2.jpg");
+      background-image: url("../media/MesutGuersoy2.jpg");
       background-position: center;
     }
     &#chris-heiny{
-      background-image: url("/media/ChrisHeiny2.jpg");
+      background-image: url("../media/ChrisHeiny2.jpg");
       background-position: center;
     }
     background-size: cover;
@@ -1194,7 +1194,7 @@ footer{
   margin-top: $margin;
   padding-top: 44px;
   padding-bottom: 2rem;
-  background-image: url("/media/FooterGrafik_min.png");
+  background-image: url("../media/FooterGrafik_min.png");
   background-color: $drumyellow;
   background-repeat: no-repeat;
   background-position: right;
