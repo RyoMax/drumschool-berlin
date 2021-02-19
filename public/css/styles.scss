@@ -27,7 +27,9 @@ $margin: 200px;
   src: url("/fonts/futura/Futura Std Medium Oblique.ttf");
 }
 /*------------------------------------------------- */
-
+*{
+  box-sizing: border-box;
+}
 html{
   overflow-x: hidden;
 }
@@ -893,7 +895,10 @@ header{
     }
   }
   .fullscreen{
-    min-height: 100%;
+    min-height: 100vh;
+  }
+  .inherit-height{
+    height: inherit;
   }
   .row{
     margin: 0;

@@ -84,11 +84,15 @@ $( document ).ready(function() {
         $(".news .soon").height(img);
     }
 
-    function lesslonResizer(){
-        var parent = $(".lesslons .content-box").height();
+    function lessslonResizer(){
+        var parent = $(".lesslons .fullscreen");
+        var nav = $("header").height();
+        var diff = parent.height() - nav;
         var child = $(".lesslons .contain .shadow-box");
-        if (parent != null){
-            child.height(parent + 128);
+        if (parent.height() != null){
+            parent.height(diff)
+            child.height(diff + 128);
+            console.log("the whole section is: " + diff + ", height, while the nav is: " + nav)
         }else{
             parent = $(".welcome .content-box").height();
             child = $(".welcome .contain .shadow-box");

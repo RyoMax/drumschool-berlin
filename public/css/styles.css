@@ -20,6 +20,11 @@
 }
 
 /*------------------------------------------------- */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html {
   overflow-x: hidden;
 }
@@ -1134,7 +1139,11 @@ header .arrow-down.scroll {
 }
 
 .lesslons .fullscreen, .teacher .fullscreen {
-  min-height: 100%;
+  min-height: 100vh;
+}
+
+.lesslons .inherit-height, .teacher .inherit-height {
+  height: inherit;
 }
 
 .lesslons .row, .teacher .row {
