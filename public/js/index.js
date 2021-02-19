@@ -136,11 +136,11 @@ $( document ).ready(function() {
             var linkForeword = $(".lesslons .arr-r");
         } else {
             var pages = [
-                "johanfink", "michaeldau", "dimitrischristides", 
-                "berndoezsevim", "felixastor", "jantuerk", 
-                "mesutguersoy", "emanuelhauptmann", "giancarlomura", 
-                "hannesstickel", "hansschlotter", "michamaass", 
-                "tomassvensson", "derekscherzer", "chrisheiny"
+                "johan_fink", "michael_dau", "dimitris_christides", 
+                "bernd_oezsevim", "felix_astor", "jan_tuerk", 
+                "mesut_guersoy", "emanuel_hauptmann", "giancarlo_mura", 
+                "hannes_stickel", "hans_schlotter", "micha_maass", 
+                "tomas_svensson", "derek_scherzer", "chris_heiny"
             ];
             var partLink = "/teacher/";
             var lesslonsId = $(".teacher").attr("id");
