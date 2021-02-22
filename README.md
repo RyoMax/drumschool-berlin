@@ -20,8 +20,9 @@ https://enigmatic-lowlands-67508.herokuapp.com
 - [ ] set up an automated email transfer
 
 **Bugfixes**
-- [ ] the content height on the Unterricht pages should be similar to the devices
-- [ ] the slash height on the same pages should be adjusted in the same way
+- [X] the content height on the Unterricht pages should be similar to the devices
+- [X] the slash height on the same pages should be adjusted in the same way
+- [ ] overlapping on section on Unterricht pages
 
 ## **SEO related tasks**
 
