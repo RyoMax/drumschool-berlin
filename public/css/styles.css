@@ -416,6 +416,10 @@ header .arrow-down.scroll {
   color: #ffffff;
 }
 
+.welcome .row .fullscreen {
+  height: 100%;
+}
+
 .welcome .row .content {
   position: relative;
   padding: 4rem 0 4rem 6rem;
@@ -1139,7 +1143,7 @@ header .arrow-down.scroll {
 }
 
 .lesslons .fullscreen, .teacher .fullscreen {
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 .lesslons .row, .teacher .row {
@@ -1378,19 +1382,19 @@ header .arrow-down.scroll {
   z-index: 3;
 }
 
-.lesslons .contain#fortgeschritten, .teacher .contain#fortgeschritten {
+.lesslons .contain#bg-fortgeschritten, .teacher .contain#bg-fortgeschritten {
   background-image: url("../media/fortgeschritten_min.jpg");
 }
 
-.lesslons .contain#anfaenger, .teacher .contain#anfaenger {
+.lesslons .contain#bg-anfaenger, .teacher .contain#bg-anfaenger {
   background-image: url("../media/anfaenger_min.jpg");
 }
 
-.lesslons .contain#kinder, .teacher .contain#kinder {
+.lesslons .contain#bg-kinder, .teacher .contain#bg-kinder {
   background-image: url("../media/kinder_min.jpg");
 }
 
-.lesslons .contain#konzept, .teacher .contain#konzept {
+.lesslons .contain#bg-konzept, .teacher .contain#bg-konzept {
   background-image: url("../media/konzept_min.jpg");
 }
 

@@ -357,6 +357,9 @@ header{
     margin: 0;
     background-color: $drumyellow;
     color: $drumwhite;
+    .fullscreen{
+      height: 100%;
+    }
     .content{
       position: relative;
       padding: 4rem 0 4rem 6rem;
@@ -872,6 +875,7 @@ header{
       transform: skew(20deg);
       background: red;
   }*/
+  //min-height: 100vh;
   position: relative;
   .close{
     position: absolute;
@@ -895,7 +899,7 @@ header{
     }
   }
   .fullscreen{
-    min-height: 100vh;
+    min-height: 100%;
   }
 
   .row{
@@ -1093,16 +1097,16 @@ header{
     
   }
   .contain{
-    &#fortgeschritten{
+    &#bg-fortgeschritten{
       background-image: url("../media/fortgeschritten_min.jpg");
     }
-    &#anfaenger{
+    &#bg-anfaenger{
       background-image: url("../media/anfaenger_min.jpg");
     }
-    &#kinder{
+    &#bg-kinder{
       background-image: url("../media/kinder_min.jpg");
     }
-    &#konzept{
+    &#bg-konzept{
       background-image: url("../media/konzept_min.jpg");
     }
     &#micha-maass{

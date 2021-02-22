@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function () {
     /*function timeout() {
         setTimeout(function () {
             // Do Something Here
@@ -17,36 +17,36 @@ $( document ).ready(function() {
         //console.log(divHeight);
     }
     */
-    
-/*      This one will make the down-pointing arrow in 
-        the main page disappear
- */    
-    function fadeScroll(){
+
+    /*      This one will make the down-pointing arrow in 
+            the main page disappear
+     */
+    function fadeScroll() {
         $("header .arrow-down").addClass("scroll");
     }
-        
-/*      This one will make the down-pointing arrow in 
-        the main page appear
- */   
-    function fadeScrollOut(){
+
+    /*      This one will make the down-pointing arrow in 
+            the main page appear
+     */
+    function fadeScrollOut() {
         $("header .arrow-down").removeClass("scroll");
     }
 
-    
-/*      This one will make the  arrow in welcome section
-        hover
- */       
-    function welcomeHover(){ 
-        $(".welcome .arr").toggleClass("hover"); 
-    }
-       
-    
-// ALL FUNCTIONS WITH 'Reziser' ARE FOR ELEMTS WHICH POSITIONS ARE SET
-// TO ABSOLUTE AND THUS HAVE NO HEIGHT/WIDTH
-// RESIZER FUNCTIONS ARE MY SOLUTION TO GIVE THEM A SPECIFIED
-// HEIGHT/WIDTH DEPENDING ON ANOTHER ELEMENT THEY REFER TO
 
-    function headerResizer(section){
+    /*      This one will make the  arrow in welcome section
+            hover
+     */
+    function welcomeHover() {
+        $(".welcome .arr").toggleClass("hover");
+    }
+
+
+    // ALL FUNCTIONS WITH 'Reziser' ARE FOR ELEMTS WHICH POSITIONS ARE SET
+    // TO ABSOLUTE AND THUS HAVE NO HEIGHT/WIDTH
+    // RESIZER FUNCTIONS ARE MY SOLUTION TO GIVE THEM A SPECIFIED
+    // HEIGHT/WIDTH DEPENDING ON ANOTHER ELEMENT THEY REFER TO
+
+    function headerResizer(section) {
         var hLine = $(section + " .section-line").height();
         var dLine = $(section + " .down-line").height();
         var hHeight = hLine + dLine;
@@ -54,16 +54,16 @@ $( document ).ready(function() {
         $(section + " .headliner").height(hHeight);
     }
 
-    function mapResizer(){
+    function mapResizer() {
         var mapWidth = $(".locations #map").width();
         $(".locations #map").height(mapWidth);
     }
 
-    function getStartedResizer(){
+    function getStartedResizer() {
         var imgHeight = $(".get-started img").height();
         var contactHeight = $(".get-started .get-contact").height();
-        var screen = $( window ).width();
-        if ( screen <= 750){
+        var screen = $(window).width();
+        if (screen <= 750) {
             console.log("window width equals: " + screen);
             $(".get-started .content").height(imgHeight + contactHeight);
             $
@@ -78,56 +78,89 @@ $( document ).ready(function() {
 
     }
 
-    function newsResizer(){
+    function newsResizer() {
         var img = $(".news .soon img").height();
         //console.log("The height of the headline section is: " + hHeight);
         $(".news .soon").height(img);
     }
- /*THIS FUNCTION NEEDS TO BE FIXED!!!!!!!!!!!!!!!!!!!!!*/
-    function lesslonResizer(){
-        var parent = $(".lesslons .fullscreen");
+    /*THIS FUNCTION NEEDS TO BE FIXED!!!!!!!!!!!!!!!!!!!!!*/
+    function lesslonResizer() {
+        var target = $(".full-height");
         var nav = $("header").height();
-        var diff = parent.height() - nav;
+        var fullHeight = window.innerHeight;
+        target.css("height", fullHeight - nav + "px");
+
+        /* var content = $(".lesslons .content").height();
+        var contentBox = $(".lesslons .content-box").height();
+        
+        var padding = parseInt(
+            $(".lesslons .content").css("padding-top").replace("px", "")
+        ) +
+            parseInt(
+                $(".lesslons .content").css("padding-bottom").replace("px", "")
+            );
+        var parent = "";
         var child = $(".lesslons .contain .shadow-box");
-        if (parent.height() != null){
-            parent.height(diff)
-            child.height(diff + 128);
-            console.log("the whole section is: " + diff + ", height, while the nav is: " + nav)
-        }else{
+        var nav = $("header").height();
+        
+        if (contentBox < content) {
+            console.log("contentBox IS smaller than content!!")
+            content = contentBox + padding;
+        }
+        var padding = $(".lesslons cotent").css("padding-top") + $(".lesslons cotent").css("padding-bottom"); 
+        var diffScreen = window.innerHeight - nav;
+        var diffContent = $(".lesslons .content")
+
+        if (parent != null) {
+            child.height(parent + 128);
+            child.height(parent);
+            child.css('height', diffScreen + 'px');
+            parent.css('height', diffScreen + 'px');
+            diffContent.css("min-height", diffScreen - padding + "px" );
+            console.log("content heigt is: " +
+                content + ", the child is: " +
+                child.height() + ",  the parent is: " +
+                parent + " and the padding is: " +
+                padding);
+             if (parent > child.height()) {
+                child.height(parent);
+                 console.log("The inner box is bigger by " + content - child.height() + " px.");
+             } 
+        } else {
             parent = $(".welcome .content-box").height();
             child = $(".welcome .contain .shadow-box");
             child.height(parent + 128);
-        }
+        } */
     }
-    function cardResizer(){
+    function cardResizer() {
         var cardW = $(".service .circ").width();
         $(".service .circ").height(cardW);
     }
 
     /* this one manages the collapses in the location section
     to allow only one collapsed description at a time */
-    function locationToggle(e){
+    function locationToggle(e) {
         var current = e.target.id;
         var collapsables = [
-            "#collapse1", "#collapse2", 
-            "#collapse3", "#collapse4", 
-            "#collapse5", "#collapse6", 
+            "#collapse1", "#collapse2",
+            "#collapse3", "#collapse4",
+            "#collapse5", "#collapse6",
         ];
         collapsables.forEach(i => {
-            if(
+            if (
                 //checks, if collapse is active on an element
-                $('.locations .mloc ' + i).hasClass("collapse show") && 
-                i != current){
-                    //if so, it will remove this 'collapse' class
-                    $('.locations .mloc ' + i).collapse('toggle');
+                $('.locations .mloc ' + i).hasClass("collapse show") &&
+                i != current) {
+                //if so, it will remove this 'collapse' class
+                $('.locations .mloc ' + i).collapse('toggle');
             }
-        });         
+        });
     }
 
     /* Generates the links for the next and previous page depending on the current page
     the links are embed to the arrow buttons. 
     works for the unterricht pages*/
-    function generateLesslonLink(){
+    function generateLesslonLink() {
         if ($("section").hasClass("lesslons")) {
             var pages = ["konzept", "anfaenger", "fortgeschritten", "kinder"];
             var partLink = "/unterricht_";
@@ -136,10 +169,10 @@ $( document ).ready(function() {
             var linkForeword = $(".lesslons .arr-r");
         } else {
             var pages = [
-                "johan_fink", "michael_dau", "dimitris_christides", 
-                "bernd_oezsevim", "felix_astor", "jan_tuerk", 
-                "mesut_guersoy", "emanuel_hauptmann", "giancarlo_mura", 
-                "hannes_stickel", "hans_schlotter", "micha_maass", 
+                "johan_fink", "michael_dau", "dimitris_christides",
+                "bernd_oezsevim", "felix_astor", "jan_tuerk",
+                "mesut_guersoy", "emanuel_hauptmann", "giancarlo_mura",
+                "hannes_stickel", "hans_schlotter", "micha_maass",
                 "tomas_svensson", "derek_scherzer", "chris_heiny"
             ];
             var partLink = "/teacher/";
@@ -150,28 +183,28 @@ $( document ).ready(function() {
         var index = pages.indexOf(lesslonsId);
         var length = pages.length;
 
-        if (index == 0){
+        if (index == 0) {
             linkBack.attr("href", partLink + pages[length - 1] + ".html");
             linkForeword.attr("href", partLink + pages[index + 1] + ".html");
-        }else if (index == length - 1) {
+        } else if (index == length - 1) {
             linkBack.attr("href", partLink + pages[index - 1] + ".html");
             linkForeword.attr("href", partLink + pages[0] + ".html");
         } else {
             linkBack.attr("href", partLink + pages[index - 1] + ".html");
             linkForeword.attr("href", partLink + pages[index + 1] + ".html");
         }
-        
+
     }
 
-    jQuery.expr.filters.offscreen = function(el) {
+    jQuery.expr.filters.offscreen = function (el) {
         var rect = el.getBoundingClientRect();
         return (
-                 (rect.x + rect.width) < 0 ||
-                    (rect.y + rect.height) < 0 || 
-                    (rect.x > window.innerWidth ||
-                    rect.y > window.innerHeight)
-               );
-      };
+            (rect.x + rect.width) < 0 ||
+            (rect.y + rect.height) < 0 ||
+            (rect.x > window.innerWidth ||
+                rect.y > window.innerHeight)
+        );
+    };
 
     var sections = [".service", ".locations", ".teacher", ".news"];
     var timer;
@@ -182,20 +215,20 @@ $( document ).ready(function() {
     lesslonResizer();
     getStartedResizer();
     mapResizer();
-    sections.forEach(function(e) {
+    sections.forEach(function (e) {
         console.log("Beim Laden der Seite wurde die Höhe angepasst");
         headerResizer(e);
     });
     generateLesslonLink();
 
     $(".welcome .more").hover(welcomeHover);
-    if($("section").hasClass("teacher")){
+    if ($("section").hasClass("teacher")) {
         console.log("this is a teacher page!")
         $("section").toggleClass("full-height");
     };
 
-    $( window ).on("load", function(){
-        sections.forEach(function(e) {
+    $(window).on("load", function () {
+        sections.forEach(function (e) {
             console.log("Beim Laden der Seite wurde die Höhe angepasst");
             headerResizer(e);
         });
@@ -204,11 +237,11 @@ $( document ).ready(function() {
         newsResizer();
         lesslonResizer();
         cardResizer();
-        
-        
+
+
     })
 
-    $( window ).resize(function() {
+    $(window).resize(function () {
         //console.log("Bildschirm Größe hat sich verändert!");
         //welcomeResizer();
         mapResizer();
@@ -216,33 +249,33 @@ $( document ).ready(function() {
         newsResizer();
         lesslonResizer();
         cardResizer();
-        sections.forEach(function(e) {
+        sections.forEach(function (e) {
             //console.log(e);
             headerResizer(e);
         });
     });
 
-    $( window ).scroll(function(){
+    $(window).scroll(function () {
         window.clearTimeout(timer);
         fadeScroll();
         var offScreen = $("footer").is(":offscreen");
-        if(offScreen == true){
-            timer = window.setTimeout(function(){ fadeScrollOut(); }, 500);
+        if (offScreen == true) {
+            timer = window.setTimeout(function () { fadeScrollOut(); }, 500);
         }
     })
-    
-    
+
+
 });
 //google maps api
 function initMap() {
     // The location of Friedrichshain/Lichtenberg location
-    var defaultLoc = {lat: 52.5095829, lng: 13.4902017};
+    var defaultLoc = { lat: 52.5095829, lng: 13.4902017 };
     // The map, centered at Friedrichshain/Lichtenberg
     var map = new google.maps.Map(
-        document.getElementById('map'), {zoom: 13, center: defaultLoc});
+        document.getElementById('map'), { zoom: 13, center: defaultLoc });
     // The marker, positioned at Friedrichshain/Lichtenberg
-    var marker = new google.maps.Marker({position: defaultLoc, map: map});
-    
+    var marker = new google.maps.Marker({ position: defaultLoc, map: map });
+
     //changes the position of the marker depending on the clients choice
     function changeMarkerPosition(marker, location) {
         var latlng = new google.maps.LatLng(location.lat, location.lng);
@@ -261,19 +294,19 @@ function initMap() {
         marker.setPosition(latlng);
     }*/
 
-    var locations = [ 
+    var locations = [
         //These are the Coordinates for the locations in the districts:
 
         //Friedrichshain/Lichtenberg 
         {
             loc: "fLichtenberg",
-            lat: 52.5095829, 
+            lat: 52.5095829,
             lng: 13.4902017
         },
         //Tempelhof
-        { 
+        {
             loc: "tempelhof",
-            lat: 52.466949, 
+            lat: 52.466949,
             lng: 13.392963
         },
         //Friedrichshain/Kreuzberg
@@ -303,7 +336,7 @@ function initMap() {
     ];
     //By clicking on the district names beneath/under the Map,
     //The marker will change its position to the choosen location
-    $(".locations .location ").click(function(e){
+    $(".locations .location ").click(function (e) {
         console.log(e);
         //console.log(e.target.id);
         var currentLoc = ""
@@ -312,14 +345,14 @@ function initMap() {
         for (var i = 0; i < locations.length; i++) {
             currentLoc = locations[i].loc;
             //console.log(currentLoc)
-            if (currentLoc == newLoc){
+            if (currentLoc == newLoc) {
                 newLoc = locations[i];
             };
-            
+
         };
         //console.log("loop is over and the newLoc.lat  equals: " + newLoc.lat);
-        
-        
+
+
         changeMarkerPosition(marker, newLoc);
         changeMapPosition(map, newLoc)
     });
