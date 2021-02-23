@@ -175,7 +175,7 @@ $(document).ready(function () {
                 "hannes_stickel", "hans_schlotter", "micha_maass",
                 "tomas_svensson", "derek_scherzer", "chris_heiny"
             ];
-            var partLink = "./teacher/";
+            var partLink = "./";
             var lesslonsId = $(".teacher").attr("id");
             var linkBack = $(".teacher .arr-l");
             var linkForeword = $(".teacher .arr-r");
