@@ -163,7 +163,7 @@ $(document).ready(function () {
     function generateLesslonLink() {
         if ($("section").hasClass("lesslons")) {
             var pages = ["konzept", "anfaenger", "fortgeschritten", "kinder"];
-            var partLink = "/unterricht_";
+            var partLink = "./unterricht_";
             var lesslonsId = $(".lesslons").attr("id");
             var linkBack = $(".lesslons .arr-l");
             var linkForeword = $(".lesslons .arr-r");
@@ -175,7 +175,7 @@ $(document).ready(function () {
                 "hannes_stickel", "hans_schlotter", "micha_maass",
                 "tomas_svensson", "derek_scherzer", "chris_heiny"
             ];
-            var partLink = "/teacher/";
+            var partLink = "./teacher/";
             var lesslonsId = $(".teacher").attr("id");
             var linkBack = $(".teacher .arr-l");
             var linkForeword = $(".teacher .arr-r");
