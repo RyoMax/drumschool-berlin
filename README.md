@@ -7,7 +7,7 @@
 
 **A first, yet buggy and incomplete impression can be found here:**
 
-https://enigmatic-lowlands-67508.herokuapp.com
+https://ryomax.github.io/drumschool-berlin/
 
 
 #
