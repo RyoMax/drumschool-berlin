@@ -44,6 +44,7 @@ https://ryomax.github.io/drumschool-berlin/
 - write/rewrite text
 - add alternative description to all pictures
 - add sr-only into the "exit-to-lehrkräfte" link
+- switch measures for font-size from px to rem/em
 
 ## **Tidy up!**
 
