@@ -23,7 +23,7 @@ https://ryomax.github.io/drumschool-berlin/
 - [X] the content height on the Unterricht pages should be similar to the devices
 - [X] the slash height on the same pages should be adjusted in the same way
 - [ ] overlapping on section on Unterricht pages
-- [ ] fix the googlemap to also switch position when clicking on the address
+- [X] fix the googlemap to also switch position when clicking on the address
 
 ## **SEO related tasks**
 

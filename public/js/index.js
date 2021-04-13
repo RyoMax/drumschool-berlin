@@ -336,11 +336,16 @@ function initMap() {
     ];
     //By clicking on the district names beneath/under the Map,
     //The marker will change its position to the choosen location
-    $(".locations .location ").click(function (e) {
-        console.log(e);
-        console.log(e.target.id + "<-------------");
-        var currentLoc = ""
-        var newLoc = e.target.id;
+    $(".locations .mloc > div:nth-child(odd)").click(function (e) {
+        //console.log(e);
+        
+        var currentLoc = "";
+        //takes the id of the parent from the selected element
+        var newLoc = e.target.parentNode.id;
+        //If the parent is clicked directly take its id directly
+        if (newLoc == "") {
+            newLoc = e.target.id;
+        }
         //checks the choosen district/location
         for (var i = 0; i < locations.length; i++) {
             currentLoc = locations[i].loc;
