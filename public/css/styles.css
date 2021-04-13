@@ -1501,6 +1501,79 @@ header .arrow-down.scroll {
   font-family: 'futuraBold';
 }
 
+#contact {
+  margin: 200px 0;
+}
+
+#contact form input:not([type=submit]), #contact form select, #contact form textarea {
+  width: 100%;
+  border-radius: 20px;
+  padding: 0 1rem;
+  outline: none;
+  border: 3px solid transparent;
+}
+
+#contact form input:not([type=submit]):focus, #contact form select:focus, #contact form textarea:focus {
+  border: #BF2231 3px solid;
+}
+
+#contact form input, #contact form select {
+  height: 2.5rem;
+}
+
+#contact form textarea {
+  height: 11rem;
+  resize: none;
+  border-radius: 20px;
+}
+
+#contact form label {
+  margin: 2rem 0 .3rem .5rem;
+}
+
+#contact form .row:last-child .col-12 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (max-width: 767.98px) {
+  #contact form .row:last-child .col-12 div {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+#contact form .lesslon-btn {
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: #BF2231;
+}
+
+#contact form .lesslon-btn:hover {
+  background-color: #ffffff;
+}
+
+#contact .contacts {
+  margin-top: 3.3rem;
+  -webkit-transform: translateX(30%);
+          transform: translateX(30%);
+}
+
+#contact .contacts a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact .contacts a:hover, #contact .contacts a :active {
+  color: #A3A3A3;
+}
+
 footer {
   margin-top: 200px;
   padding-top: 44px;

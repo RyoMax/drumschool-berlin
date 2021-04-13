@@ -338,7 +338,7 @@ function initMap() {
     //The marker will change its position to the choosen location
     $(".locations .location ").click(function (e) {
         console.log(e);
-        //console.log(e.target.id);
+        console.log(e.target.id + "<-------------");
         var currentLoc = ""
         var newLoc = e.target.id;
         //checks the choosen district/location

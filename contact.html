@@ -51,7 +51,7 @@
                             <a class="dropdown-item" href="./unterricht_kinder.html">KINDER</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">LEHRKRÄFTE<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="./lehrkräfte.html">LEHRKRÄFTE</a>
                     </li>
                     <!--<li class="nav-item">
                 <a class="nav-link" href="#">NEWS</a>
@@ -60,7 +60,7 @@
                 <a class="nav-link" href="#">SCHÜLER-LOGIN</a>
               </li>-->
                     <li class="nav-item">
-                        <a class="nav-link" href="#">KONTAKT STANDORTE</a>
+                        <a class="nav-link" href="#">KONTAKT STANDORTE<span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>
@@ -68,172 +68,192 @@
     </header>
     <main>
         <section id="contact">
-            <h1>Kontakt</h1>
-            <div class="row">
-                <div class="col-12 col-md-7">
-                    <p>
-                        Melde dich hier direkt zu einer unverbindlichen und
-                        <strong>kostenlosen Probestunde</strong> an.
-                        Wir verbinden dich auf schnellstem Wege mit
-                        dem für dich passenden Lehrer - wir freuen uns
-                        darauf, dich kennenzulernen!
-                    </p>
-                    <h3>Kontaktformular</h3>
+            <div class="container">
+
+
+                <h1>Kontakt</h1>
+                <div class="row">
+                    <div class="col-12 col-md-7">
+                        <p>
+                            Melde dich hier direkt zu einer unverbindlichen und
+                            <strong>kostenlosen Probestunde</strong> an.
+                            Wir verbinden dich auf schnellstem Wege mit
+                            dem für dich passenden Lehrer - wir freuen uns
+                            darauf, dich kennenzulernen!
+                        </p>
+                        <h3>Kontaktformular</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <form action="#" method="post">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div>
+                                        <label for="name">Dein Vor- und Nachname:</label>
+                                        <input type="text" name="name" id="name" placeholder="Buddy Rich">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div>
+                                        <label for="email">Deine E-Mail Adresse:</label>
+                                        <input type="email" name="email" id="email" placeholder="buddy@rich.com">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div>
+                                        <label for="age">Dein Alter:</label>
+                                        <input type="number" name="age" id="age" min="10" max="124" placeholder="69">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div>
+                                        <label for="district">Unterrichtsort:</label>
+                                        <select name="district" id="district">
+                                            <option value="Friedrichshain/Lichtenberg">Friedrichshain/Lichtenberg
+                                            </option>
+                                            <option value="Tempelhof">Tempelhof</option>
+                                            <option value="Friedrichshain/Kreuzberg">Friedrichshain/Kreuzberg</option>
+                                            <option value="Mitte">Mitte</option>
+                                            <option value="Wedding">Wedding</option>
+                                            <option value="Pankow">Pankow</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div>
+                                        <label for="message">Deine Nachricht an uns:</label>
+                                        <textarea name="message" id="message"
+                                            placeholder="(Terminwünsche, Kenntisstand, Fragen, ...)"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div>
+                                        <input type="submit" value="ANMELDEN" class="btn lesslon-btn">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="contacts">
+                            <address>
+                                Drumschool Berlin<br>
+                                Buchberger&nbsp;Straße&nbsp;6<br>
+                                10365&nbsp;Berlin
+                            </address>
+                            <div class="contact-links">
+                                <a href="tel:+491724827101">+&nbsp;49&nbsp;172&nbsp;48&nbsp;27&nbsp;101</a> <br>
+                                <a href="mailto:info@drumschoolberlin.com">info@drumschoolberlin.com</a>
+                            </div>
+                            <div class="opening-time">
+                                <p>
+                                    Bürozeiten: <br>
+                                    Mo - Fr 120:00 Uhr bis 16:00 Uhr
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <form action="#" method="post">
-                        <div class="row">
-                            <div class="col-12 col-md-6">
-                                <div class="input-container">
-                                    <label for="name">Dein Vor- und Nachname:</label>
-                                    <input type="text" name="name" id="name" placeholder="Buddy Rich">
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="input-container">
-                                    <label for="email">Deine E-Mail Adresse:</label>
-                                    <input type="email" name="email" id="email" placeholder="buddy@rich.com">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 col-md-6">
-                                <div class="input-container">
-                                    <label for="age">Dein Alter:</label>
-                                    <input type="number" name="age" id="age" placeholder="69">
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="input-container">
-                                    <label for="district">Unterrichtsort:</label>
-                                    <select name="district" id="district">
-                                        <option value="Friedrichshain/Lichtenberg">Friedrichshain/Lichtenberg</option>
-                                        <option value="Tempelhof">Tempelhof</option>
-                                        <option value="Friedrichshain/Kreuzberg">Friedrichshain/Kreuzberg</option>
-                                        <option value="Mitte">Mitte</option>
-                                        <option value="Wedding">Wedding</option>
-                                        <option value="Pankow">Pankow</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="input-container">
-                                    <label for="message">Deine Nachricht an uns:</label>
-                                    <textarea name="message" id="message" placeholder="(Terminwünsche, Kenntisstand, Fragen, ...)"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="contacts">
-                        <address>
-                            Drumschool Berlin<br>
-                            Buchberger&nbsp;Straße&nbsp;6<br>
-                            10365&nbsp;Berlin
-                        </address>
-                        <div class="contact-links">
-                            <a href="tel:+491724827101">+&nbsp;49&nbsp;172&nbsp;48&nbsp;27&nbsp;101</a> <br>
-                            <a href="mailto:info@drumschoolberlin.com">info@drumschoolberlin.com</a>
-                        </div>
-                        <div class="opening-time">
-                            <p>
-                                Bürozeiten: <br>
-                                Mo - Fr 120:00 Uhr bis 16:00 Uhr
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>col-12
-
         </section>
         <section class="locations">
-            <h2 class="section-header sh-left">UNSERE STANDORTE</h2>
             <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-7 col-lg-6">
-                        <div id="map"></div>
-                    </div>
-                    <div class="col-10 offset-1 col-md-5 offset-md-0 col-lg-6 mloc">
-                        <div data-toggle="collapse" data-target="#collapse1" aria-expanded="false">
-                            <h3 class="location" id="fLichtenberg">Friedrichshain/Lichtenberg</h3>
-                            <p class="adress">Buchberger Str. 6, 10365 Berlin</p>
+                <h2 class="section-header sh-left">UNSERE STANDORTE</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-7 col-lg-6">
+                            <div id="map"></div>
                         </div>
-                        <div class="collapse" id="collapse1">
-                            <div class="card card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                                squid. Nihil
-                                anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                                proident.
+                        <div class="col-10 offset-1 col-md-5 offset-md-0 col-lg-6 mloc">
+                            <div data-toggle="collapse" data-target="#collapse1" aria-expanded="false">
+                                <h3 class="location" id="fLichtenberg">Friedrichshain/Lichtenberg</h3>
+                                <p class="adress">Buchberger Str. 6, 10365 Berlin</p>
                             </div>
-                        </div>
-                        <div data-toggle="collapse" data-target="#collapse2" aria-expanded="false"
-                            aria-controls="collapseExample">
-                            <h3 class="location" id="tempelhof">Tempelhof</h3>
-                            <p class="adress">Ringbahnstr. 16-20, 12099 Berlin</p>
-                        </div>
-                        <div class="collapse" id="collapse2">
-                            <div class="card card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                                squid. Nihil
-                                anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                                proident.
+                            <div class="collapse" id="collapse1">
+                                <div class="card card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad
+                                    squid. Nihil
+                                    anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                    proident.
+                                </div>
                             </div>
-                        </div>
-                        <div data-toggle="collapse" data-target="#collapse3" aria-expanded="false"
-                            aria-controls="collapseExample">
-                            <h3 class="location" id="fKreuzberg">Friedrichshain/Kreuzberg</h3>
-                            <p class="adress">Rudolfstr. 1, 10245 Berlin</p>
-                        </div>
-                        <div class="collapse" id="collapse3">
-                            <div class="card card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                                squid. Nihil
-                                anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                                proident.
+                            <div data-toggle="collapse" data-target="#collapse2" aria-expanded="false"
+                                aria-controls="collapseExample">
+                                <h3 class="location" id="tempelhof">Tempelhof</h3>
+                                <p class="adress">Ringbahnstr. 16-20, 12099 Berlin</p>
                             </div>
-                        </div>
-                        <div data-toggle="collapse" data-target="#collapse4" aria-expanded="false"
-                            aria-controls="collapseExample">
-                            <h3 class="location" id="mitte">Mitte</h3>
-                            <p class="adress">Brunnenstr. 152, 10115 Berlin</p>
-                        </div>
-                        <div class="collapse" id="collapse4">
-                            <div class="card card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                                squid. Nihil
-                                anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                                proident.
+                            <div class="collapse" id="collapse2">
+                                <div class="card card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad
+                                    squid. Nihil
+                                    anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                    proident.
+                                </div>
                             </div>
-                        </div>
-                        <div data-toggle="collapse" data-target="#collapse5" aria-expanded="false"
-                            aria-controls="collapseExample">
-                            <h3 class="location" id="wedding">Wedding</h3>
-                            <p class="adress">Schwedenstr. 14, 13357 Berlin</p>
-                        </div>
-                        <div class="collapse" id="collapse5">
-                            <div class="card card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                                squid. Nihil
-                                anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                                proident.
+                            <div data-toggle="collapse" data-target="#collapse3" aria-expanded="false"
+                                aria-controls="collapseExample">
+                                <h3 class="location" id="fKreuzberg">Friedrichshain/Kreuzberg</h3>
+                                <p class="adress">Rudolfstr. 1, 10245 Berlin</p>
                             </div>
-                        </div>
-                        <div data-toggle="collapse" data-target="#collapse6" aria-expanded="false"
-                            aria-controls="collapseExample">
-                            <h3 class="location" id="pankow">Pankow</h3>
-                            <p class="adress">Mühlenstr. 62, 13187 Berlin</p>
-                        </div>
-                        <div class="collapse" id="collapse6">
-                            <div class="card card-body no-mb">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                                squid. Nihil
-                                anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                                proident.
+                            <div class="collapse" id="collapse3">
+                                <div class="card card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad
+                                    squid. Nihil
+                                    anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                    proident.
+                                </div>
+                            </div>
+                            <div data-toggle="collapse" data-target="#collapse4" aria-expanded="false"
+                                aria-controls="collapseExample">
+                                <h3 class="location" id="mitte">Mitte</h3>
+                                <p class="adress">Brunnenstr. 152, 10115 Berlin</p>
+                            </div>
+                            <div class="collapse" id="collapse4">
+                                <div class="card card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad
+                                    squid. Nihil
+                                    anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                    proident.
+                                </div>
+                            </div>
+                            <div data-toggle="collapse" data-target="#collapse5" aria-expanded="false"
+                                aria-controls="collapseExample">
+                                <h3 class="location" id="wedding">Wedding</h3>
+                                <p class="adress">Schwedenstr. 14, 13357 Berlin</p>
+                            </div>
+                            <div class="collapse" id="collapse5">
+                                <div class="card card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad
+                                    squid. Nihil
+                                    anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                    proident.
+                                </div>
+                            </div>
+                            <div data-toggle="collapse" data-target="#collapse6" aria-expanded="false"
+                                aria-controls="collapseExample">
+                                <h3 class="location" id="pankow">Pankow</h3>
+                                <p class="adress">Mühlenstr. 62, 13187 Berlin</p>
+                            </div>
+                            <div class="collapse" id="collapse6">
+                                <div class="card card-body no-mb">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad
+                                    squid. Nihil
+                                    anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                    proident.
+                                </div>
                             </div>
                         </div>
                     </div>
