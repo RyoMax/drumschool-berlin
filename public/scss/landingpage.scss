@@ -69,7 +69,14 @@
           }
         }
       }
-      
+      .buttons{
+        @include media-breakpoint-down(sm){
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: center;
+          align-items: center;
+        }
+      }
       .more{
         position: absolute;
         bottom: calc(8px + 4rem);
@@ -93,9 +100,10 @@
            left: 4rem;
          }
         @include media-breakpoint-down(sm) {
+          position: static;
+          bottom: unset;
           left: unset;
-          right: 2rem;
-          bottom: calc(8px + 4rem);
+          right: unset;
         }
         &:hover, &:focus{
           text-decoration: none;
