@@ -83,54 +83,14 @@ $(document).ready(function () {
         //console.log("The height of the headline section is: " + hHeight);
         $(".news .soon").height(img);
     }
-    /*THIS FUNCTION NEEDS TO BE FIXED!!!!!!!!!!!!!!!!!!!!!*/
+    
     function lesslonResizer() {
         var target = $(".full-height");
         var nav = $("header").height();
         var fullHeight = window.innerHeight;
-        target.css("height", fullHeight - nav + "px");
+        target.css("min-height", fullHeight - nav + "px");
 
-        /* var content = $(".lesslons .content").height();
-        var contentBox = $(".lesslons .content-box").height();
         
-        var padding = parseInt(
-            $(".lesslons .content").css("padding-top").replace("px", "")
-        ) +
-            parseInt(
-                $(".lesslons .content").css("padding-bottom").replace("px", "")
-            );
-        var parent = "";
-        var child = $(".lesslons .contain .shadow-box");
-        var nav = $("header").height();
-        
-        if (contentBox < content) {
-            console.log("contentBox IS smaller than content!!")
-            content = contentBox + padding;
-        }
-        var padding = $(".lesslons cotent").css("padding-top") + $(".lesslons cotent").css("padding-bottom"); 
-        var diffScreen = window.innerHeight - nav;
-        var diffContent = $(".lesslons .content")
-
-        if (parent != null) {
-            child.height(parent + 128);
-            child.height(parent);
-            child.css('height', diffScreen + 'px');
-            parent.css('height', diffScreen + 'px');
-            diffContent.css("min-height", diffScreen - padding + "px" );
-            console.log("content heigt is: " +
-                content + ", the child is: " +
-                child.height() + ",  the parent is: " +
-                parent + " and the padding is: " +
-                padding);
-             if (parent > child.height()) {
-                child.height(parent);
-                 console.log("The inner box is bigger by " + content - child.height() + " px.");
-             } 
-        } else {
-            parent = $(".welcome .content-box").height();
-            child = $(".welcome .contain .shadow-box");
-            child.height(parent + 128);
-        } */
     }
     function cardResizer() {
         var cardW = $(".service .circ").width();
