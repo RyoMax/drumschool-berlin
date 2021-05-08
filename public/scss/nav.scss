@@ -1,0 +1,76 @@
+header{
+    &.lp{
+      position: relative;
+      height: 100vh;
+      li a{
+        color: $drumwhite
+      }
+    }
+    
+    
+    nav{
+      //mittels DOM manipulation komplette Hintergrund Farbe mittels transition toggeln
+      background: rgba(191, 34, 49, 1);
+      font-family: 'futuraBold';
+      z-index: 6;
+      #nav-logo{
+        width: auto;
+        height:50px;
+        @include media-breakpoint-down(md){
+          height: 40px;
+        }
+      }
+      .navbar-toggler .navbar-toggler-icon{
+        color: $drumwhite;
+      }
+      ul{
+        width: 80%;
+        .dropdown-menu{
+          background-color:rgba(191, 34, 49, 0.7);
+          border: unset;
+          a{
+            color:  rgba(255, 255, 255, 0.5);
+            &:hover, &:focus{
+              color:  rgba(255, 255, 255, 1);
+              background-color: unset;
+            }
+          }
+        }
+        
+      }
+    }
+    .drum-logo{
+      position: absolute;
+      max-width: 35%;
+      left: 50%;
+      top: 50%;
+      filter: drop-shadow(0px 0px 100px $drumblack);
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      @include media-breakpoint-down(sm){
+        max-width: 60%;
+        max-height: 55%;
+      }
+    }
+    .arrow-down{
+      position: absolute;
+      position: fixed;
+      opacity: 1;
+      visibility: visible;
+      max-width: 20%;
+      left: 50%;
+      bottom: 5%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+      z-index: 99;
+      @include media-breakpoint-down(sm){
+        max-width: 30%;
+      }
+      &.scroll{
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }

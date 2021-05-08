@@ -1,0 +1,290 @@
+.lesslons, .teacher{
+    /*#trapezoid {
+        width: 150px;
+        height: 100px;
+        transform: skew(20deg);
+        background: red;
+    }*/
+    //min-height: 100vh;
+    position: relative;
+    .close{
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      opacity: 1;
+      z-index: 6;
+      i{
+        color: $drumyellow;
+        border: $drumblack;
+        font-size: 40px;
+        text-shadow: none;
+        -moz-transition: all 0.2s;
+        transition: all 0.2s;
+        @include media-breakpoint-down(sm){
+          color: $drumblack;
+        }
+        &:hover, &:focus{
+          color: $drumwhite;
+        }
+      }
+    }
+    .fullscreen{
+      min-height: 100%;
+    }
+  
+    .row{
+      margin: 0;
+      background-color: $drumyellow;
+      
+    }
+    .headline{
+      position: relative;
+      margin-bottom: 3rem;
+      font-size: 32px;
+      z-index: 4;
+      &.teacher-name{
+        position: relative;
+        display: inline-block;
+        font-family: 'futuraBook';
+        text-transform: uppercase;
+        .thick{
+          position: absolute;
+          font-family: 'futuraBold';
+          bottom: -40px;
+          right: 25px;
+          transform: translateX(100%);
+        }
+      }
+      &::before{
+        position: absolute;
+        content: "";
+        background-image: url("../media/IconUnterseiten_min.jpg");
+        background-size: contain;
+        width: 5.5rem;
+        height: 5.5rem;
+        left: -0.5rem;
+        transform: translateX(-100%);
+        z-index: 6;
+        @include media-breakpoint-down(md){
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+        @include media-breakpoint-down(sm){
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+      @include media-breakpoint-down(md){
+        font-size: 28px;
+      };
+    }
+    
+    .content{
+      padding: 4rem 0 4rem 6rem;
+      background-color: $drumyellow;
+      @include media-breakpoint-down(md){
+        padding-left: 3rem;
+      }
+      @include media-breakpoint-down(sm){
+        padding: 4rem 2rem; 
+      }
+      
+      /*.headliner{
+        color: $drumblack;
+        .bb{
+          border-bottom: $drumwhite 2px solid ;
+        }
+        .foreheader{
+          font-size: 18px;
+          z-index: 5;
+          @include media-breakpoint-down(lg){
+            font-size: 15px;
+          }
+          /*@include media-breakpoint-down(md){
+            font-size: 16px;
+          }
+          @include media-breakpoint-down(sm){
+            font-size: 16px;
+          }
+          &.fh-left{
+            margin-right: auto;
+            margin-left: 0;
+            @include media-breakpoint-down(sm){
+              margin: auto;
+            }
+          }
+        }
+        .section-header{
+          font-size: 48px;
+          background-color: $drumyellow;
+          transform: translate(10%, -14px);
+          @include media-breakpoint-down(lg){
+            font-size: 38px;
+            transform: translate(12%, -10.5px);
+          }
+          @include media-breakpoint-down(md){
+            font-size: 30px;
+            transform: translate(7%, -8.5px);
+          }
+          @include media-breakpoint-down(sm){
+            font-size: 40px;
+            transform: translate(0%, -12px);
+          }
+          &.sh-right{
+            margin-left: auto;
+            padding-right: 0%;
+            padding-left: 0px;
+            z-index: 4;
+            @include media-breakpoint-down(sm){
+              margin: auto;
+            }
+          }
+        }
+      }
+      h1{
+        font-family: 'futuraItalic';
+        color: $drumblack;
+        font-size: 20px;
+        .head-liner{
+          display: block;
+          width: 100%;
+          text-align: right;
+          font-family: 'Bebas Neue';
+          border-top: 1px solid $drumwhite;
+          .ul{
+            //width: 100%;
+            //text-align: right;
+            font-size: 28px;
+            background-color: $drumyellow;
+          }
+        }
+      }*/
+      p{
+        font-size: 13px;
+        
+      }
+      a{
+        display: block;
+        color: $drumwhite;
+        font-size: 15px;
+        font-family: 'futuraBold';
+        -moz-transition: all 0,2s;
+        transition: all 0.2s;
+        &:hover, &:focus{
+          color: $drumblack;
+          text-decoration: unset;
+        }
+      }
+      h3{
+        font-size: 13px;
+        font-family: 'futuraBold';
+      }
+      
+      .arr-l{
+        position: absolute;
+        right: calc(0px - 8%);
+        bottom: calc(2rem + 60px);
+        z-index: 4;
+        @include media-breakpoint-down(sm){
+          transform: translateX(-90%);
+        }
+        .arr{
+          position: relative;
+          width: 60px;
+          height: 60px;
+          i{
+            position: absolute;
+            left: 50%;
+            bottom: 50%;
+            -webkit-transform: translate(-50%, 45%);
+            transform: translate(-50%, 45%);
+            font-size: 50px;
+          }
+        }
+      }
+      .arr-r{
+        position: absolute;
+        right: calc(0px - 8%);
+        bottom: 1rem;
+        z-index: 4;
+        @include media-breakpoint-down(sm){
+          transform: translateX(-90%);
+        }
+        .arr{
+          position: relative;
+          width: 60px;
+          height: 60px;
+          i{
+            position: absolute;
+            left: 50%;
+            bottom: 50%;
+            -webkit-transform: translate(-50%, 45%);
+            transform: translate(-50%, 45%);
+            font-size: 50px;
+          }
+        }
+      }
+      
+    }
+    .contain{
+      &#bg-fortgeschritten{
+        background-image: url("../media/fortgeschritten_min.jpg");
+      }
+      &#bg-anfaenger{
+        background-image: url("../media/anfaenger_min.jpg");
+      }
+      &#bg-kinder{
+        background-image: url("../media/kinder_min.jpg");
+      }
+      &#bg-konzept{
+        background-image: url("../media/konzept_min.jpg");
+      }
+      &#micha-maass{
+        background-image: url("../media/micha-maass2.jpeg");
+        background-position: center;
+      }
+      &#mesut-guersoy{
+        background-image: url("../media/MesutGuersoy2.jpg");
+        background-position: center;
+      }
+      &#chris-heiny{
+        background-image: url("../media/ChrisHeiny2.jpg");
+        background-position: center;
+      }
+      background-size: cover;
+      background-position: right;
+      padding: 0;
+      z-index: 3;
+      .row{
+        background-color: transparent;
+      }
+      .shadow-box{
+        padding: 0;
+        margin: 0;
+        filter: drop-shadow(10px 10px 5px $drumblack);
+        .slash{
+          background-color: $drumyellow;
+          height: 100%;
+          clip-path: polygon(
+            0 0,
+            100% 0,
+            0 100%
+          );
+          z-index: 4;
+          @include media-breakpoint-down(sm){
+            clip-path: none;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+  /*.teacher{
+    .lesslon-btn{
+      @include media-breakpoint-up(lg){
+        position: absolute;
+        left: 3rem;
+        bottom: 3rem;
+      }
+    }
+  }*/

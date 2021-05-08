@@ -1,0 +1,53 @@
+#contact{
+    margin: $margin 0;
+    form{
+      input:not([type=submit]), select, textarea{
+        width: 100%;
+        border-radius: 20px;
+        padding: 0 1rem;
+        outline: none;
+        border: 3px solid transparent;
+        &:focus{
+          border: $drumyellow 3px solid;
+        }
+      }
+      input, select{
+        height: 2.5rem;
+      }
+      textarea{
+        height: 11rem;
+        resize: none;
+        border-radius: 20px;
+      }
+      label{
+        margin: 2rem 0 .3rem .5rem;
+      }
+      .row:last-child .col-12 div{
+        display: flex;
+        justify-content: flex-end;
+        @include media-breakpoint-down(sm){
+          justify-content: center;
+        }
+      }
+      .lesslon-btn{
+        font-weight: bold;
+        font-size: 1rem;
+        background-color: $drumyellow;
+        &:hover{
+          background-color: $drumwhite;
+        }
+      }
+    }
+    .contacts{
+      margin-top: 3.3rem;
+      transform: translateX(30%);
+      a{
+        color: $drumwhite;
+        text-decoration: none;
+        font-weight: bold;
+        &:hover, :active{
+          color: $drumgrey;
+        }
+      }
+    }
+  }

@@ -1,0 +1,269 @@
+/* GLOBAL STYLES*/
+@import "../bootstrap-4.5.0/scss/_functions.scss";
+@import "../bootstrap-4.5.0/scss/_variables.scss";
+@import "../bootstrap-4.5.0/scss/mixins/_breakpoints.scss";
+
+
+
+/*@font-face {
+  font-family: druk-text-wide;
+  src: url("/fonts/Druk Text Wide Web Medium Regular.ttf");
+}*/
+@font-face {
+  font-family: futuraBook;
+  src: url("../fonts/futura/Futura Book.ttf");
+}
+@font-face {
+  font-family: futuraBold;
+  src: url("../fonts/futura/FuturaStd Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: futuraItalic;
+  src: url("../fonts/futura/Futura Std Medium Oblique.ttf");
+}
+/*------------------------------------------------- */
+
+body {
+  
+  .full-height{
+    height: 100vh;
+  }
+
+    overflow-x: hidden;
+    background-color: $drumblack;
+    color: $drumwhite;
+    font-family: 'futuraBook';
+    h1, h2{
+      font-family: 'FuturaBold', cursive;
+    }
+  }
+  
+.background-1{
+  background-image: url("../media/home_bg_min.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+  @include media-breakpoint-down(sm){
+    -webkit-background-size: auto;
+    -o-background-size: auto;
+    -moz-background-size:auto;
+    background-size: auto;
+  }
+}
+/*.background-2{
+  background-image: url("/media/drums-2708199_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}*/
+.background-3{
+  background-image: url("../media/stage-2089831_1280.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  @include media-breakpoint-down(sm){
+    -webkit-background-size: auto;
+    -o-background-size: auto;
+    -moz-background-size:auto;
+    background-size: auto;
+  }
+}
+
+.headliner{
+  position: relative;
+  .bb{
+    position: relative;
+    width:100%;
+    border-bottom: $drumyellow 2px solid ;
+    z-index: 1;
+  }
+  .foreheader{
+    position: inherit;
+    width: 100%;
+    margin-bottom: 0;
+    font-family: 'futuraItalic';
+    font-size: 22px;
+    letter-spacing: 200%;
+    z-index: 3;
+    @include media-breakpoint-down(lg){
+      font-size: 22px;
+    }
+    @include media-breakpoint-down(md){
+      font-size: 16px;
+    }
+    @include media-breakpoint-down(sm){
+      font-size: 12px;
+    }
+    &.fh-right{
+      right: -45%;
+      @include media-breakpoint-down(lg){
+        right: -55%;
+      }
+      @include media-breakpoint-down(sm){
+        right: 5%;
+        text-align: right;
+      } 
+    }
+    &.fh-left{
+      margin-left: auto;
+      width: max-content;
+      margin-right: 45%;
+      @include media-breakpoint-down(lg){
+        margin-right: 55%;
+      }
+      @include media-breakpoint-down(sm){
+        margin-left: 5%;
+      }
+    }
+  }
+  .section-header{
+    position: inherit;
+    width: max-content;
+    font-size: 65px;
+    background-color: $drumblack;
+    transform: translateY(-17px);
+    z-index: 2;
+    @include media-breakpoint-down(lg){
+      font-size: 60px;
+      transform: translateY(-14px);
+    }
+    @include media-breakpoint-down(md){
+      font-size: 40px;
+      transform: translateY(-11px);
+    }
+    @include media-breakpoint-down(sm){
+      font-size: 28px;
+      transform: translateY(-9px);
+    }
+    &.sh-right{
+      margin-left: auto;
+      padding-right: 5%;
+      padding-left: 6px;
+    }
+    &.sh-left{
+      padding-left: 5%;
+      padding-right: 6px;
+    }
+  }
+  /*.down-line{
+    position: absolute;
+    width: 60%;
+    height: auto;
+    bottom: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index:1;
+    @include media-breakpoint-down(sm){
+      -webkit-transform: translateY(-70%);
+      transform: translateY(-70%);
+    }
+    &.h-right{
+      right:0;
+    }
+    &.h-left{
+      left:0;
+    }
+  }*/
+}
+
+/*.headliner-left{
+  position: relative;
+  .section-line{
+    position: absolute;
+    margin-bottom: 0;
+    z-index: 2;
+  }
+  .downline{
+    position: absolute;
+    width: 60%;
+    margin-left: auto;
+    z-index:1;
+  }
+}*/
+
+.lesslon-btn{
+  position: relative;
+  margin-top: 1rem;
+  padding: 6px 25px;
+  background-color: $drumblack;
+  color: $drumwhite;
+  font-size: 14px;
+  //border: $drumblack solid 3px;
+  border-radius: 30px;
+  line-height: 20px;
+  box-shadow: none;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  @include media-breakpoint-down(md){
+    font-size: 12px;
+  }
+  span{
+    font-size: 18px;
+    font-family: 'futuraBold';
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    @include media-breakpoint-down(md){
+      font-size: 16px;
+    }
+  }
+  &:hover, &:focus{
+    background-color: $drumwhite;
+    color: $drumblack;
+    //border: $drumblack 3px solid;
+    box-shadow: 10px 10px 10px $drumblack;
+    span{
+      color: $drumyellow;
+    }
+  }
+}
+.arr{
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  //padding: 6px;
+  background-color: $drumwhite;
+  border: $drumwhite 3px solid;
+  border-radius: 100%;
+  //box-shadow: $drumblack 0 0 0;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  @include media-breakpoint-down(sm){
+    width: 38px;
+    height: 38px;
+  }
+  i{
+    display: inline-block;
+    -webkit-transform: translate(25%, -5%);
+    transform: translate(25%, -5%);
+    font-size: 25px;
+    color: $drumblack;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    @include media-breakpoint-down(sm){
+      font-size: 21px;
+    }
+  }
+  &:hover, &:focus{
+      background-color: $drumblack;
+      border: $drumblack 3px solid;
+      //box-shadow: $drumwhite 0 0 5px;
+      i{
+        color: $drumwhite;
+      }
+  }
+}
