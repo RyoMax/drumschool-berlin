@@ -16,7 +16,7 @@ https://ryomax.github.io/drumschool-berlin/
 **Creating missing pages and key features**
 - [ ] Kontakt
 - [ ] Probestunde
-- [ ] fill in placeholder links with correct ones
+- [ ] fill in placeholder links with correct ones + target="__blank"
 - [ ] set up an automated email transfer
 
 **Bugfixes**
