@@ -1160,6 +1160,9 @@ header .arrow-down.scroll {
   color: #1D1D1D;
   text-decoration: unset;
 }
+.lesslons .content a .lesslon-btn, .teacher .content a .lesslon-btn {
+  font-family: futuraBook;
+}
 .lesslons .content h3, .teacher .content h3 {
   font-size: 13px;
   font-family: "futuraBold";

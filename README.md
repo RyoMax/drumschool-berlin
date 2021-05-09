@@ -16,8 +16,11 @@ https://ryomax.github.io/drumschool-berlin/
 **Creating missing pages and key features**
 - [X] Kontakt
 - [X] Probestunde
-- [ ] fill in placeholder links with correct ones
-- [ ] set up an automated email transfer
+- [X] Fill in placeholder links with correct ones
+- [ ] Redesign landingpage 
+- [ ] Upload a picture for each teacher
+- [ ] Replace placeholder text with real text
+- [ ] Set up an automated email transfer
 
 **Bugfixes**
 - [X] the content height on the Unterricht pages should be similar to the devices
