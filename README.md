@@ -14,15 +14,15 @@ https://ryomax.github.io/drumschool-berlin/
 ## **The major priorities are**
 
 **Creating missing pages and key features**
-- [ ] Kontakt
-- [ ] Probestunde
+- [X] Kontakt
+- [X] Probestunde
 - [ ] fill in placeholder links with correct ones
 - [ ] set up an automated email transfer
 
 **Bugfixes**
 - [X] the content height on the Unterricht pages should be similar to the devices
 - [X] the slash height on the same pages should be adjusted in the same way
-- [ ] overlapping on section on Unterricht pages
+- [X] overlapping on section on Unterricht pages
 - [X] fix the googlemap to also switch position when clicking on the address
 
 ## **SEO related tasks**

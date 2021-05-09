@@ -32,7 +32,7 @@ body {
   font-family: "futuraBook";
 }
 body .full-height {
-  min-height: 100vh;
+  height: 100vh;
 }
 body h1, body h2 {
   font-family: "FuturaBold", cursive;
@@ -1358,6 +1358,11 @@ header .arrow-down.scroll {
   margin-top: 3.3rem;
   transform: translateX(30%);
 }
+@media (max-width: 767.98px) {
+  #contact .contacts {
+    transform: translateX(0%);
+  }
+}
 #contact .contacts a {
   color: #ffffff;
   text-decoration: none;
@@ -1365,6 +1370,21 @@ header .arrow-down.scroll {
 }
 #contact .contacts a:hover, #contact .contacts a :active {
   color: #A3A3A3;
+}
+
+.banner {
+  padding: 40px 0;
+  background-color: #BF2231;
+}
+.banner h3 {
+  font-family: futuraBold;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 767.98px) {
+  #contact, .locations, .banner {
+    text-align: center;
+  }
 }
 
 footer {

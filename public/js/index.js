@@ -89,8 +89,9 @@ $(document).ready(function () {
         var nav = $("header").height();
         var fullHeight = window.innerHeight;
         target.css("min-height", fullHeight - nav + "px");
-
-        
+        if($("main > section").hasClass("lesslons")){
+            target.css("height", "auto");
+        }   
     }
     function cardResizer() {
         var cardW = $(".service .circ").width();
