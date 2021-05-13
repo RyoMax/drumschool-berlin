@@ -41,10 +41,11 @@ body {
     height: 100vh;
   }
 
-    overflow-x: hidden;
-    background-color: $drumblack;
-    color: $drumwhite;
-    font-family: 'futuraBook';
+  overflow-x: hidden;
+  background-color: $drumblack;
+  color: $drumwhite;
+  font-family: 'futuraBook';
+  scroll-behavior: smooth;
     h1, h2{
       font-family: 'FuturaBold', cursive;
     }
