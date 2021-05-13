@@ -1,14 +1,11 @@
 header{
-    &.lp{
-      position: relative;
-      height: 100vh;
-      li a{
-        color: $drumwhite
-      }
+    li a{
+      color: $drumwhite
     }
     
     
-    nav{
+    
+    nav.navbar{
       //mittels DOM manipulation komplette Hintergrund Farbe mittels transition toggeln
       background: rgba(191, 34, 49, 1);
       font-family: 'futuraBold';
@@ -23,13 +20,19 @@ header{
       .navbar-toggler .navbar-toggler-icon{
         color: $drumwhite;
       }
-      ul{
+      ul.navbar-nav{
         width: 80%;
+        a.nav-link{
+          color: rgba(255, 255, 255, 0.8);
+          &:hover, &:focus{
+            color:  rgba(255, 255, 255, 1);
+          }
+        }
         .dropdown-menu{
           background-color:rgba(191, 34, 49, 0.7);
           border: unset;
           a{
-            color:  rgba(255, 255, 255, 0.5);
+            color:  rgba(255, 255, 255, 0.8);
             &:hover, &:focus{
               color:  rgba(255, 255, 255, 1);
               background-color: unset;

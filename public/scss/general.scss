@@ -9,7 +9,7 @@
   font-family: druk-text-wide;
   src: url("/fonts/Druk Text Wide Web Medium Regular.ttf");
 }*/
-@font-face {
+/* @font-face {
   font-family: futuraBook;
   src: url("../fonts/futura/Futura Book.ttf");
 }
@@ -21,11 +21,22 @@
 @font-face {
   font-family: futuraItalic;
   src: url("../fonts/futura/Futura Std Medium Oblique.ttf");
-}
+} */
 /*------------------------------------------------- */
 
 body {
-  
+  &#landing-page{
+    background-color: black;
+    background-image: url("../media/Titelbild_Mobile.webp");
+    background-size: 110% auto;
+    background-repeat: no-repeat;
+    @include media-breakpoint-up(sm){
+      background-image: url("../media/Titelbild_Desktop.webp");
+    }
+    header *{
+      background-color: transparent;
+    }
+  }
   .full-height{
     height: 100vh;
   }

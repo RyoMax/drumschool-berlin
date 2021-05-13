@@ -11,7 +11,7 @@ html {
   font-family: druk-text-wide;
   src: url("/fonts/Druk Text Wide Web Medium Regular.ttf");
 }*/
-@font-face {
+/* @font-face {
   font-family: futuraBook;
   src: url("../fonts/futura/Futura Book.ttf");
 }
@@ -23,13 +23,27 @@ html {
 @font-face {
   font-family: futuraItalic;
   src: url("../fonts/futura/Futura Std Medium Oblique.ttf");
-}
+} */
 /*------------------------------------------------- */
 body {
   overflow-x: hidden;
   background-color: #1D1D1D;
   color: #ffffff;
   font-family: "futuraBook";
+}
+body#landing-page {
+  background-color: black;
+  background-image: url("../media/Titelbild_Mobile.webp");
+  background-size: 110% auto;
+  background-repeat: no-repeat;
+}
+@media (min-width: 576px) {
+  body#landing-page {
+    background-image: url("../media/Titelbild_Desktop.webp");
+  }
+}
+body#landing-page header * {
+  background-color: transparent;
 }
 body .full-height {
   height: 100vh;
@@ -294,41 +308,43 @@ body h1, body h2 {
   color: #ffffff;
 }
 
-header.lp {
-  position: relative;
-  height: 100vh;
-}
-header.lp li a {
+header li a {
   color: #ffffff;
 }
-header nav {
+header nav.navbar {
   background: #bf2231;
   font-family: "futuraBold";
   z-index: 6;
 }
-header nav #nav-logo {
+header nav.navbar #nav-logo {
   width: auto;
   height: 50px;
 }
 @media (max-width: 991.98px) {
-  header nav #nav-logo {
+  header nav.navbar #nav-logo {
     height: 40px;
   }
 }
-header nav .navbar-toggler .navbar-toggler-icon {
+header nav.navbar .navbar-toggler .navbar-toggler-icon {
   color: #ffffff;
 }
-header nav ul {
+header nav.navbar ul.navbar-nav {
   width: 80%;
 }
-header nav ul .dropdown-menu {
+header nav.navbar ul.navbar-nav a.nav-link {
+  color: rgba(255, 255, 255, 0.8);
+}
+header nav.navbar ul.navbar-nav a.nav-link:hover, header nav.navbar ul.navbar-nav a.nav-link:focus {
+  color: white;
+}
+header nav.navbar ul.navbar-nav .dropdown-menu {
   background-color: rgba(191, 34, 49, 0.7);
   border: unset;
 }
-header nav ul .dropdown-menu a {
-  color: rgba(255, 255, 255, 0.5);
+header nav.navbar ul.navbar-nav .dropdown-menu a {
+  color: rgba(255, 255, 255, 0.8);
 }
-header nav ul .dropdown-menu a:hover, header nav ul .dropdown-menu a:focus {
+header nav.navbar ul.navbar-nav .dropdown-menu a:hover, header nav.navbar ul.navbar-nav .dropdown-menu a:focus {
   color: white;
   background-color: unset;
 }
@@ -373,7 +389,7 @@ header .arrow-down.scroll {
 
 .welcome .row {
   margin: 0;
-  background-color: #BF2231;
+  /* background-color: $drumyellow; */
   color: #ffffff;
 }
 .welcome .row .fullscreen {
@@ -382,7 +398,7 @@ header .arrow-down.scroll {
 .welcome .row .content {
   position: relative;
   padding: 4rem 0 4rem 6rem;
-  background-color: #BF2231;
+  /* background-color: $drumyellow; */
 }
 @media (max-width: 991.98px) {
   .welcome .row .content {
@@ -424,7 +440,8 @@ header .arrow-down.scroll {
 .welcome .row .content h1 .head-liner .ul {
   font-family: "FuturaBold";
   font-size: 50px;
-  background-color: #BF2231;
+  /*               background-color: $drumyellow;
+   */
 }
 @media (max-width: 1199.98px) {
   .welcome .row .content h1 .head-liner .ul {
@@ -472,6 +489,18 @@ header .arrow-down.scroll {
     align-items: center;
   }
 }
+.welcome .row .buttons .lesslon-btn {
+  background-color: #BF2231;
+}
+.welcome .row .buttons .lesslon-btn:hover, .welcome .row .buttons .lesslon-btn:focus {
+  background-color: #ffffff;
+  /* color: $drumblack;
+  //border: $drumblack 3px solid;
+  box-shadow: 10px 10px 10px $drumblack;
+  span{
+    color: $drumyellow;
+  } */
+}
 .welcome .row .more {
   position: absolute;
   bottom: calc(8px + 4rem);
@@ -509,7 +538,7 @@ header .arrow-down.scroll {
 }
 .welcome .row .more:hover, .welcome .row .more:focus {
   text-decoration: none;
-  color: #1D1D1D;
+  color: #BF2231;
 }
 @media (min-width: 992px) {
   .welcome .row .more:hover, .welcome .row .more:focus {
@@ -575,7 +604,7 @@ header .arrow-down.scroll {
 }
 .service .card {
   position: relative;
-  background-color: #1D1D1D;
+  background-color: transparent;
   padding: 0 2rem;
   text-align: center;
   z-index: 3;
@@ -764,6 +793,7 @@ header .arrow-down.scroll {
   bottom: 0;
   z-index: 5;
   width: 51%;
+  aspect-ratio: 3/2;
 }
 @media (max-width: 991.98px) {
   .get-started img {

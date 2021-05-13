@@ -1,7 +1,7 @@
 .welcome{
     .row{
       margin: 0;
-      background-color: $drumyellow;
+      /* background-color: $drumyellow; */
       color: $drumwhite;
       .fullscreen{
         height: 100%;
@@ -9,7 +9,7 @@
       .content{
         position: relative;
         padding: 4rem 0 4rem 6rem;
-        background-color: $drumyellow;
+        /* background-color: $drumyellow; */
         @include media-breakpoint-down(md){
           padding-right: 1rem;
           padding-left: 3rem;
@@ -38,8 +38,8 @@
             .ul{
               font-family: 'FuturaBold';
               font-size: 50px;
-              background-color: $drumyellow;
-              @include media-breakpoint-down(lg){
+/*               background-color: $drumyellow;
+ */              @include media-breakpoint-down(lg){
                 font-size: 40px;
               }
               @include media-breakpoint-down(md){
@@ -76,6 +76,18 @@
           justify-content: center;
           align-items: center;
         }
+        .lesslon-btn{
+          background-color: $drumyellow;
+          &:hover, &:focus{
+            background-color: $drumwhite;
+            /* color: $drumblack;
+            //border: $drumblack 3px solid;
+            box-shadow: 10px 10px 10px $drumblack;
+            span{
+              color: $drumyellow;
+            } */
+          }
+        }
       }
       .more{
         position: absolute;
@@ -108,7 +120,7 @@
         &:hover, &:focus{
           text-decoration: none;
           //font-size: 20px;
-          color: $drumblack;
+          color: $drumyellow;
           @include media-breakpoint-up(lg) {
             font-size: 20px;
           }
@@ -171,7 +183,7 @@
     }
     .card{
       position: relative;
-      background-color: $drumblack;
+      background-color: transparent;
       padding: 0 2rem;
       text-align: center;
       z-index: 3;
@@ -334,6 +346,7 @@
       bottom: 0;
       z-index: 5;
       width: 51%;
+      aspect-ratio: 3 / 2;
       @include media-breakpoint-down(md){
         width: 58%;
       }
