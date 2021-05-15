@@ -172,6 +172,7 @@ $(document).ready(function () {
 
     //welcomeResizer();
     $(".locations .mloc").click(locationToggle);
+    
     cardResizer();
     lesslonResizer();
     getStartedResizer();
@@ -297,7 +298,7 @@ function initMap() {
     ];
     //By clicking on the district names beneath/under the Map,
     //The marker will change its position to the choosen location
-    $(".locations .mloc > div:nth-child(odd)").click(function (e) {
+    $(".locations .mloc > button").click(function (e) {
         //console.log(e);
         
         var currentLoc = "";

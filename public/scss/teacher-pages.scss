@@ -166,17 +166,31 @@ nav .close-btn{
       }
       a{
         display: block;
+        max-width: max-content;
         color: $drumwhite;
         font-size: 15px;
         font-family: 'futuraBold';
         -moz-transition: all 0,2s;
         transition: all 0.2s;
+        padding: 5px 0;
+        margin: 5px 0;
+
         &:hover, &:focus{
           color: $drumblack;
           text-decoration: unset;
+          .lesslon-btn{
+            background-color: $drumwhite;
+            color: $drumblack;
+            //border: $drumblack 3px solid;
+            box-shadow: 10px 10px 10px $drumblack;
+            span{
+              color: $drumyellow;
+            }
+          }
         }
         .lesslon-btn{
           font-family: futuraBook;
+          margin: 0;
         }
       }
       h3{

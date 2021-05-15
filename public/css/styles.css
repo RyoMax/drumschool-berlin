@@ -225,7 +225,7 @@ body h1, body h2 {
     z-index:1;
   }
 }*/
-.lesslon-btn {
+a .lesslon-btn, #btn-container .lesslon-btn {
   position: relative;
   margin-top: 1rem;
   padding: 6px 25px;
@@ -235,39 +235,28 @@ body h1, body h2 {
   border-radius: 30px;
   line-height: 20px;
   box-shadow: none;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4;
-  -o-transition: all 0.4s;
+  font-family: "futuraBook";
   transition: all 0.4s;
+  /* &:hover, &:focus{
+
+  } */
 }
 @media (max-width: 991.98px) {
-  .lesslon-btn {
+  a .lesslon-btn, #btn-container .lesslon-btn {
     font-size: 12px;
   }
 }
-.lesslon-btn span {
+a .lesslon-btn span, #btn-container .lesslon-btn span {
   font-size: 18px;
   font-family: "futuraBold";
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
+  transition: all 0.2s;
 }
 @media (max-width: 991.98px) {
-  .lesslon-btn span {
+  a .lesslon-btn span, #btn-container .lesslon-btn span {
     font-size: 16px;
   }
 }
-.lesslon-btn:hover, .lesslon-btn:focus {
-  background-color: #ffffff;
-  color: #1D1D1D;
-  box-shadow: 10px 10px 10px #1D1D1D;
-}
-.lesslon-btn:hover span, .lesslon-btn:focus span {
-  color: #BF2231;
-}
-
-.arr {
+a .arr, #btn-container .arr {
   display: inline-block;
   width: 43px;
   height: 43px;
@@ -278,14 +267,22 @@ body h1, body h2 {
   -moz-transition: all 0.4;
   -o-transition: all 0.4s;
   transition: all 0.4s;
+  /* &:hover, &:focus{
+      background-color: $drumblack;
+      border: $drumblack 3px solid;
+      //box-shadow: $drumwhite 0 0 5px;
+      i{
+        color: $drumwhite;
+      }
+  } */
 }
 @media (max-width: 767.98px) {
-  .arr {
+  a .arr, #btn-container .arr {
     width: 38px;
     height: 38px;
   }
 }
-.arr i {
+a .arr i, #btn-container .arr i {
   display: inline-block;
   -webkit-transform: translate(25%, -5%);
   transform: translate(25%, -5%);
@@ -297,16 +294,32 @@ body h1, body h2 {
   transition: all 0.4s;
 }
 @media (max-width: 767.98px) {
-  .arr i {
+  a .arr i, #btn-container .arr i {
     font-size: 21px;
   }
 }
-.arr:hover, .arr:focus {
+a:not(#btn-container):hover .lesslon-btn, a:not(#btn-container):hover input.lesslon-btn:hover, a:not(#btn-container):focus .lesslon-btn, a:not(#btn-container):focus input.lesslon-btn:hover, #btn-container:not(#btn-container):hover .lesslon-btn, #btn-container:not(#btn-container):hover input.lesslon-btn:hover, #btn-container:not(#btn-container):focus .lesslon-btn, #btn-container:not(#btn-container):focus input.lesslon-btn:hover {
+  background-color: #ffffff;
+  color: #1D1D1D;
+  box-shadow: 10px 10px 10px #1D1D1D;
+}
+a:not(#btn-container):hover .lesslon-btn span, a:not(#btn-container):hover input.lesslon-btn:hover span, a:not(#btn-container):focus .lesslon-btn span, a:not(#btn-container):focus input.lesslon-btn:hover span, #btn-container:not(#btn-container):hover .lesslon-btn span, #btn-container:not(#btn-container):hover input.lesslon-btn:hover span, #btn-container:not(#btn-container):focus .lesslon-btn span, #btn-container:not(#btn-container):focus input.lesslon-btn:hover span {
+  color: #BF2231;
+}
+a:not(#btn-container):hover .arr, a:not(#btn-container):focus .arr, #btn-container:not(#btn-container):hover .arr, #btn-container:not(#btn-container):focus .arr {
   background-color: #1D1D1D;
   border: #1D1D1D 3px solid;
 }
-.arr:hover i, .arr:focus i {
+a:not(#btn-container):hover .arr i, a:not(#btn-container):focus .arr i, #btn-container:not(#btn-container):hover .arr i, #btn-container:not(#btn-container):focus .arr i {
   color: #ffffff;
+}
+a:not(a) .lesslon-btn:hover, a:not(a) .lesslon-btn:focus, #btn-container:not(a) .lesslon-btn:hover, #btn-container:not(a) .lesslon-btn:focus {
+  background-color: #ffffff;
+  color: #1D1D1D;
+  box-shadow: 0px 0px 0px 3px #BF2231;
+}
+a:not(a) .lesslon-btn:hover span, a:not(a) .lesslon-btn:focus span, #btn-container:not(a) .lesslon-btn:hover span, #btn-container:not(a) .lesslon-btn:focus span {
+  color: #BF2231;
 }
 
 header li a {
@@ -490,17 +503,15 @@ header .arrow-down.scroll {
     align-items: center;
   }
 }
-.welcome .row .buttons .lesslon-btn {
+.welcome .row .buttons a .lesslon-btn {
   background-color: #BF2231;
 }
-.welcome .row .buttons .lesslon-btn:hover, .welcome .row .buttons .lesslon-btn:focus {
+.welcome .row .buttons a:hover .lesslon-btn, .welcome .row .buttons a:focus .lesslon-btn {
   background-color: #ffffff;
-  /* color: $drumblack;
-  //border: $drumblack 3px solid;
-  box-shadow: 10px 10px 10px $drumblack;
-  span{
-    color: $drumyellow;
-  } */
+  color: #1D1D1D;
+}
+.welcome .row .buttons a:hover .lesslon-btn span, .welcome .row .buttons a:focus .lesslon-btn span {
+  color: #BF2231;
 }
 .welcome .row .more {
   position: absolute;
@@ -741,6 +752,23 @@ header .arrow-down.scroll {
 .locations .mloc {
   padding-left: 2rem;
 }
+.locations .mloc button {
+  background-color: transparent;
+  display: block;
+  width: 100%;
+  text-align: left;
+  border: none;
+  padding: unset;
+}
+.locations .mloc button:focus, .locations .mloc button:hover {
+  outline: none;
+}
+.locations .mloc button:focus .location, .locations .mloc button:hover .location {
+  color: #BF2231;
+}
+.locations .mloc button:focus-visible {
+  outline: 5px auto -webkit-focus-ring-color;
+}
 @media (max-width: 767.98px) {
   .locations .mloc {
     margin-top: 2rem;
@@ -770,6 +798,7 @@ header .arrow-down.scroll {
 }
 .locations .mloc .adress {
   font-family: "futuraItalic";
+  color: #ffffff;
 }
 .locations .mloc .card {
   background-color: #1D1D1D;
@@ -899,6 +928,11 @@ header .arrow-down.scroll {
     padding: 1rem 0;
   }
 }
+.get-started .get-contact .row .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .get-started .get-contact .row p {
   font-size: 24px;
 }
@@ -919,6 +953,7 @@ header .arrow-down.scroll {
 }
 .get-started .get-contact .row a {
   display: block;
+  max-width: max-content;
   margin-bottom: 1.5rem;
   color: #ffffff;
   font-size: 24px;
@@ -943,21 +978,25 @@ header .arrow-down.scroll {
     margin-bottom: 0;
   }
 }
-.get-started .get-contact .row .lesslon-btn {
+.get-started .get-contact .row a .lesslon-btn {
   padding: 12px 25px;
   margin: 0;
+  background-color: #3043B7;
   font-size: 18px;
   font-family: "futuraBook";
 }
 @media (max-width: 991.98px) {
-  .get-started .get-contact .row .lesslon-btn {
+  .get-started .get-contact .row a .lesslon-btn {
     font-size: 16px;
   }
 }
 @media (max-width: 767.98px) {
-  .get-started .get-contact .row .lesslon-btn {
+  .get-started .get-contact .row a .lesslon-btn {
     font-size: 14px;
   }
+}
+.get-started .get-contact .row a:hover .lesslon-btn, .get-started .get-contact .row a:focus .lesslon-btn {
+  background-color: #ffffff;
 }
 
 .news {
@@ -1182,18 +1221,30 @@ nav .close-btn:hover .close-cross, nav .close-btn:focus .close-cross {
 }
 .lesslons .content a, .teacher .content a {
   display: block;
+  max-width: max-content;
   color: #ffffff;
   font-size: 15px;
   font-family: "futuraBold";
   -moz-transition: all 0, 2s;
   transition: all 0.2s;
+  padding: 5px 0;
+  margin: 5px 0;
 }
 .lesslons .content a:hover, .lesslons .content a:focus, .teacher .content a:hover, .teacher .content a:focus {
   color: #1D1D1D;
   text-decoration: unset;
 }
+.lesslons .content a:hover .lesslon-btn, .lesslons .content a:focus .lesslon-btn, .teacher .content a:hover .lesslon-btn, .teacher .content a:focus .lesslon-btn {
+  background-color: #ffffff;
+  color: #1D1D1D;
+  box-shadow: 10px 10px 10px #1D1D1D;
+}
+.lesslons .content a:hover .lesslon-btn span, .lesslons .content a:focus .lesslon-btn span, .teacher .content a:hover .lesslon-btn span, .teacher .content a:focus .lesslon-btn span {
+  color: #BF2231;
+}
 .lesslons .content a .lesslon-btn, .teacher .content a .lesslon-btn {
   font-family: futuraBook;
+  margin: 0;
 }
 .lesslons .content h3, .teacher .content h3 {
   font-size: 13px;
@@ -1385,9 +1436,9 @@ nav .close-btn:hover .close-cross, nav .close-btn:focus .close-cross {
   font-weight: bold;
   font-size: 1rem;
   background-color: #BF2231;
-}
-#contact form .lesslon-btn:hover {
-  background-color: #ffffff;
+  /* &:hover{
+    background-color: $drumwhite;
+  } */
 }
 #contact .contacts {
   margin-top: 3.3rem;
@@ -1410,6 +1461,7 @@ nav .close-btn:hover .close-cross, nav .close-btn:focus .close-cross {
 .banner {
   padding: 40px 0;
   background-color: #BF2231;
+  text-align: center;
 }
 .banner h3 {
   font-family: futuraBold;
@@ -1432,12 +1484,17 @@ footer {
   background-position: right;
   background-size: contain;
 }
+footer p {
+  opacity: 0.8;
+}
 footer a {
   color: #ffffff;
+  opacity: 0.8;
 }
 footer a:hover, footer a:focus {
   text-decoration: none;
   color: #ffffff;
+  opacity: 1;
 }
 footer .newsletter-form {
   margin-bottom: 2rem;

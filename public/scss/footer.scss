@@ -7,11 +7,16 @@ footer{
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
+    p{
+      opacity:0.8;
+    }
     a{
       color: $drumwhite;
+      opacity: 0.8;
       &:hover, &:focus{
         text-decoration: none;
         color: $drumwhite;
+        opacity: 1;
       }
     }
     .newsletter-form{

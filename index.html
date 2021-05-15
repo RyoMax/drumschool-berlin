@@ -462,8 +462,8 @@
   <!-- Bootstrap CSS -->
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
-  <link rel="preload" href="./public/bootstrap-4.5.0/dist/css/bootstrap.min.css"
-    as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="./public/bootstrap-4.5.0/dist/css/bootstrap.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
     <link rel="stylesheet" href="./public/bootstrap-4.5.0/dist/css/bootstrap.min.css">
   </noscript>
@@ -549,7 +549,8 @@
             </p>
             <div class="buttons">
               <a href="./contact.html">
-                <button type="button" class="btn lesslon-btn">ZUR KOSTENLOSEN <br> <span>PROBESTUNDE</span></button>
+                <button type="button" tabindex="-1" class="btn lesslon-btn">ZUR KOSTENLOSEN <br>
+                  <span>PROBESTUNDE</span></button>
               </a>
               <a href="./unterricht_konzept.html" class="more">Erfahre mehr <span class="arr"><i>&rarr;</i></span></a>
             </div>
@@ -720,10 +721,11 @@
             <div id="map"></div>
           </div>
           <div class="col-10 offset-1 col-md-5 offset-md-0 col-lg-6 mloc">
-            <div id="fLichtenberg" data-toggle="collapse" data-target="#collapse1" aria-expanded="false">
+            <button id="fLichtenberg" data-toggle="collapse" data-target="#collapse1"
+              aria-expanded="false">
               <h3 class="location">Friedrichshain/Lichtenberg</h3>
               <p class="adress">Buchberger Str. 6, 10365 Berlin</p>
-            </div>
+            </button>
             <div class="collapse" id="collapse1">
               <div class="card card-body">
                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
@@ -733,11 +735,11 @@
                 proident.
               </div>
             </div>
-            <div id="tempelhof" data-toggle="collapse" data-target="#collapse2" aria-expanded="false"
+            <button id="tempelhof" data-toggle="collapse" data-target="#collapse2" aria-expanded="false"
               aria-controls="collapseExample">
               <h3 class="location">Tempelhof</h3>
               <p class="adress">Ringbahnstr. 16-20, 12099 Berlin</p>
-            </div>
+            </button>
             <div class="collapse" id="collapse2">
               <div class="card card-body">
                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
@@ -747,11 +749,11 @@
                 proident.
               </div>
             </div>
-            <div id="fKreuzberg" data-toggle="collapse" data-target="#collapse3" aria-expanded="false"
+            <button id="fKreuzberg" data-toggle="collapse" data-target="#collapse3" aria-expanded="false"
               aria-controls="collapseExample">
               <h3 class="location">Friedrichshain/Kreuzberg</h3>
               <p class="adress">Rudolfstr. 1, 10245 Berlin</p>
-            </div>
+            </button>
             <div class="collapse" id="collapse3">
               <div class="card card-body">
                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
@@ -761,11 +763,11 @@
                 proident.
               </div>
             </div>
-            <div id="mitte" data-toggle="collapse" data-target="#collapse4" aria-expanded="false"
+            <button id="mitte" data-toggle="collapse" data-target="#collapse4" aria-expanded="false"
               aria-controls="collapseExample">
               <h3 class="location">Mitte</h3>
               <p class="adress">Brunnenstr. 152, 10115 Berlin</p>
-            </div>
+            </button>
             <div class="collapse" id="collapse4">
               <div class="card card-body">
                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
@@ -775,11 +777,11 @@
                 proident.
               </div>
             </div>
-            <div id="wedding" data-toggle="collapse" data-target="#collapse5" aria-expanded="false"
+            <button id="wedding" data-toggle="collapse" data-target="#collapse5" aria-expanded="false"
               aria-controls="collapseExample">
               <h3 class="location">Wedding</h3>
               <p class="adress">Schwedenstr. 14, 13357 Berlin</p>
-            </div>
+            </button>
             <div class="collapse" id="collapse5">
               <div class="card card-body">
                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
@@ -789,11 +791,11 @@
                 proident.
               </div>
             </div>
-            <div id="pankow" data-toggle="collapse" data-target="#collapse6" aria-expanded="false"
+            <button id="pankow" data-toggle="collapse" data-target="#collapse6" aria-expanded="false"
               aria-controls="collapseExample">
               <h3 class="location">Pankow</h3>
               <p class="adress">Mühlenstr. 62, 13187 Berlin</p>
-            </div>
+            </button>
             <div class="collapse" id="collapse6">
               <div class="card card-body no-mb">
                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
@@ -824,7 +826,7 @@
               <a href="tel:+491724827101">+49 172 48 27 101</a>
               <a href="./contact.html" class="button-link">
                 <!--<button type="button" class="btn drum-btn">oder melde dich online an</button>-->
-                <button type="button" class="btn lesslon-btn">ODER MELDE DICH ONLINE AN</button>
+                <button type="button" tabindex="-1" class="btn lesslon-btn">ODER MELDE DICH ONLINE AN</button>
               </a>
             </div>
           </div>

@@ -76,16 +76,18 @@
           justify-content: center;
           align-items: center;
         }
-        .lesslon-btn{
-          background-color: $drumyellow;
+        a {
+          .lesslon-btn{
+            background-color: $drumyellow;
+          }
           &:hover, &:focus{
-            background-color: $drumwhite;
-            /* color: $drumblack;
-            //border: $drumblack 3px solid;
-            box-shadow: 10px 10px 10px $drumblack;
-            span{
-              color: $drumyellow;
-            } */
+            .lesslon-btn{
+              background-color: $drumwhite;
+              color: $drumblack;
+              span{
+                color: $drumyellow;
+              }
+            }
           }
         }
       }
@@ -296,6 +298,23 @@
     }
     .mloc{
       padding-left: 2rem;
+      button{
+        background-color: transparent;
+        display: block;
+        width: 100%;
+        text-align: left;
+        border: none;
+        padding: unset;
+        &:focus, &:hover{
+          outline: none;
+          .location{
+            color: $drumyellow;
+          }
+        }
+        &:focus-visible{
+          outline: 5px auto -webkit-focus-ring-color;
+        }
+      }
       @include media-breakpoint-down(sm){
         margin-top: 2rem;
         padding-left: 0;
@@ -319,7 +338,7 @@
       }
       .adress{
         font-family: 'futuraItalic';
-  
+        color: $drumwhite;
       }
       .card{
         background-color: $drumblack;
@@ -374,6 +393,11 @@
         @include media-breakpoint-down(md){
           padding: 1rem 0;
         }
+        .contact{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
         p{
           font-size: 24px;
           @include media-breakpoint-down(lg){
@@ -389,6 +413,7 @@
         }
         a{
           display: block;
+          max-width: max-content;
           margin-bottom: 1.5rem;
           color: $drumwhite;
           font-size: 24px;
@@ -406,17 +431,23 @@
               margin-bottom: 0;
             }
           }
-        }
-        .lesslon-btn{
-          padding: 12px 25px;
-          margin: 0;
-          font-size: 18px;
-          font-family: 'futuraBook';
-          @include media-breakpoint-down(md){
-            font-size: 16px;
+          .lesslon-btn{
+            padding: 12px 25px;
+            margin: 0;
+            background-color: $drumblue;
+            font-size: 18px;
+            font-family: 'futuraBook';
+            @include media-breakpoint-down(md){
+              font-size: 16px;
+            }
+            @include media-breakpoint-down(sm){
+              font-size: 14px;
+            }
           }
-          @include media-breakpoint-down(sm){
-            font-size: 14px;
+          &:hover, &:focus{
+            .lesslon-btn{
+              background-color: $drumwhite;
+            }
           }
         }      
       }
