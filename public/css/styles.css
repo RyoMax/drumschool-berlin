@@ -76,7 +76,7 @@ body h1, body h2 {
   background-size: cover;
   background-repeat: no-repeat;
 }*/
-.background-3 {
+/* .background-3{
   background-image: url("../media/stage-2089831_1280.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -84,18 +84,91 @@ body h1, body h2 {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-@media (max-width: 767.98px) {
-  .background-3 {
+  @include media-breakpoint-down(sm){
     -webkit-background-size: auto;
     -o-background-size: auto;
-    -moz-background-size: auto;
+    -moz-background-size:auto;
     background-size: auto;
   }
-}
-
+} */
 .headliner {
-  position: relative;
+  text-align: center;
+  margin-bottom: 50px 0;
+  /* position: relative;
+  .bb{
+    position: relative;
+    width:100%;
+    border-bottom: $drumyellow 2px solid ;
+    z-index: 1;
+  }
+  .foreheader{
+    position: inherit;
+    width: 100%;
+    margin-bottom: 0;
+    font-family: 'futuraItalic';
+    font-size: 22px;
+    letter-spacing: 200%;
+    z-index: 3;
+    @include media-breakpoint-down(lg){
+      font-size: 22px;
+    }
+    @include media-breakpoint-down(md){
+      font-size: 16px;
+    }
+    @include media-breakpoint-down(sm){
+      font-size: 12px;
+    }
+    &.fh-right{
+      right: -45%;
+      @include media-breakpoint-down(lg){
+        right: -55%;
+      }
+      @include media-breakpoint-down(sm){
+        right: 5%;
+        text-align: right;
+      } 
+    }
+    &.fh-left{
+      margin-left: auto;
+      width: max-content;
+      margin-right: 45%;
+      @include media-breakpoint-down(lg){
+        margin-right: 55%;
+      }
+      @include media-breakpoint-down(sm){
+        margin-left: 5%;
+      }
+    }
+  }
+  .section-header{
+    position: inherit;
+    width: max-content;
+    font-size: 65px;
+    background-color: $drumblack;
+    transform: translateY(-17px);
+    z-index: 2;
+    @include media-breakpoint-down(lg){
+      font-size: 60px;
+      transform: translateY(-14px);
+    }
+    @include media-breakpoint-down(md){
+      font-size: 40px;
+      transform: translateY(-11px);
+    }
+    @include media-breakpoint-down(sm){
+      font-size: 28px;
+      transform: translateY(-9px);
+    }
+    &.sh-right{
+      margin-left: auto;
+      padding-right: 5%;
+      padding-left: 6px;
+    }
+    &.sh-left{
+      padding-left: 5%;
+      padding-right: 6px;
+    }
+  } */
   /*.down-line{
     position: absolute;
     width: 60%;
@@ -116,99 +189,30 @@ body h1, body h2 {
     }
   }*/
 }
-.headliner .bb {
-  position: relative;
-  width: 100%;
-  border-bottom: #BF2231 2px solid;
-  z-index: 1;
+.headliner h2 {
+  font-family: futuraBook;
+  font-size: 1.3rem;
 }
-.headliner .foreheader {
-  position: inherit;
-  width: 100%;
-  margin-bottom: 0;
-  font-family: "futuraItalic";
-  font-size: 22px;
-  letter-spacing: 200%;
-  z-index: 3;
-}
-@media (max-width: 1199.98px) {
-  .headliner .foreheader {
-    font-size: 22px;
+@media (min-width: 576px) {
+  .headliner h2 {
+    font-size: 1.8rem;
   }
 }
-@media (max-width: 991.98px) {
-  .headliner .foreheader {
-    font-size: 16px;
+@media (min-width: 992px) {
+  .headliner h2 {
+    font-size: 2.2rem;
   }
 }
-@media (max-width: 767.98px) {
-  .headliner .foreheader {
-    font-size: 12px;
+@media (min-width: 1200px) {
+  .headliner h2 {
+    font-size: 3rem;
   }
 }
-.headliner .foreheader.fh-right {
-  right: -45%;
-}
-@media (max-width: 1199.98px) {
-  .headliner .foreheader.fh-right {
-    right: -55%;
-  }
-}
-@media (max-width: 767.98px) {
-  .headliner .foreheader.fh-right {
-    right: 5%;
-    text-align: right;
-  }
-}
-.headliner .foreheader.fh-left {
-  margin-left: auto;
-  width: max-content;
-  margin-right: 45%;
-}
-@media (max-width: 1199.98px) {
-  .headliner .foreheader.fh-left {
-    margin-right: 55%;
-  }
-}
-@media (max-width: 767.98px) {
-  .headliner .foreheader.fh-left {
-    margin-left: 5%;
-  }
-}
-.headliner .section-header {
-  position: inherit;
-  width: max-content;
-  font-size: 65px;
-  background-color: #1D1D1D;
-  transform: translateY(-17px);
-  z-index: 2;
-}
-@media (max-width: 1199.98px) {
-  .headliner .section-header {
-    font-size: 60px;
-    transform: translateY(-14px);
-  }
-}
-@media (max-width: 991.98px) {
-  .headliner .section-header {
-    font-size: 40px;
-    transform: translateY(-11px);
-  }
-}
-@media (max-width: 767.98px) {
-  .headliner .section-header {
-    font-size: 28px;
-    transform: translateY(-9px);
-  }
-}
-.headliner .section-header.sh-right {
-  margin-left: auto;
-  padding-right: 5%;
-  padding-left: 6px;
-}
-.headliner .section-header.sh-left {
-  padding-left: 5%;
-  padding-right: 6px;
+.headliner h2 strong {
+  display: block;
+  margin-top: 0.5em;
+  font-size: 1.7em;
+  font-family: futuraBold;
 }
 
 /*.headliner-left{
@@ -984,6 +988,7 @@ header .arrow-down.scroll {
   background-color: #3043B7;
   font-size: 18px;
   font-family: "futuraBook";
+  box-shadow: 5px 5px 5px #1D1D1D;
 }
 @media (max-width: 991.98px) {
   .get-started .get-contact .row a .lesslon-btn {
@@ -1316,16 +1321,64 @@ nav .close-btn:hover .close-cross, nav .close-btn:focus .close-cross {
 .lesslons .contain#bg-konzept, .teacher .contain#bg-konzept {
   background-image: url("../media/konzept_min.jpg");
 }
-.lesslons .contain#micha-maass, .teacher .contain#micha-maass {
-  background-image: url("../media/micha-maass2.jpeg");
+.lesslons .contain#bernd-oezsevim, .teacher .contain#bernd-oezsevim {
+  background-image: url("../media/BerndOezsevim2.jpg");
+  background-position: center;
+}
+.lesslons .contain#chris-heiny, .teacher .contain#chris-heiny {
+  background-image: url("../media/ChrisHeiny2.jpg");
+  background-position: center;
+}
+.lesslons .contain#derek-scherzer, .teacher .contain#derek-scherzer {
+  background-image: url("../media/DerekScherzer2.jpg");
+  background-position: center;
+}
+.lesslons .contain#dimitris-christides, .teacher .contain#dimitris-christides {
+  background-image: url("../media/DimitrisChristides2.jpg");
+  background-position: center;
+}
+.lesslons .contain#emanuel_hauptmann, .teacher .contain#emanuel_hauptmann {
+  background-image: url("../media/EmanuelHauptmann2.jpg");
+  background-position: center;
+}
+.lesslons .contain#felix-astor, .teacher .contain#felix-astor {
+  background-image: url("../media/FelixAstor2.jpg");
+  background-position: center;
+}
+.lesslons .contain#giancarlo-mura, .teacher .contain#giancarlo-mura {
+  background-image: url("../media/GiancarloMura2.jpg");
+  background-position: center;
+}
+.lesslons .contain#hannes-stickel, .teacher .contain#hannes-stickel {
+  background-image: url("../media/HannesStickel2.jpg");
+  background-position: center;
+}
+.lesslons .contain#hans-schlotter, .teacher .contain#hans-schlotter {
+  background-image: url("../media/HansSchlotter2.jpg");
+  background-position: center;
+}
+.lesslons .contain#jan-tuerk, .teacher .contain#jan-tuerk {
+  background-image: url("../media/JanTuerk2.jpg");
+  background-position: center;
+}
+.lesslons .contain#johan-fink, .teacher .contain#johan-fink {
+  background-image: url("../media/JohanFink2.jpg");
   background-position: center;
 }
 .lesslons .contain#mesut-guersoy, .teacher .contain#mesut-guersoy {
   background-image: url("../media/MesutGuersoy2.jpg");
   background-position: center;
 }
-.lesslons .contain#chris-heiny, .teacher .contain#chris-heiny {
-  background-image: url("../media/ChrisHeiny2.jpg");
+.lesslons .contain#micha-maass, .teacher .contain#micha-maass {
+  background-image: url("../media/micha-maass2.jpeg");
+  background-position: center;
+}
+.lesslons .contain#michael-dau, .teacher .contain#michael-dau {
+  background-image: url("../media/MichaelDau2.jpg");
+  background-position: center;
+}
+.lesslons .contain#tomas-svensson, .teacher .contain#tomas-svensson {
+  background-image: url("../media/TomasSvensson2.jpg");
   background-position: center;
 }
 @media (max-width: 767.98px) {
@@ -1402,6 +1455,9 @@ nav .close-btn:hover .close-cross, nav .close-btn:focus .close-cross {
 #contact {
   margin: 200px 0;
 }
+#contact h2 {
+  font-family: futuraBook;
+}
 #contact form input:not([type=submit]), #contact form select, #contact form textarea {
   width: 100%;
   border-radius: 20px;
@@ -1463,7 +1519,7 @@ nav .close-btn:hover .close-cross, nav .close-btn:focus .close-cross {
   background-color: #BF2231;
   text-align: center;
 }
-.banner h3 {
+.banner h2 {
   font-family: futuraBold;
   font-size: 2.5rem;
 }
@@ -1563,6 +1619,15 @@ footer .bold {
 @media (max-width: 991.98px) {
   footer .bold {
     font-size: 17px;
+  }
+  footer .bold a {
+    display: inline-block;
+    padding: 15px 0;
+  }
+}
+@media (max-width: 991.98px) and (min-width: 576px) {
+  footer .bold a {
+    padding: initial;
   }
 }
 footer .bold .thin {

@@ -82,6 +82,13 @@ footer{
       font-size: 20px;
       @include media-breakpoint-down(md){
         font-size: 17px;
+        a{
+          display: inline-block;
+          padding: 15px 0;
+          @include media-breakpoint-up(sm){
+            padding: initial;
+          }
+        }
       }
       .thin{
         margin-top: 1.5rem;

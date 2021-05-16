@@ -25,6 +25,11 @@
 /*------------------------------------------------- */
 
 body {
+  overflow-x: hidden;
+  background-color: $drumblack;
+  color: $drumwhite;
+  font-family: 'futuraBook';
+  scroll-behavior: smooth;
   &#landing-page{
     background-color: black;
     background-image: url("../media/Titelbild_Mobile.webp");
@@ -40,16 +45,10 @@ body {
   .full-height{
     height: 100vh;
   }
-
-  overflow-x: hidden;
-  background-color: $drumblack;
-  color: $drumwhite;
-  font-family: 'futuraBook';
-  scroll-behavior: smooth;
-    h1, h2{
+  h1, h2{
       font-family: 'FuturaBold', cursive;
-    }
   }
+}
   
 .background-1{
   background-image: url("../media/home_bg_min.jpg");
@@ -72,7 +71,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }*/
-.background-3{
+/* .background-3{
   background-image: url("../media/stage-2089831_1280.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -86,10 +85,31 @@ body {
     -moz-background-size:auto;
     background-size: auto;
   }
-}
+} */
 
 .headliner{
-  position: relative;
+  text-align: center;
+  margin-bottom: 50px 0;
+  h2{
+    font-family: futuraBook;
+    font-size: 1.3rem;
+    @include media-breakpoint-up(sm){
+      font-size: 1.8rem
+    }
+    @include media-breakpoint-up(lg){
+      font-size: 2.2rem
+    }
+    @include media-breakpoint-up(xl){
+      font-size: 3rem
+    }
+    strong{
+      display: block;
+      margin-top: .5em;
+      font-size: 1.7em;
+      font-family: futuraBold;
+    }
+  }
+  /* position: relative;
   .bb{
     position: relative;
     width:100%;
@@ -163,7 +183,7 @@ body {
       padding-left: 5%;
       padding-right: 6px;
     }
-  }
+  } */
   /*.down-line{
     position: absolute;
     width: 60%;

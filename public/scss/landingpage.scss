@@ -437,6 +437,7 @@
             background-color: $drumblue;
             font-size: 18px;
             font-family: 'futuraBook';
+            box-shadow: 5px 5px 5px $drumblack;
             @include media-breakpoint-down(md){
               font-size: 16px;
             }
