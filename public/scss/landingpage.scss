@@ -1,4 +1,10 @@
 .welcome{
+  padding-left: 0;
+  padding-top: 0;
+  @include media-breakpoint-up(sm){
+    padding-left: 5rem;
+    padding-top: 2rem;
+  }
     .row{
       margin: 0;
       /* background-color: $drumyellow; */
