@@ -17,10 +17,22 @@ https://ryomax.github.io/drumschool-berlin/
 - [X] Kontakt
 - [X] Probestunde
 - [X] Fill in placeholder links with correct ones
-- [ ] Redesign landingpage 
+- [X] Redesign landingpage 
 - [ ] Upload a picture for each teacher
-- [ ] Replace placeholder text with real text
+- [X] Replace placeholder text with real text
 - [ ] Set up an automated email transfer
+- [ ] Make Nav logo larger
+- [ ] PS-Button in same appearance
+- [ ] Make first PS-Buton larger
+- [ ] Place PS-Button underneath each home-headline, at the end of landingpage and in footer
+- [ ] Correct typo in footer (Buchberger Str.)
+- [ ] Get rid of Bürozeiten and add "voicemail hinterlassen in footer
+- [ ] Make Service Icons into links
+- [ ] Creating navigation Buttons for each Unterricht page
+- [ ] Rename Konzept page into "Schlagzeugunterricht" and add meta title + h1 with same name
+- [ ] Create Proberaum-page 
+- [ ] Teacherpages NOW: open in new Tab
+- [ ] Teacherpages LATER: Application Window, without changing the page (from Lehrkräfte)
 
 **Bugfixes**
 - [X] the content height on the Unterricht pages should be similar to the devices
