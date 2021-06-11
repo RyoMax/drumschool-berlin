@@ -123,8 +123,8 @@ $(document).ready(function () {
     works for the unterricht pages*/
     function generateLesslonLink() {
         if ($("section").hasClass("lesslons")) {
-            var pages = ["konzept", "anfaenger", "fortgeschritten", "kinder"];
-            var partLink = "./unterricht_";
+            var pages = ["preise", "anfaenger", "fortgeschritten", "kinder"];
+            var partLink = "./schlagzeugunterricht_";
             var lesslonsId = $(".lesslons").attr("id");
             var linkBack = $(".lesslons .arr-l");
             var linkForeword = $(".lesslons .arr-r");

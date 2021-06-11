@@ -336,7 +336,7 @@ header nav.navbar {
 }
 header nav.navbar #nav-logo {
   width: auto;
-  height: 50px;
+  height: 90px;
 }
 @media (max-width: 991.98px) {
   header nav.navbar #nav-logo {
@@ -1093,6 +1093,9 @@ nav .close-btn:hover .close-cross, nav .close-btn:focus .close-cross {
   }*/
   position: relative;
 }
+.lesslons h1, .teacher h1 {
+  margin-bottom: 2rem;
+}
 .lesslons .fullscreen, .teacher .fullscreen {
   min-height: 100%;
 }
@@ -1409,6 +1412,7 @@ nav .close-btn:hover .close-cross, nav .close-btn:focus .close-cross {
   height: 100%;
   clip-path: polygon(0 0, 100% 0, 0 100%);
   z-index: 4;
+  transform: translateX(-1px);
 }
 
 /*.teacher{

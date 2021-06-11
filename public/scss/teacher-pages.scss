@@ -28,6 +28,9 @@ nav .close-btn{
         background: red;
     }*/
     //min-height: 100vh;
+    h1{
+      margin-bottom: 2rem;
+    }
     position: relative;
     .fullscreen{
       min-height: 100%;
@@ -341,7 +344,7 @@ nav .close-btn{
             0 100%
           );
           z-index: 4;
-          
+          transform: translateX(-1px);
         }
       }
     }
