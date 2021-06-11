@@ -1,0 +1,100 @@
+footer{
+    margin-top: $margin;
+    padding-top: 44px;
+    padding-bottom: 2rem;
+    background-image: url("../media/FooterGrafik_min.png");
+    background-color: $drumyellow;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    p{
+      opacity:0.8;
+    }
+    a{
+      color: $drumwhite;
+      opacity: 0.8;
+      &:hover, &:focus{
+        text-decoration: none;
+        color: $drumwhite;
+        opacity: 1;
+      }
+    }
+    .newsletter-form{
+      margin-bottom: 2rem;
+      label{
+        font-family: 'futuraBold';
+        font-size: 28px;
+      }
+      .email{
+        padding: 8px 20px;
+        width: 70%;
+        border: none;
+        border-top-left-radius: 40px;
+        border-bottom-left-radius: 40px;
+        @include media-breakpoint-down(sm){
+          font-size: 12px;
+          padding: 8px 12px;
+        }
+      }
+      .submit{
+        padding: 8px 24px;
+        background-color: $drumblack;
+        color: $drumwhite;
+        font-weight: bold;
+        border: none;
+        border-left: $drumblack 2px solid;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        transform: translateX(-6px);
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+        @include media-breakpoint-down(sm){
+          font-size: 12px;
+          padding: 8px 12px;
+        }
+        &:hover, &:focus{
+          background-color: $drumwhite;
+          color: $drumblack;
+        }
+        
+      }
+    }
+    .social{
+      font-family: 'futuraBold';
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .icon-link{
+      font-size: 14px;
+      .icon{
+        width: 25px;
+        height: 25px;
+        color: $drumyellow;
+        margin: 12px;
+        margin-left: 0;
+      }
+    }
+    .bold{
+      //padding-top: 44px;
+      font-weight: bold;
+      font-size: 20px;
+      @include media-breakpoint-down(md){
+        font-size: 17px;
+        a{
+          display: inline-block;
+          padding: 15px 0;
+          @include media-breakpoint-up(sm){
+            padding: initial;
+          }
+        }
+      }
+      .thin{
+        margin-top: 1.5rem;
+        font-family: 'futuraItalic';
+        font-weight: 400;
+      }
+    }
+    
+  }

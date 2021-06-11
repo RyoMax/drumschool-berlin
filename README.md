@@ -33,6 +33,10 @@ https://ryomax.github.io/drumschool-berlin/
 - [ ] Create Proberaum-page 
 - [ ] Teacherpages NOW: open in new Tab
 - [ ] Teacherpages LATER: Application Window, without changing the page (from Lehrkräfte)
+- [ ] Redesign landingpage 
+- [ ] Upload a picture for each teacher
+- [ ] Replace placeholder text with real text
+- [ ] Set up an automated email transfer
 
 **Bugfixes**
 - [X] the content height on the Unterricht pages should be similar to the devices
