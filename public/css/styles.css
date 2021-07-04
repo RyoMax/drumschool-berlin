@@ -469,7 +469,7 @@ header .arrow-down.scroll {
   font-family: "FuturaBold";
   font-size: 50px;
   /*               background-color: $drumyellow;
-   */
+  */
 }
 @media (max-width: 1199.98px) {
   .welcome .row .content h1 .head-liner .ul {
@@ -1070,6 +1070,16 @@ header .arrow-down.scroll {
 }
 .news .soon:hover h3, .news .soon:focus h3 {
   color: #1D1D1D;
+}
+
+.probestunde {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.probestunde button {
+  margin: 0;
+  background-color: #BF2231;
 }
 
 nav .close-btn {

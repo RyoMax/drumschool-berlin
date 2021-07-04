@@ -5,583 +5,592 @@
     padding-left: 5rem;
     padding-top: 2rem;
   }
-    .row{
-      margin: 0;
+  .row{
+    margin: 0;
+    /* background-color: $drumyellow; */
+    color: $drumwhite;
+    .fullscreen{
+      height: 100%;
+    }
+    .content{
+      position: relative;
+      padding: 4rem 0 4rem 6rem;
       /* background-color: $drumyellow; */
-      color: $drumwhite;
-      .fullscreen{
-        height: 100%;
+      @include media-breakpoint-down(md){
+        padding-right: 1rem;
+        padding-left: 3rem;
       }
-      .content{
-        position: relative;
-        padding: 4rem 0 4rem 6rem;
-        /* background-color: $drumyellow; */
-        @include media-breakpoint-down(md){
-          padding-right: 1rem;
-          padding-left: 3rem;
-        }
-        @include media-breakpoint-down(sm){
-          padding: 4rem 2rem;
-        }
-        h1{
-          font-family: 'futuraItalic';
+      @include media-breakpoint-down(sm){
+        padding: 4rem 2rem;
+      }
+      h1{
+        font-family: 'futuraItalic';
+        font-size: 22px;
+        margin-bottom: 3rem;
+        @include media-breakpoint-down(lg){
           font-size: 22px;
-          margin-bottom: 3rem;
-          @include media-breakpoint-down(lg){
-            font-size: 22px;
-          }
-          @include media-breakpoint-down(md){
-            font-size: 18px;
-          }
-          @include media-breakpoint-down(sm){
-            font-size: 16px;
-          }
-          .head-liner{
-            position: relative;
-            display: block;
-            width: 100%;
-            z-index: 4;
-            .ul{
-              font-family: 'FuturaBold';
-              font-size: 50px;
-/*               background-color: $drumyellow;
- */              @include media-breakpoint-down(lg){
-                font-size: 40px;
-              }
-              @include media-breakpoint-down(md){
-                font-size: 30px;
-              }
-              @include media-breakpoint-down(sm){
-                font-size: 40px;
-              }
-            }
-          }
         }
-        p{
-          font-size: 20px;
-          line-height: 25px;
-          margin-bottom: 3rem;
-          @include media-breakpoint-down(lg){
-            margin-bottom: 6rem;
-            font-size: 18px;
-            line-height: 22px;
-          }
-          @include media-breakpoint-down(md){
-            font-size: 16px;
-          }
-          @include media-breakpoint-down(sm){
-            font-size: 16px;
-            margin-bottom: 3rem;
-          }
+        @include media-breakpoint-down(md){
+          font-size: 18px;
         }
-      }
-      .buttons{
         @include media-breakpoint-down(sm){
-          display: flex;
-          flex-direction: column-reverse;
-          justify-content: center;
-          align-items: center;
+          font-size: 16px;
         }
-        a {
-          .lesslon-btn{
-            background-color: $drumyellow;
-          }
-          &:hover, &:focus{
-            .lesslon-btn{
-              background-color: $drumwhite;
-              color: $drumblack;
-              span{
-                color: $drumyellow;
-              }
+        .head-liner{
+          position: relative;
+          display: block;
+          width: 100%;
+          z-index: 4;
+          .ul{
+            font-family: 'FuturaBold';
+            font-size: 50px;
+/*               background-color: $drumyellow;
+*/              @include media-breakpoint-down(lg){
+              font-size: 40px;
+            }
+            @include media-breakpoint-down(md){
+              font-size: 30px;
+            }
+            @include media-breakpoint-down(sm){
+              font-size: 40px;
             }
           }
         }
       }
-      .more{
-        position: absolute;
-        bottom: calc(8px + 4rem);
-        right: 6rem;
-        color: $drumwhite;
-        font-size: 18px;
-        font-weight: 600;
-        transform: translateX(4rem);
-        -webkit-transition: all 0.4s;
-        -moz-transition: all 0.4;
-        -o-transition: all 0.4s;
-        transition: all 0.4s;
-        @include media-breakpoint-down(lg) {
-          font-size: 20px;
-          left: 7rem;
-          bottom: calc(90px + 4rem);
-          transform: translateX(0);
+      p{
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 3rem;
+        @include media-breakpoint-down(lg){
+          margin-bottom: 6rem;
+          font-size: 18px;
+          line-height: 22px;
         }
-         @include media-breakpoint-down(md){
-           font-size: 17px;
-           left: 4rem;
-         }
-        @include media-breakpoint-down(sm) {
-          position: static;
-          bottom: unset;
-          left: unset;
-          right: unset;
+        @include media-breakpoint-down(md){
+          font-size: 16px;
+        }
+        @include media-breakpoint-down(sm){
+          font-size: 16px;
+          margin-bottom: 3rem;
+        }
+      }
+    }
+    .buttons{
+      @include media-breakpoint-down(sm){
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+      }
+      a {
+        .lesslon-btn{
+          background-color: $drumyellow;
         }
         &:hover, &:focus{
-          text-decoration: none;
-          //font-size: 20px;
-          color: $drumyellow;
-          @include media-breakpoint-up(lg) {
-            font-size: 20px;
-          }
-          .arr{
-            background-color: $drumblack;
-            border: $drumblack 3px solid;
-            i{
-              color: $drumwhite;
-            }
-          }
-        }
-      }
-      .contain{
-        background-image: url("../media/DrummerSW-2_min.jpg");
-        background-size: cover;
-        background-position: center;
-        padding: 0;
-        z-index: 3;
-        .row{
-          background-color: transparent;
-        }
-        .shadow-box{
-          padding: 0;
-          margin: 0;
-          filter: drop-shadow(10px 10px 5px $drumblack);
-          .slash{
-            position: relative;
-            background-color: $drumyellow;
-            height: 100%;
-            clip-path: polygon(
-              0 0,
-              100% 0,
-              0 100%
-            );
-            z-index: 4;
-            @include media-breakpoint-down(sm){
-              clip-path: none;
-              background-color: transparent;
+          .lesslon-btn{
+            background-color: $drumwhite;
+            color: $drumblack;
+            span{
+              color: $drumyellow;
             }
           }
         }
       }
     }
-  }
-  .service{
-    margin-top: $margin;
-    margin-bottom: $margin;
-    .container{
-      margin: 5rem auto;
-      @include media-breakpoint-down(md){
-        margin-left: 0;
-        margin-right: 0;
-        max-width: none;
+    .more{
+      position: absolute;
+      bottom: calc(8px + 4rem);
+      right: 6rem;
+      color: $drumwhite;
+      font-size: 18px;
+      font-weight: 600;
+      transform: translateX(4rem);
+      -webkit-transition: all 0.4s;
+      -moz-transition: all 0.4;
+      -o-transition: all 0.4s;
+      transition: all 0.4s;
+      @include media-breakpoint-down(lg) {
+        font-size: 20px;
+        left: 7rem;
+        bottom: calc(90px + 4rem);
+        transform: translateX(0);
       }
-      @include media-breakpoint-down(sm){
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 540px;
+        @include media-breakpoint-down(md){
+          font-size: 17px;
+          left: 4rem;
+        }
+      @include media-breakpoint-down(sm) {
+        position: static;
+        bottom: unset;
+        left: unset;
+        right: unset;
       }
-    }
-    .card{
-      position: relative;
-      background-color: transparent;
-      padding: 0 2rem;
-      text-align: center;
-      text-decoration: unset;
-      z-index: 3;
-      border: unset;
-      @include media-breakpoint-down(md){
-        padding: unset;
-      }
-      @include media-breakpoint-down(sm){
-        padding: 0 2rem 4rem;
-      }
-      &:hover .card-body > *{
+      &:hover, &:focus{
+        text-decoration: none;
+        //font-size: 20px;
         color: $drumyellow;
-      }
-      &:hover .circ{
-        opacity: 0.8;
-      }
-      .circ{
-        position: relative;
-        width: 100%;
-        background-color: $drumyellow;
-        border-radius: 100%;
-        opacity: 1;
-        transition: opacity 0.4s;
-        .ico{
-          position: absolute;
-          left: 50%;
-          bottom: 50%;
-          -webkit-transform: translate(-50%, 50%);
-          transform: translate(-50%, 50%);
-          padding: 15%;
+        @include media-breakpoint-up(lg) {
+          font-size: 20px;
         }
-      }
-      .card-body{
-        padding: 0;
-        padding-top: 2rem;
-        h2{
-          font-size: 24px;
-          font-family: 'futuraBold';
-          @include media-breakpoint-down(lg){
-            font-size: 20px;
+        .arr{
+          background-color: $drumblack;
+          border: $drumblack 3px solid;
+          i{
+            color: $drumwhite;
           }
-          @include media-breakpoint-down(md){
-            font-size: 18px;
-          }
-        }
-        p{
-          font-size: 16px;
-          @include media-breakpoint-down(sm){
-            font-size: 14px;
-          }
-        }
-        & > *{
-          color: $drumwhite;
-          margin-bottom: 0;
-          transition: color 0.4s;
         }
       }
     }
-    
-    .grid{
-      .ico{
-        //background-color: $drumyellow;
-        display: block;
-        margin: auto;
-        
-      }
+    .contain{
+      background-image: url("../media/DrummerSW-2_min.jpg");
+      background-size: cover;
+      background-position: center;
+      padding: 0;
+      z-index: 3;
       .row{
-        margin: 2rem 0;
-        @include media-breakpoint-down(sm){
-          padding: 2rem 0 .5rem;
-        }
-        &:nth-child(odd){
-          background-color: $drumgrey;
-          padding: 2rem 0;
-        }
-      }
-      .p-header{
-        font-weight: bold;
-        font-size: 25px;
-        @include media-breakpoint-down(md){
-          font-size: 22px;
-        }
-        @include media-breakpoint-down(md){
-          font-size: 16px;
-        }
-        @include media-breakpoint-down(sm){
-          margin-top: 1rem;
-          text-align: center;
-        }
-      }
-      .r{
-        text-align: right;
-        @include media-breakpoint-down(sm){
-          text-align: center;
-        }
-      }
-      /*img{
-        max-height: 250px;
-      }*/
-    }
-     
-  }
-  
-  .locations{
-    margin-top: $margin;
-    margin-bottom: $margin;
-    .container{
-      margin-top: 7rem;
-      @include media-breakpoint-down(md){
-        padding: unset;
-      }
-      @include media-breakpoint-down(md){
-        padding: 0 2rem;
-      }
-    }
-    #map{
-      width: 90%;
-      @include media-breakpoint-down(sm){
-        margin: auto;
-      }   
-    }
-    .mloc{
-      padding-left: 2rem;
-      button{
         background-color: transparent;
-        display: block;
-        width: 100%;
-        text-align: left;
-        border: none;
-        padding: unset;
-        &:focus, &:hover{
-          outline: none;
-          .location{
-            color: $drumyellow;
+      }
+      .shadow-box{
+        padding: 0;
+        margin: 0;
+        filter: drop-shadow(10px 10px 5px $drumblack);
+        .slash{
+          position: relative;
+          background-color: $drumyellow;
+          height: 100%;
+          clip-path: polygon(
+            0 0,
+            100% 0,
+            0 100%
+          );
+          z-index: 4;
+          @include media-breakpoint-down(sm){
+            clip-path: none;
+            background-color: transparent;
           }
         }
-        &:focus-visible{
-          outline: 5px auto -webkit-focus-ring-color;
-        }
       }
-      @include media-breakpoint-down(sm){
-        margin-top: 2rem;
-        padding-left: 0;
+    }
+  }
+}
+.service{
+  margin-top: $margin;
+  margin-bottom: $margin;
+  .container{
+    margin: 5rem auto;
+    @include media-breakpoint-down(md){
+      margin-left: 0;
+      margin-right: 0;
+      max-width: none;
+    }
+    @include media-breakpoint-down(sm){
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 540px;
+    }
+  }
+  .card{
+    position: relative;
+    background-color: transparent;
+    padding: 0 2rem;
+    text-align: center;
+    text-decoration: unset;
+    z-index: 3;
+    border: unset;
+    @include media-breakpoint-down(md){
+      padding: unset;
+    }
+    @include media-breakpoint-down(sm){
+      padding: 0 2rem 4rem;
+    }
+    &:hover .card-body > *{
+      color: $drumyellow;
+    }
+    &:hover .circ{
+      opacity: 0.8;
+    }
+    .circ{
+      position: relative;
+      width: 100%;
+      background-color: $drumyellow;
+      border-radius: 100%;
+      opacity: 1;
+      transition: opacity 0.4s;
+      .ico{
+        position: absolute;
+        left: 50%;
+        bottom: 50%;
+        -webkit-transform: translate(-50%, 50%);
+        transform: translate(-50%, 50%);
+        padding: 15%;
       }
-      .location{
-        font-family: 'futuraBold';
-        font-weight: bold;
+    }
+    .card-body{
+      padding: 0;
+      padding-top: 2rem;
+      h2{
         font-size: 24px;
-        color: $drumwhite;
-        border-bottom: 1px solid $drumyellow;
-        cursor: pointer;
+        font-family: 'futuraBold';
         @include media-breakpoint-down(lg){
           font-size: 20px;
         }
         @include media-breakpoint-down(md){
           font-size: 18px;
         }
-        &:hover, &:focus{
-          color: $drumyellow;
+      }
+      p{
+        font-size: 16px;
+        @include media-breakpoint-down(sm){
+          font-size: 14px;
         }
       }
-      .adress{
-        font-family: 'futuraItalic';
+      & > *{
         color: $drumwhite;
-      }
-      .card{
-        background-color: $drumblack;
-        border: $drumyellow solid 1px;
-        margin-bottom: 2rem;
-        &.no-mb{
-          margin-bottom: 0;
-        }
+        margin-bottom: 0;
+        transition: color 0.4s;
       }
     }
-    
   }
   
-  .get-started{
-    position: relative;
-    margin-top: $margin;
-    margin-bottom: $margin;
-    color: $drumwhite;
-    .content{
-      position: relative;
+  .grid{
+    .ico{
+      //background-color: $drumyellow;
+      display: block;
+      margin: auto;
+      
     }
-    img{
-      position: absolute;
-      bottom: 0;
-      z-index: 5;
-      width: 51%;
-      aspect-ratio: 3 / 2;
-      @include media-breakpoint-down(md){
-        width: 58%;
-      }
+    .row{
+      margin: 2rem 0;
       @include media-breakpoint-down(sm){
-        position: relative;
-        width: 100%;
+        padding: 2rem 0 .5rem;
       }
-    }
-    .get-contact{
-      position: absolute;
-      bottom: 0;
-      background-color: $drumyellow;
-      width: 100%;
-      z-index: 4;
-      //margin-bottom: 2rem;
-      @include media-breakpoint-down(sm){
-        position: relative;
-      }
-      .row{
+      &:nth-child(odd){
+        background-color: $drumgrey;
         padding: 2rem 0;
-        text-align: center;
-        @include media-breakpoint-down(lg){
-          padding: 1.5rem 0;
-        }
-        @include media-breakpoint-down(md){
-          padding: 1rem 0;
-        }
-        .contact{
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-        p{
-          font-size: 24px;
-          @include media-breakpoint-down(lg){
-            //font-size: 18px;
-            margin-bottom: 0.5rem;
-          }
-          @include media-breakpoint-down(md){
-            font-size: 19px;
-          }
-          @include media-breakpoint-down(sm){
-            margin-bottom:1rem;
-          }
-        }
-        a{
-          display: block;
-          max-width: max-content;
-          margin-bottom: 1.5rem;
-          color: $drumwhite;
-          font-size: 24px;
-          font-family: 'futuraBold';
-          @include media-breakpoint-down(lg){
-            font-size: 22px;
-            margin-bottom: 1rem;
-          }
-          @include media-breakpoint-down(md){
-            font-size: 20px;
-          }
-          @include media-breakpoint-down(sm){
-            margin-bottom: 1.5rem;
-            &:last-of-type{
-              margin-bottom: 0;
-            }
-          }
-          .lesslon-btn{
-            padding: 12px 25px;
-            margin: 0;
-            background-color: $drumblue;
-            font-size: 18px;
-            font-family: 'futuraBook';
-            box-shadow: 5px 5px 5px $drumblack;
-            @include media-breakpoint-down(md){
-              font-size: 16px;
-            }
-            @include media-breakpoint-down(sm){
-              font-size: 14px;
-            }
-          }
-          &:hover, &:focus{
-            .lesslon-btn{
-              background-color: $drumwhite;
-            }
-          }
-        }      
       }
-      /*.left{
-        p, a{
-          text-align: left;
-          display: block;
-          @include media-breakpoint-down(sm){
-            text-align: center;
-          }
-        }
-      }
-      .right{
-        p, a{
-          text-align: right;
-          display: block;
-          margin: 0 2rem 0 0;
-          @include media-breakpoint-down(md){
-            margin-right: 1rem;
-          }
-          @include media-breakpoint-down(sm){
-            text-align: center;
-            margin-bottom: 1rem;
-            margin-right: 0;
-          }
-        }
-      }
-      .pl{
-        p, a{
-          padding-left: 2rem;
-          @include media-breakpoint-down(md){
-            padding-left: 0;
-          }
-        }
-      }
-      .bold{
-        p, a{
-          font-weight: bold;
-        }
-        
-      }
-      .drum-btn{
-        width: 100%;
-        padding: 7px 2px;
-        background-color: $drumblack;
-        color: $drumwhite;
+    }
+    .p-header{
+      font-weight: bold;
+      font-size: 25px;
+      @include media-breakpoint-down(md){
         font-size: 22px;
-        border: $drumblack solid 3px;
-        border-radius: 30px;
-        -webkit-transition: all 0.2s;
-        transition: all 0.2s;
-        @include media-breakpoint-down(lg){
-          font-size:18px;
-        }
-        @include media-breakpoint-down(md){
-          font-size:14px;
-        }
-        @include media-breakpoint-down(sm){
-          min-width: 40%;
-          max-width: 60%;
-        }
-        &:hover{
-          background-color: $drumwhite;
-          color: $drumyellow;
-          border: solid 3px $drumblack;
-        }
-        
-        //box-shadow: 0 0 10px $drumyellow;
-      }*/
+      }
+      @include media-breakpoint-down(md){
+        font-size: 16px;
+      }
+      @include media-breakpoint-down(sm){
+        margin-top: 1rem;
+        text-align: center;
+      }
+    }
+    .r{
+      text-align: right;
+      @include media-breakpoint-down(sm){
+        text-align: center;
+      }
+    }
+    /*img{
+      max-height: 250px;
+    }*/
+  }
+    
+}
+
+.locations{
+  margin-top: $margin;
+  margin-bottom: $margin;
+  .container{
+    margin-top: 7rem;
+    @include media-breakpoint-down(md){
+      padding: unset;
+    }
+    @include media-breakpoint-down(md){
+      padding: 0 2rem;
     }
   }
-  
-  .news{
-    margin-top: $margin;
-    margin-bottom: $margin;
-    .soon{
-      position: relative;
-      margin-top: 7rem;
-      .bg-grey{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: $drumwhite;
-        opacity: 0.65;
-        -webkit-transition: all 0.2s;
-        transition: all 0.2s;
-        z-index: 3;
-      }
-      img{
-        position: relative;
-        z-index: 2;
-      }
-      h3{
-        position: absolute;
-        font-family: 'futuraBold';
-        font-size: 3rem;
-        top: 50%;
-        right: 50%;
-        transform: translate(50%, -50%);
-        opacity: 1;
-        -webkit-transition: all 0.2s;
-        transition: all 0.2s;
-        z-index: 4;
-        @include media-breakpoint-down(sm){
-          font-size: 2.5rem;
+  #map{
+    width: 90%;
+    @include media-breakpoint-down(sm){
+      margin: auto;
+    }   
+  }
+  .mloc{
+    padding-left: 2rem;
+    button{
+      background-color: transparent;
+      display: block;
+      width: 100%;
+      text-align: left;
+      border: none;
+      padding: unset;
+      &:focus, &:hover{
+        outline: none;
+        .location{
+          color: $drumyellow;
         }
-  
+      }
+      &:focus-visible{
+        outline: 5px auto -webkit-focus-ring-color;
+      }
+    }
+    @include media-breakpoint-down(sm){
+      margin-top: 2rem;
+      padding-left: 0;
+    }
+    .location{
+      font-family: 'futuraBold';
+      font-weight: bold;
+      font-size: 24px;
+      color: $drumwhite;
+      border-bottom: 1px solid $drumyellow;
+      cursor: pointer;
+      @include media-breakpoint-down(lg){
+        font-size: 20px;
+      }
+      @include media-breakpoint-down(md){
+        font-size: 18px;
       }
       &:hover, &:focus{
-        .bg-grey{
-          opacity: 0.8;
-        }
-        h3{
-          color: $drumblack;
-        }
+        color: $drumyellow;
+      }
+    }
+    .adress{
+      font-family: 'futuraItalic';
+      color: $drumwhite;
+    }
+    .card{
+      background-color: $drumblack;
+      border: $drumyellow solid 1px;
+      margin-bottom: 2rem;
+      &.no-mb{
+        margin-bottom: 0;
       }
     }
   }
+  
+}
+
+.get-started{
+  position: relative;
+  margin-top: $margin;
+  margin-bottom: $margin;
+  color: $drumwhite;
+  .content{
+    position: relative;
+  }
+  img{
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+    width: 51%;
+    aspect-ratio: 3 / 2;
+    @include media-breakpoint-down(md){
+      width: 58%;
+    }
+    @include media-breakpoint-down(sm){
+      position: relative;
+      width: 100%;
+    }
+  }
+  .get-contact{
+    position: absolute;
+    bottom: 0;
+    background-color: $drumyellow;
+    width: 100%;
+    z-index: 4;
+    //margin-bottom: 2rem;
+    @include media-breakpoint-down(sm){
+      position: relative;
+    }
+    .row{
+      padding: 2rem 0;
+      text-align: center;
+      @include media-breakpoint-down(lg){
+        padding: 1.5rem 0;
+      }
+      @include media-breakpoint-down(md){
+        padding: 1rem 0;
+      }
+      .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      p{
+        font-size: 24px;
+        @include media-breakpoint-down(lg){
+          //font-size: 18px;
+          margin-bottom: 0.5rem;
+        }
+        @include media-breakpoint-down(md){
+          font-size: 19px;
+        }
+        @include media-breakpoint-down(sm){
+          margin-bottom:1rem;
+        }
+      }
+      a{
+        display: block;
+        max-width: max-content;
+        margin-bottom: 1.5rem;
+        color: $drumwhite;
+        font-size: 24px;
+        font-family: 'futuraBold';
+        @include media-breakpoint-down(lg){
+          font-size: 22px;
+          margin-bottom: 1rem;
+        }
+        @include media-breakpoint-down(md){
+          font-size: 20px;
+        }
+        @include media-breakpoint-down(sm){
+          margin-bottom: 1.5rem;
+          &:last-of-type{
+            margin-bottom: 0;
+          }
+        }
+        .lesslon-btn{
+          padding: 12px 25px;
+          margin: 0;
+          background-color: $drumblue;
+          font-size: 18px;
+          font-family: 'futuraBook';
+          box-shadow: 5px 5px 5px $drumblack;
+          @include media-breakpoint-down(md){
+            font-size: 16px;
+          }
+          @include media-breakpoint-down(sm){
+            font-size: 14px;
+          }
+        }
+        &:hover, &:focus{
+          .lesslon-btn{
+            background-color: $drumwhite;
+          }
+        }
+      }      
+    }
+    /*.left{
+      p, a{
+        text-align: left;
+        display: block;
+        @include media-breakpoint-down(sm){
+          text-align: center;
+        }
+      }
+    }
+    .right{
+      p, a{
+        text-align: right;
+        display: block;
+        margin: 0 2rem 0 0;
+        @include media-breakpoint-down(md){
+          margin-right: 1rem;
+        }
+        @include media-breakpoint-down(sm){
+          text-align: center;
+          margin-bottom: 1rem;
+          margin-right: 0;
+        }
+      }
+    }
+    .pl{
+      p, a{
+        padding-left: 2rem;
+        @include media-breakpoint-down(md){
+          padding-left: 0;
+        }
+      }
+    }
+    .bold{
+      p, a{
+        font-weight: bold;
+      }
+      
+    }
+    .drum-btn{
+      width: 100%;
+      padding: 7px 2px;
+      background-color: $drumblack;
+      color: $drumwhite;
+      font-size: 22px;
+      border: $drumblack solid 3px;
+      border-radius: 30px;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+      @include media-breakpoint-down(lg){
+        font-size:18px;
+      }
+      @include media-breakpoint-down(md){
+        font-size:14px;
+      }
+      @include media-breakpoint-down(sm){
+        min-width: 40%;
+        max-width: 60%;
+      }
+      &:hover{
+        background-color: $drumwhite;
+        color: $drumyellow;
+        border: solid 3px $drumblack;
+      }
+      
+      //box-shadow: 0 0 10px $drumyellow;
+    }*/
+  }
+}
+
+.news{
+  margin-top: $margin;
+  margin-bottom: $margin;
+  .soon{
+    position: relative;
+    margin-top: 7rem;
+    .bg-grey{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: $drumwhite;
+      opacity: 0.65;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+      z-index: 3;
+    }
+    img{
+      position: relative;
+      z-index: 2;
+    }
+    h3{
+      position: absolute;
+      font-family: 'futuraBold';
+      font-size: 3rem;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+      opacity: 1;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+      z-index: 4;
+      @include media-breakpoint-down(sm){
+        font-size: 2.5rem;
+      }
+
+    }
+    &:hover, &:focus{
+      .bg-grey{
+        opacity: 0.8;
+      }
+      h3{
+        color: $drumblack;
+      }
+    }
+  }
+}
+.probestunde{
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  button{
+    margin: 0;
+    background-color: $drumyellow;
+  }
+}
