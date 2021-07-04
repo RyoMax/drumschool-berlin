@@ -5,6 +5,8 @@
 >note: *For now, the page will be delivered* **temporarily via FTP transfer.**
 >*Switching the whole project to* **node** *will be a mandatory future project.*
 
+**SASS CODE:** sass --watch public/scss/main.scss:public/css/styles.css
+ 
 **A first, yet buggy and incomplete impression can be found here:**
 
 https://ryomax.github.io/drumschool-berlin/
@@ -21,22 +23,18 @@ https://ryomax.github.io/drumschool-berlin/
 - [ ] Upload a picture for each teacher
 - [X] Replace placeholder text with real text
 - [ ] Set up an automated email transfer
-- [ ] Make Nav logo larger
+- [X] Make Nav logo larger
 - [ ] PS-Button in same appearance
 - [ ] Make first PS-Buton larger
 - [ ] Place PS-Button underneath each home-headline, at the end of landingpage and in footer
 - [ ] Correct typo in footer (Buchberger Str.)
 - [ ] Get rid of Bürozeiten and add "voicemail hinterlassen in footer
-- [ ] Make Service Icons into links
+- [X] Make Service Icons into links
 - [ ] Creating navigation Buttons for each Unterricht page
-- [ ] Rename Konzept page into "Schlagzeugunterricht" and add meta title + h1 with same name
+- [X] Rename Konzept page into "Schlagzeugunterricht" and add meta title + h1 with same name
 - [ ] Create Proberaum-page 
-- [ ] Teacherpages NOW: open in new Tab
+- [X] Teacherpages NOW: open in new Tab
 - [ ] Teacherpages LATER: Application Window, without changing the page (from Lehrkräfte)
-- [ ] Redesign landingpage 
-- [ ] Upload a picture for each teacher
-- [ ] Replace placeholder text with real text
-- [ ] Set up an automated email transfer
 
 **Bugfixes**
 - [X] the content height on the Unterricht pages should be similar to the devices

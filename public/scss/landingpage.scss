@@ -194,6 +194,7 @@
       background-color: transparent;
       padding: 0 2rem;
       text-align: center;
+      text-decoration: unset;
       z-index: 3;
       border: unset;
       @include media-breakpoint-down(md){
@@ -202,11 +203,19 @@
       @include media-breakpoint-down(sm){
         padding: 0 2rem 4rem;
       }
+      &:hover .card-body > *{
+        color: $drumyellow;
+      }
+      &:hover .circ{
+        opacity: 0.8;
+      }
       .circ{
         position: relative;
         width: 100%;
         background-color: $drumyellow;
         border-radius: 100%;
+        opacity: 1;
+        transition: opacity 0.4s;
         .ico{
           position: absolute;
           left: 50%;
@@ -221,7 +230,6 @@
         padding-top: 2rem;
         h2{
           font-size: 24px;
-          margin-bottom: 0;
           font-family: 'futuraBold';
           @include media-breakpoint-down(lg){
             font-size: 20px;
@@ -232,10 +240,14 @@
         }
         p{
           font-size: 16px;
-          margin-bottom: 0;
           @include media-breakpoint-down(sm){
             font-size: 14px;
           }
+        }
+        & > *{
+          color: $drumwhite;
+          margin-bottom: 0;
+          transition: color 0.4s;
         }
       }
     }

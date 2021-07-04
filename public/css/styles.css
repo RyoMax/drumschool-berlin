@@ -633,6 +633,7 @@ header .arrow-down.scroll {
   background-color: transparent;
   padding: 0 2rem;
   text-align: center;
+  text-decoration: unset;
   z-index: 3;
   border: unset;
 }
@@ -646,11 +647,19 @@ header .arrow-down.scroll {
     padding: 0 2rem 4rem;
   }
 }
+.service .card:hover .card-body > * {
+  color: #BF2231;
+}
+.service .card:hover .circ {
+  opacity: 0.8;
+}
 .service .card .circ {
   position: relative;
   width: 100%;
   background-color: #BF2231;
   border-radius: 100%;
+  opacity: 1;
+  transition: opacity 0.4s;
 }
 .service .card .circ .ico {
   position: absolute;
@@ -666,7 +675,6 @@ header .arrow-down.scroll {
 }
 .service .card .card-body h2 {
   font-size: 24px;
-  margin-bottom: 0;
   font-family: "futuraBold";
 }
 @media (max-width: 1199.98px) {
@@ -681,12 +689,16 @@ header .arrow-down.scroll {
 }
 .service .card .card-body p {
   font-size: 16px;
-  margin-bottom: 0;
 }
 @media (max-width: 767.98px) {
   .service .card .card-body p {
     font-size: 14px;
   }
+}
+.service .card .card-body > * {
+  color: #ffffff;
+  margin-bottom: 0;
+  transition: color 0.4s;
 }
 .service .grid {
   /*img{
