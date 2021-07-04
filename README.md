@@ -26,9 +26,9 @@ https://ryomax.github.io/drumschool-berlin/
 - [X] Make Nav logo larger
 - [ ] PS-Button in same appearance
 - [ ] Make first PS-Buton larger
-- [ ] Place PS-Button underneath each home-headline, at the end of landingpage and in footer
-- [ ] Correct typo in footer (Buchberger Str.)
-- [ ] Get rid of Bürozeiten and add "voicemail hinterlassen in footer
+- [ ] Place PS-Button underneath each home-headline, at the end of lehrerpage and in footer
+- [X] Correct typo in footer (Buchberger Str.)
+- [X] Get rid of Bürozeiten and add "voicemail hinterlassen in footer
 - [X] Make Service Icons into links
 - [ ] Creating navigation Buttons for each Unterricht page
 - [X] Rename Konzept page into "Schlagzeugunterricht" and add meta title + h1 with same name
